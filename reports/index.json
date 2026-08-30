@@ -1,4 +1,13 @@
 {
-  "updated_at": null,
-  "reports": []
+  "updated_at": "2026-08-30T14:00:00+02:00",
+  "reports": [
+    {
+      "date": "2026-08-30",
+      "title": "Baseline #1 — 10-system market snapshot",
+      "summary": "预算内最佳 €1,279.90；整体性能/价值最佳 Ryzen 7 7700 + RTX 5070 €1,814.90；建立 64GB 工程机价格锚点。",
+      "rating": "✅ 很值 / 🔥 错过可惜",
+      "path": "reports/2026-08-30.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-08-30.md"
+    }
+  ]
 }
