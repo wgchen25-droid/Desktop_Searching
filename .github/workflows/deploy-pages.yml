@@ -1,4 +1,4 @@
-# Public GitHub Pages deployment
+# Public GitHub Pages deployment — Pages enabled
 name: Deploy dashboard to GitHub Pages
 
 on:
