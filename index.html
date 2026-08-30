@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#08101f" />
+  <meta name="description" content="德国 / 欧洲高性价比 Desktop 与工程工作站长期价格追踪。" />
+  <title>Desktop Deal Radar</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">DR</div>
+        <div>
+          <div class="eyebrow">DESKTOP SEARCHING</div>
+          <h1>Desktop Deal Radar</h1>
+        </div>
+      </div>
+      <a class="repo-link" href="https://github.com/wgchen25-droid/Desktop_Searching" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </header>
+
+    <main>
+      <section class="hero panel">
+        <div class="hero-copy">
+          <span class="status-dot"></span>
+          <span id="data-status">正在读取价格历史…</span>
+          <h2>不是找“最便宜”，而是找<span>错过可惜</span>的工程桌面机。</h2>
+          <p>持续追踪德国与可可靠配送德国的欧洲市场，综合工程性能、远程多屏、售后、升级空间和真实历史价格，识别短期异常折扣。</p>
+        </div>
+        <div class="hero-meta">
+          <div><span>核心预算</span><strong>€900–€1,300</strong></div>
+          <div><span>神价扩展</span><strong>至 €1,600</strong></div>
+          <div><span>时间尺度</span><strong>5 年升级</strong></div>
+        </div>
+      </section>
+
+      <section class="metrics-grid" aria-label="核心指标">
+        <article class="metric-card accent">
+          <span>最新最佳候选</span>
+          <strong id="best-model">等待首轮搜索</strong>
+          <small id="best-rating">尚无历史数据</small>
+        </article>
+        <article class="metric-card">
+          <span>当前价格</span>
+          <strong id="best-price">—</strong>
+          <small id="market-gap">相对真实市场价 —</small>
+        </article>
+        <article class="metric-card">
+          <span>性价比分</span>
+          <strong id="value-score">—</strong>
+          <small>综合配置与市场价</small>
+        </article>
+        <article class="metric-card">
+          <span>市场趋势</span>
+          <strong id="market-trend">—</strong>
+          <small id="trend-note">等待跨日比较</small>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel chart-panel">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">HISTORY</span>
+              <h3>历史最佳性价比趋势</h3>
+            </div>
+            <span class="subtle" id="chart-range">暂无数据</span>
+          </div>
+          <div id="trend-chart" class="chart-wrap" role="img" aria-label="历史性价比趋势图">
+            <div class="empty-state">首轮搜索完成后，这里会显示每日最佳候选的性价比分变化。</div>
+          </div>
+        </article>
+
+        <article class="panel criteria-panel">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">SCORING</span>
+              <h3>我们真正奖励什么</h3>
+            </div>
+          </div>
+          <div class="criteria-list">
+            <div><b>01</b><span><strong>真实折扣</strong><small>对比同级真实市场价，不信虚高 UVP</small></span></div>
+            <div><b>02</b><span><strong>工程均衡</strong><small>CPU / GPU / RAM / SSD 不留明显短板</small></span></div>
+            <div><b>03</b><span><strong>远程主机</strong><small>网络、稳定性、散热与长时间运行</small></span></div>
+            <div><b>04</b><span><strong>五年可升级</strong><small>标准主板、电源、DIMM、M.2 与 PCIe</small></span></div>
+            <div><b>05</b><span><strong>可靠售后</strong><small>Outlet / Refurb 也必须有可接受保修与退货</small></span></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel table-panel">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">DEALS</span>
+            <h3>最近候选</h3>
+          </div>
+          <span class="subtle" id="deal-count">0 条记录</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>日期</th><th>判断</th><th>型号</th><th>价格</th><th>CPU</th><th>GPU</th><th>RAM</th><th>升级</th><th>性价比</th><th>趋势</th><th></th>
+              </tr>
+            </thead>
+            <tbody id="deal-table-body">
+              <tr><td colspan="11" class="empty-cell">暂无正式搜索记录。</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="content-grid lower-grid">
+        <article class="panel">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">REPORTS</span>
+              <h3>最近搜索报告</h3>
+            </div>
+          </div>
+          <div id="report-list" class="report-list">
+            <div class="empty-state compact">每日总结写入仓库后，会在这里形成可追溯的报告时间线。</div>
+          </div>
+        </article>
+
+        <article class="panel methodology">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">RULE</span>
+              <h3>什么时候才值得打扰你</h3>
+            </div>
+          </div>
+          <div class="rating-stack">
+            <div><span class="rating fire">🔥</span><p><strong>错过可惜</strong><small>明显脱离近期正常价格，优先核查库存与购买条件。</small></p></div>
+            <div><span class="rating good">✓</span><p><strong>很值</strong><small>现在买长期不容易吃亏，但未来仍可能再次出现。</small></p></div>
+            <div><span class="rating normal">•</span><p><strong>普通好价</strong><small>可以考虑，不值得被促销倒计时推动。</small></p></div>
+            <div><span class="rating skip">×</span><p><strong>跳过</strong><small>折扣好看但真实价值不足，或升级 / 售后存在明显短板。</small></p></div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <span>Desktop Searching · Germany / Europe</span>
+      <span id="last-updated">数据尚未更新</span>
+    </footer>
+  </div>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
