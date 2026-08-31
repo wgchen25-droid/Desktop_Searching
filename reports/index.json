@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-08-30T22:05:00+02:00",
+  "updated_at": "2026-08-31T22:08:00+02:00",
   "reports": [
+    {
+      "date": "2026-08-31",
+      "title": "Daily Angebot — RTX 5070 €1,399",
+      "summary": "今日 Angebot：CSL Speed 4574，Core Ultra 5 225F + RTX 5070 12GB + 16GB DDR5 + 1TB，€1,399；🔥 错过可惜。相比昨日历史库 RTX 5070 入门价 €1,719.90 低约 18.7%，但需优先升级 RAM，H810 平台升级性一般。",
+      "rating": "🔥 错过可惜",
+      "path": "reports/2026-08-31.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-08-31.md"
+    },
     {
       "date": "2026-08-30",
       "title": "Daily Angebot + Baseline #1",
