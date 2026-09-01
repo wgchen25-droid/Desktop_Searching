@@ -1,4 +1,5 @@
 const DATA_URL = 'data/price_history.csv';
+const REFERENCE_DATA = 'data/reference_systems.csv';
 const REPORT_INDEX = 'reports/index.json';
 const REPO = 'https://github.com/wgchen25-droid/Desktop_Searching';
 const $ = (s) => document.querySelector(s);
@@ -111,6 +112,22 @@ function setMetrics(rows) {
   $('#last-updated').textContent = `最新数据 ${best.date}${best.time ? ' ' + best.time : ''}`;
 }
 
+function renderReferences(rows) {
+  const body = $('#reference-table-body');
+  const count = $('#reference-count');
+  if (!body || !count) return;
+  count.textContent = `${rows.length} 台基准`;
+  if (!rows.length) return;
+  body.innerHTML = rows.map((r) => `<tr>
+    <td><strong>${esc(r.model || '—')}</strong></td>
+    <td>${esc(r.cpu || '—')}</td>
+    <td>${esc(r.ram_gb || '—')}${r.ram_gb ? ' GB' : ''}</td>
+    <td>${esc(r.gpu || '—')}</td>
+    <td>${r.role === 'hardware_reference' ? '固定硬件基准' : esc(r.role || 'Reference')}</td>
+    <td>${esc(r.notes || '—')}</td>
+  </tr>`).join('');
+}
+
 function renderTable(rows) {
   const body = $('#deal-table-body');
   $('#deal-count').textContent = `${rows.length} 条记录`;
@@ -181,15 +198,17 @@ function renderReports(index) {
 
 async function init() {
   try {
-    const [csv, reports] = await Promise.all([
+    const [csv, references, reports] = await Promise.all([
       fetch(DATA_URL, { cache: 'no-store' }).then((r) => {
         if (!r.ok) throw new Error('price_history.csv ' + r.status);
         return r.text();
       }),
+      fetch(REFERENCE_DATA, { cache: 'no-store' }).then((r) => r.ok ? r.text() : '').catch(() => ''),
       fetch(REPORT_INDEX, { cache: 'no-store' }).then((r) => r.ok ? r.json() : ({ reports: [] })).catch(() => ({ reports: [] }))
     ]);
     const rows = csvParse(csv).map(norm).filter((r) => r.date);
     setMetrics(rows);
+    renderReferences(csvParse(references));
     renderTable(rows);
     renderChart(rows);
     renderReports(reports);
