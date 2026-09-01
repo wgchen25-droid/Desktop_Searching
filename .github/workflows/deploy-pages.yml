@@ -38,6 +38,7 @@ jobs:
           cp assets/styles.css _site/assets/styles.css
           cp assets/app.js _site/assets/app.js
           cp data/price_history.csv _site/data/price_history.csv
+          cp data/reference_systems.csv _site/data/reference_systems.csv
           cp reports/index.json _site/reports/index.json
           touch _site/.nojekyll
 
