@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-08-31T22:08:00+02:00",
+  "updated_at": "2026-09-01T22:08:00+02:00",
   "reports": [
+    {
+      "date": "2026-09-01",
+      "title": "Daily Angebot — RTX 5070 €1,399 + HP Z2 Reference",
+      "summary": "今日 Angebot：CSL Speed 4574，Core Ultra 5 225F + RTX 5070 12GB + 16GB DDR5 + 1TB，€1,399；🔥 错过可惜。价格与昨日历史最低持平，并新增相对固定 HP Z2 Tower G9 i7-12700K / 32GB / UHD 770 的硬件升级与退步分析。",
+      "rating": "🔥 错过可惜",
+      "path": "reports/2026-09-01.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-01.md"
+    },
     {
       "date": "2026-08-31",
       "title": "Daily Angebot — RTX 5070 €1,399",
