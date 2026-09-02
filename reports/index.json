@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-09-01T22:08:00+02:00",
+  "updated_at": "2026-09-02T21:58:00+02:00",
   "reports": [
+    {
+      "date": "2026-09-02",
+      "title": "Daily Angebot — RTX 5070 €1,399 + new Ryzen 9 9900X/B850 option",
+      "summary": "今日主推仍为 CSL Speed 4574：Core Ultra 5 225F + RTX 5070 12GB，€1,399，🔥 错过可惜；价格连续第三次观察持平。新增 CSL Sprint 5928：Ryzen 9 9900X + B850 + RX 9060 8GB，€1,349，成为 CPU-heavy 工程与五年升级方向的新价值锚点。",
+      "rating": "🔥 错过可惜",
+      "path": "reports/2026-09-02.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-02.md"
+    },
     {
       "date": "2026-09-01",
       "title": "Daily Angebot — RTX 5070 €1,399 + HP Z2 Reference",
