@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-09-03T22:10:00+02:00",
+  "updated_at": "2026-09-04T22:14:00+02:00",
   "reports": [
+    {
+      "date": "2026-09-04",
+      "title": "Daily Angebot — broad scan finds 32GB RTX 5070 deals beyond CSL",
+      "summary": "强制跨商家扫描后，今日总冠军为 Coolblue 的 HP OMEN 35L：Ryzen 7 8700F + RTX 5070 + 32GB DDR5 + 1TB + B650 + Windows 11，€1,599，🔥 错过可惜；最佳非同商家挑战者为 x-kom 经 Kaufland 的 SMX 7600 + RTX 5070 + 32GB，€1,467.62；另发现 Hurricane24/Kaufland 的 Acer RTX 5070 整机 €1,249 作为预算内 GPU 异常价。",
+      "rating": "🔥 错过可惜",
+      "path": "reports/2026-09-04.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-04.md"
+    },
     {
       "date": "2026-09-03",
       "title": "Daily Angebot — balanced RX 9070 GRE / 32GB AM5 at €1,499",
