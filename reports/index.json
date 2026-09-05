@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-09-04T22:14:00+02:00",
+  "updated_at": "2026-09-05T22:12:00+02:00",
   "reports": [
+    {
+      "date": "2026-09-05",
+      "title": "Daily Angebot — broad scan holds; HP OMEN €1,599 remains balanced winner",
+      "summary": "今日强制跨商家扫描没有发现新的全能新低：Coolblue HP OMEN 35L 8700F + RTX 5070 + 32GB + B650 仍为 €1,599，评级降为 ✅ 很值 / 持平；最佳非同商家挑战者 x-kom/Kaufland SMX 7600 + RTX 5070 + 32GB 仍为 €1,467.62，页面显示该价仅剩 1 台；7 日可比 32GB+RTX5070 低位较 8/30 下降约14.7%，30日窗口仍不足。",
+      "rating": "✅ 很值",
+      "path": "reports/2026-09-05.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-05.md"
+    },
     {
       "date": "2026-09-04",
       "title": "Daily Angebot — broad scan finds 32GB RTX 5070 deals beyond CSL",
