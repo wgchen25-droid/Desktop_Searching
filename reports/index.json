@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-09-05T22:12:00+02:00",
+  "updated_at": "2026-09-06T22:14:00+02:00",
   "reports": [
+    {
+      "date": "2026-09-06",
+      "title": "Daily Angebot — HP holds; cheaper RTX 5070 options have platform/availability caveats",
+      "summary": "强制跨商家扫描没有出现新的全能历史低价：Coolblue HP OMEN 35L 8700F + RTX 5070 + 32GB 仍 €1,599，为 ✅ 很值总冠军；最佳非同商家挑战者 CSL Speed 4574 仍 €1,399；核心预算 Acer RTX 5070 仍 €1,249。x-kom 历史 €1,467.62 机型直达页当前显示不可用，因此不计作今日可买；7 日可用性相对该历史低点略恶化，30 日数据仍不足。",
+      "rating": "✅ 很值",
+      "path": "reports/2026-09-06.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-06.md"
+    },
     {
       "date": "2026-09-05",
       "title": "Daily Angebot — broad scan holds; HP OMEN €1,599 remains balanced winner",
