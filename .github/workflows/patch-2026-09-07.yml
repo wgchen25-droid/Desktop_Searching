@@ -16,272 +16,59 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: Correct daily data and report
+      - name: Correct daily CSV and dashboard selection
         run: |
           python - <<'PY'
-          import csv, json, re
+          import csv, re
           from pathlib import Path
-
-          date = '2026-09-07'
-          time = '22:45'
-          csv_path = Path('data/price_history.csv')
-          with csv_path.open(newline='', encoding='utf-8') as f:
-              reader = csv.DictReader(f)
-              fields = reader.fieldnames
-              rows = [r for r in reader if r.get('date') != date]
-
-          def row(model, seller, price, cpu, gpu, ram, storage, psu, form, warranty,
-                  upgrade, eng, remote, value, rarity, rating, market_ref, discount, trend, url, notes):
-              return {
-                  'date': date, 'time': time, 'model': model, 'condition': 'New', 'seller': seller,
-                  'country': 'DE', 'price_eur': str(price), 'cpu': cpu, 'gpu': gpu,
-                  'ram_gb': str(ram), 'storage_gb': str(storage), 'psu': psu,
-                  'form_factor': form, 'warranty': warranty, 'shipping_to_germany': 'yes',
-                  'upgrade_score': str(upgrade), 'engineering_score': str(eng), 'remote_score': str(remote),
-                  'value_score': str(value), 'rarity_score': str(rarity), 'rating': rating,
-                  'market_reference_eur': str(market_ref), 'discount_vs_market_pct': str(discount),
-                  'trend_vs_history': trend, 'product_url': url, 'notes': notes,
-              }
-
-          rows.extend([
-              row('HP OMEN 35L GT16-0972nd', 'Coolblue / HP', 1599.00,
-                  'AMD Ryzen 7 8700F', 'NVIDIA GeForce RTX 5070 12GB', 32, 1000,
-                  '750W (exact-SKU secondary specification)', 'Full Tower / B650 mATX',
-                  '2 years via Coolblue; 30-day free return/exchange',
-                  7.8, 9.1, 9.1, 9.5, 4, '✅ 很值', 1800, 11.2, '→ 持平（自身价格）',
-                  'https://www.coolblue.de/produkt/974719/hp-omen-35l-gt16-0972nd.html',
-                  'Daily champion after broad scan. Direct Coolblue page verifies €1599, free delivery, Ryzen 7 8700F, RTX5070, 32GB DDR5, 1TB, B650 and four DIMM slots. Exact-SKU secondary data lists 750W PSU and modern wireless. Strong complete engineering/CUDA host; OEM motherboard/chassis/BIOS still creates more proprietary risk than a standard DIY-style ATX system. Fixed HP Z2 reference is compared separately and excluded from market history.'),
-              row('Captiva Highend Gaming R93-435', 'NEXOC Store GmbH / CAPTIVA', 1445.99,
-                  'AMD Ryzen 7 5700X', 'NVIDIA GeForce RTX 5070 12GB', 32, 1000,
-                  '850W MSI MAG A850GL', 'Tower / B550M',
-                  '24 months CAPTIVA warranty; NEXOC 14-day withdrawal; consumer pays direct return shipping',
-                  5.8, 8.4, 8.8, 9.3, 7, '✅ 很值', 1515, 4.6, '↑ 新低（32GB+RTX5070）',
-                  'https://www.nexoc-store.de/pc-systeme/pcs/gaming-pcs/captiva-pc-highend-gaming-r93-435-ryzen-7-5700x-rtx5070-12gb-gddr7-ssd-1tb-32gb-wlan-windows-11-home-64-bit',
-                  'Best different-seller challenger and new absolute tracked low for a 32GB+RTX5070 desktop. Direct NEXOC page verifies €1445.99, free shipping, 2-3 business days, Win11 Home and Wi-Fi. Idealo shows seven current offers from €1445.99 to €1559.79, so this is a real low but not a huge same-SKU anomaly. Main weakness is AM4/B550/DDR4 platform end-of-line; future CPU-platform upgrade likely means motherboard+CPU+RAM together.'),
-              row('Acer Predator Orion 3000 PO3-665 DG.E4UEG.003', 'nordiva-shop0 via eBay', 1199.00,
-                  'Intel Core i5-14400F', 'NVIDIA GeForce RTX 5070 12GB', 16, 1000,
-                  '850W (exact-SKU comparison listing)', 'OEM Tower / H610-class platform',
-                  'Marketplace seller warranty not independently re-verified today; exact SKU and seller offer verified through Idealo',
-                  4.5, 7.6, 8.7, 9.4, 8, '🟡 普通好价', 1249, 4.0, '↑ 改善（€1249→€1199）',
-                  'https://www.ebay.de/itm/205941893117',
-                  'Core-budget CUDA/GPU outlier. Idealo exact SKU shows €1199 incl. shipping from eBay/nordiva-shop0 and three new offers in €1199-1269 range. Hardware price is excellent, but seller warranty clarity plus OEM/H610/DDR4/16GB and limited expansion make it a conditional buy rather than a five-year workstation base.'),
-              row('CSL Speed 4574 Core Ultra 5 225F / RTX 5070', 'CSL Computer', 1399.00,
-                  'Intel Core Ultra 5 225F', 'NVIDIA GeForce RTX 5070 12GB', 16, 1000,
-                  '700W BoostBoxx Power Boost 80+ Gold ATX2.53', 'Mid Tower / H810M',
-                  '24 months manufacturer warranty; 36 months optional; lifetime technical support',
-                  5.8, 8.8, 8.7, 9.3, 2, '✅ 很值', 1500, 6.7, '→ 持平',
-                  'https://www.csl-computer.com/gaming-pcs/gaming-pcs-1000-1500-euro/pc-csl-speed-4574-core-ultra-5.html',
-                  'Official CSL page rechecked at €1399 with 3-5 business-day dispatch. Still strong RTX5070 value, but 16GB RAM, H810M expansion, no Wi-Fi and no OS prevent it from beating the more complete HP champion for a long-lived remote engineering host.'),
-              row('OMIXIMO Ryzen 7 5700 / RTX 5070 32GB/1TB', 'Omiximo B.V. via MediaMarkt', 1549.00,
-                  'AMD Ryzen 7 5700', 'NVIDIA GeForce RTX 5070 12GB', 32, 1000,
-                  'Not disclosed on marketplace product page', 'Tower / board not disclosed',
-                  'Marketplace seller terms; MediaMarkt page advertises 30-day voluntary return, subject to marketplace conditions',
-                  4.5, 7.9, 8.6, 8.4, 4, '🟡 普通好价', 1550, 0.1, '→ 市场锚点',
-                  'https://www.mediamarkt.de/de/product/_omiximo-ryzen-7-5700-rtx-5070-32gb1tb-gaming-pc-ryzentm-7-32-gb-ram-1-tb-ssd-nvidia-geforce-rtxtm-5070-windows-11-pro-168998229.html',
-                  'Actual seller and shipper is Omiximo B.V., not MediaMarkt. €1549 incl. shipping, Ryzen 7 5700, RTX5070, 32GB, 1TB, Win11 Pro. Motherboard/PSU are not disclosed, so component transparency and five-year upgrade confidence are materially worse than direct-vendor systems.'),
-              row('MemoryPC Ryzen 5 7500F / RTX 5070 32GB', 'MemoryPC', 1879.00,
-                  'AMD Ryzen 5 7500F', 'NVIDIA GeForce RTX 5070 12GB', 32, 1000,
-                  '750W be quiet! System Power 11 M 80+ Gold', 'Mid Tower / MSI PRO B850-S WIFI6E',
-                  'Manufacturer warranty; German assembly/support; return process available',
-                  9.2, 8.3, 9.2, 7.1, 2, '❌ 跳过', 1700, -10.5, '→ 持平偏贵',
-                  'https://www.memorypc.de/p/gaming-pc-amd-ryzen-5-7500f-rtx-5070-32-gb-ddr5-557100/',
-                  'Official page rechecked at €1879 in stock. Excellent B850/Wi-Fi/32GB/750W Gold foundation, but pricing is far above today’s HP/Captiva/CSL options.'),
-              row('SYSTEMTREFF Ryzen 5 7500F / RTX 5070 32GB', 'SYSTEMTREFF', 1909.90,
-                  'AMD Ryzen 5 7500F', 'NVIDIA GeForce RTX 5070 12GB', 32, 1000,
-                  '750W be quiet! System Power 11 M Gold', 'Mid Tower / B850-class',
-                  '3 years + 30-day return',
-                  9.0, 7.7, 9.0, 6.9, 2, '❌ 跳过', 1800, -6.1, '↓ 恶化 vs historical same model',
-                  'https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-5-7500F-32GB-DDR5-GeForce-RTX-5070-12GB-1TB-4088',
-                  'Official page shows €1949.90 list with €40 code GAMING26, about €1909.90 effective before any shipping. Strong standard platform and 3-year service, but not price-competitive; same tracked model was €1719.90 on 2026-08-30.'),
-          ])
-
-          with csv_path.open('w', newline='', encoding='utf-8') as f:
-              w = csv.DictWriter(f, fieldnames=fields, lineterminator='\n')
-              w.writeheader(); w.writerows(rows)
-
-          report = r'''# Desktop Angebot Search — 2026-09-07
-
-## 结论
-
-今天按“强制跨商家广泛扫描”重新检查了 CSL、SYSTEMTREFF、MemoryPC、Dubaro、Alternate/Outlet、notebooksbilliger.de、Cyberport、MediaMarkt/Saturn Marketplace、Amazon、Dell、HP、Lenovo，并用 Idealo/Geizhals/Mydealz 做价格发现与交叉验证。没有因为前几日结果而优先复用单一商家。
-
-**今日总冠军：✅ HP OMEN 35L GT16-0972nd — €1,599，Coolblue 直售。** 这是今天上限预算内综合最完整的可核验组合：Ryzen 7 8700F + RTX 5070 12GB + 32GB DDR5-6000 + 1TB + B650 + 4 DIMM + Windows 11 Home。Coolblue 直接页显示 €1,599、免费配送、2 年保修、30 天免费退换。它不是新低，价格自身趋势为持平；之所以仍第一，是现代平台、32GB、强 GPU 和售后完整度一起达标。
-
-**最佳非同商家挑战者：✅ Captiva Highend Gaming R93-435 — €1,445.99，NEXOC Store GmbH 直售。** Ryzen 7 5700X + RTX 5070 12GB + 32GB DDR4 + 1TB + B550M + MSI MAG A850GL 850W + Wi-Fi + Windows 11 Home。它比 HP 少 €153.01，而且把仓库“32GB + RTX 5070”的绝对低位从 €1,467.62 推到 €1,445.99；但 AM4/B550/DDR4 已接近平台终点，所以更适合“现在就要 RTX 5070/32GB”，不如 HP 适合未来五年渐进升级。
-
-**核心预算内的 GPU 异常价：🟡 Acer Predator Orion 3000 DG.E4UEG.003 — €1,199，实际销售方 nordiva-shop0，经 eBay Marketplace。** Idealo 对精确 SKU 显示三档新机报价约 €1,199–€1,269，当前最低就是该卖家；相对昨天 €1,249 再降 €50。i5-14400F + RTX 5070 + 16GB DDR4 + 1TB 的 CUDA/欧元很强，但 Marketplace 保修清晰度、OEM/H610 级平台、DDR4 和内存扩展限制使它只适合“预算内最大化 GPU”，不适合作为五年 workstation 底座。
-
-> 重要更正：本轮重新核验 MIFCOM 后发现先前同日草稿中的“€1,499 / RTX 5060 Ti 16GB / 32GB”配置并不与当前 MIFCOM 商品页一致，因此已从 2026-09-07 正式价格历史与日报中移除，不让错误报价进入趋势统计。
-
----
-
-## 今日总冠军 — ✅ 很值
-
-### HP OMEN 35L GT16-0972nd — €1,599
-
-- 来源网站 / 实际销售方：Coolblue（HP 品牌整机）
-- 域名：`coolblue.de`
-- 直接商品页：https://www.coolblue.de/produkt/974719/hp-omen-35l-gt16-0972nd.html
-- 当前价：**€1,599，免费配送**
-- 合理市场参考价：约 **€1,800**（参考当前德国可买的现代平台 RTX 5070 / 32GB 整机；不使用 HP UVP）
-- 相对市场折扣：约 **11.2%**
-- 推荐等级：**✅ 很值**
-- 机会稀缺度 / 后悔风险：**4/10**
-- 性价比：**9.5/10**
-- 工程软件适配：**9.1/10**
-- 远程主机适配：**9.1/10**
-- 五年升级潜力：**7.8/10**
-- 历史趋势：**→ 自身价格持平；7 日同档低位整体改善**
-
-关键配置：Ryzen 7 8700F（8C/16T）、RTX 5070 12GB、32GB DDR5-6000（2×16GB）、4 DIMM、B650、1TB SSD、Windows 11 Home。精确 SKU 的二级规格源列出 750W PSU；Coolblue 本身未披露电源品牌/型号，因此电源“功率够用”可以判断，但长期换高功耗 GPU 前仍应打开机箱确认具体 PSU 与接口。
-
-NVIDIA 官方对 RTX 5070 给出 6144 CUDA cores、12GB GDDR7，并支持最多 4 个独立显示器。它对 CUDA/OptiX、GPU 渲染、本地 AI、重 3D 视口是真正的结构性升级；远程多屏时，实际体验还取决于所用远程协议、网络与编码，而不只是物理显示接口。
-
-Coolblue 的售后确定性很强：直接商品页标明 2 年保修，官方退货政策允许 30 天内登记并免费退回。德国本地有客服与门店体系，长期放地下室后如果出现硬件故障，比不透明 Marketplace 更省事。
-
-OEM 风险仍需保留：它不是标准零件完全透明的自组式 workstation；主板 BIOS、前面板/机箱布局、未来换板兼容性不如标准 ATX 整机确定。B650 + 4 DIMM 是加分，但不能把它当作完全无专有件风险。
-
----
-
-## 最佳非同商家挑战者 — ✅ 很值
-
-### Captiva Highend Gaming R93-435 — €1,445.99
-
-- 实际销售方：**NEXOC Store GmbH / CAPTIVA**
-- 域名：`nexoc-store.de`
-- 直接商品页：https://www.nexoc-store.de/pc-systeme/pcs/gaming-pcs/captiva-pc-highend-gaming-r93-435-ryzen-7-5700x-rtx5070-12gb-gddr7-ssd-1tb-32gb-wlan-windows-11-home-64-bit
-- 当前价：**€1,445.99，免运费，页面显示 2–3 个工作日**
-- 当前同型号市场：Idealo 今天显示 **7 个报价，约 €1,445.99–€1,559.79**
-- 合理市场参考价：约 **€1,515**
-- 相对参考折扣：约 **4.6%**
-- 推荐等级：**✅ 很值**
-- 机会稀缺度：**7/10**
-- 性价比：**9.3/10**
-- 工程软件适配：**8.4/10**
-- 远程主机适配：**8.8/10**
-- 五年升级潜力：**5.8/10**
-- 历史趋势：**↑ 新的 32GB + RTX 5070 绝对低位**
-
-与 HP 相比少 €153.01，显卡、RAM 容量、SSD 容量都不退步，而且还有明确的 MSI MAG A850GL 850W 电源与 Windows 11 Home。它真正牺牲的是平台寿命：Ryzen 7 5700X + B550M + DDR4 已是 AM4 后期路线，未来若想大幅提升 CPU，往往需要主板、CPU、RAM 一起更换。对只想立刻获得 CUDA/RTX 5070 的工程用户，这个折衷合理；对五年持续升级，它不如 HP。
-
-CAPTIVA 官方 FAQ/手册给两年保修；NEXOC 的消费者撤回期为 14 天，并明确由消费者承担直接退货费用。CAPTIVA FAQ 同时说明，正常开机箱升级并不会自动丧失保修，但由改装造成的损坏不在保修范围内。
-
----
-
-## 核心预算内异常价 — 🟡 条件型
-
-### Acer Predator Orion 3000 PO3-665 DG.E4UEG.003 — €1,199
-
-- 实际销售方：**nordiva-shop0**
-- 平台：**eBay Marketplace**
-- 直接商品页：https://www.ebay.de/itm/205941893117
-- 价格核验：https://www.idealo.de/preisvergleich/OffersOfProduct/208030437_-predator-orion-3000-po3-665-dg-e4ueg-003-acer.html
-- 当前价：**€1,199 含运费**
-- 精确 SKU 当前新机报价区间：**€1,199–€1,269（3 个报价）**
-- 合理市场参考价：**€1,249**
-- 相对同 SKU 参考折扣：约 **4.0%**
-- 推荐等级：**🟡 普通好价（条件型；硬件价本身接近 🔥）**
-- 机会稀缺度：**8/10**
-- 五年升级潜力：**4.5/10**
-
-精确 SKU 是 i5-14400F + RTX 5070 12GB + 16GB DDR4 + 1TB + Windows 11 Home。今天它把昨日跟踪价 €1,249 再压到 €1,199；如果目标是 €1,300 内拿到最大 CUDA/GPU 性能，这是最激进的选项。问题在于 OEM/H610 级底座、DDR4、RAM/扩展上限和 Marketplace 售后条款透明度，所以不把“显卡便宜”误判成“长期 workstation 最优”。
-
----
-
-## 其他已核验市场锚点
-
-- **✅ CSL Speed 4574 — €1,399，CSL Computer 直售**：Core Ultra 5 225F + RTX 5070 + 16GB + 1TB，700W Gold；官方仍为 €1,399。裸 GPU 价值强，但 16GB、H810M、无 Wi-Fi、无 OS 让它不如 HP 完整。
-- **🟡 OMIXIMO — €1,549，Omiximo B.V. 经 MediaMarkt Marketplace 实际销售并发货**：Ryzen 7 5700 + RTX 5070 + 32GB + 1TB + Win11 Pro；价格尚可，但主板/PSU 未披露，长期可维护性信息不足。
-- **❌ MemoryPC — €1,879**：7500F + RTX 5070 + 32GB + B850 Wi-Fi + 1TB；平台好，但价格明显过高。
-- **❌ SYSTEMTREFF — 约 €1,909.90（€1,949.90 - €40 GAMING26）**：7500F + RTX 5070 + 32GB + 750W Gold，3 年保修；售后/标准件不错，但同一跟踪型号 8 月 30 日曾为 €1,719.90，今天属于恶化。
-- Dubaro、Alternate/Outlet、NBB、Cyberport、Dell、HP 官方、Lenovo 官方与 Amazon 本轮没有核验到 €1,600 内在“价格 + 规格透明 + 售后 + 五年升级”上击败上述前三的清晰新成交点；不因为搜索结果缺失就把它们当作低价，只记录可核验的商品页。
-
----
-
-## 相对固定 Reference 的实际升级 / 退步
-
-固定 Reference 仍是 **HP Z2 Tower G9 Workstation：Core i7-12700K / 32GB / Intel UHD Graphics 770**，且**无价格**。它继续只用于硬件比较，不进入 `price_history.csv`，也不参与 7 天/30 天均值、市场折扣或历史最好价。
-
-### HP OMEN 相对 Z2
-
-**CPU：不是无条件升级。** Intel 官方规格显示 i7-12700K 为 12 核（8P+4E）/20 线程，处理器基础功耗 125W、最大睿频功耗 190W；AMD 官方规格显示 Ryzen 7 8700F 为 8 核/16 线程、65W 默认 TDP。没有用未经核验的百分比去声称谁在你的具体工程 workload 快多少。对于高度并行的 CPU-only solver、编译和 CPU 渲染，Z2 的 12700K 仍可能很有竞争力；8700F 的优势更偏现代 AM5 平台与较低 CPU 标称功耗，而不是“必然更快”。
-
-**GPU：这是最实质的升级。** 从 UHD 770 到 RTX 5070 12GB，CUDA/OptiX、GPU 渲染、AI、GPU 求解器和大型 3D 视口会获得能力级别的提升。NVIDIA 官方规格给 RTX 5070 6144 CUDA cores、12GB GDDR7、最多四个独立显示器。没有给出“快几倍”，因为不同工程软件差异很大。
-
-**RAM：持平。** 两边都是 32GB；OMEN 的 4 DIMM + DDR5 是后续扩容加分项。对于大型有限元、CFD、大程序集或多 VM，64GB 仍是很可能的下一步升级。
-
-**远程主机：OMEN 的图形/编码能力更强，但 Z2 的 workstation 属性仍有价值。** OMEN 适合 GPU 加速桌面、远程 3D 和多屏编码；长期无人值守时建议优先有线网络、关闭不必要睡眠、设置自动开机/断电恢复，并验证 BIOS 是否提供所需恢复选项。Windows 11 Home 若要使用微软原生 RDP 作为被控 Host，通常需要升级到 Pro 或改用其他远程方案。
-
-**功耗/散热：不要只看 CPU TDP。** 8700F 的 65W CPU 标称功耗低于 12700K 的 125W/190W规格，但 OMEN 新增 RTX 5070，GPU 满载时整机功耗必然远高于只用 UHD 770 的 Z2。地下室长期运行要关注的是机箱风道、灰尘过滤、风扇/泵可靠性和 GPU 负载，而不是单看 CPU 数字。
-
-**五年升级：OMEN 的 AM5/B650/DDR5 路线更现代，但标准件透明度不如真正 ATX 自组式整机。** 如果 Z2 当前瓶颈只是 CPU 多核而不是 GPU，今天不值得仅为 OMEN 换机；如果瓶颈是 CUDA、GPU 渲染、AI 或大型 3D，OMEN 才是明确的实际升级。
-
----
-
-## 历史趋势
-
-仓库目前覆盖 **2026-08-30 至 2026-09-07，共 9 个自然日**：
-
-- **7 日趋势：↑ 改善。** 9 月 4 日/5 日 x-kom/SMX 的 32GB + RTX 5070 低位为 €1,467.62；今天 Captiva 把同类绝对低位推到 **€1,445.99**，再低约 **1.5%**。相对 8 月 30 日 SYSTEMTREFF 的 €1,719.90 初始基准，则低约 **15.9%**。
-- **核心预算 RTX 5070：↑ 改善。** Acer 精确 SKU 从昨日 €1,249 降到 **€1,199**，约下降 **4.0%**。
-- **HP OMEN 自身：→ 持平。** 仍是 €1,599，没有新降价，因此今天是“值得买”而不是“错过可惜”。
-- **30 日趋势：数据不足。** 历史只有 9 天，继续拒绝伪造 30 日均值或趋势。
-- **历史最好价需按类别看。** 最低 RTX 5070 整机价格是 Acer €1,199（但 OEM/16GB/售后折衷明显）；32GB + RTX 5070 当前历史低位是 Captiva €1,445.99；现代 AM5/DDR5/32GB/RTX5070 的最完整已验证综合选择仍是 HP €1,599。
-
-## 今日购买结论
-
-**想买回来直接做长期 CUDA/工程远程主机、重视 32GB/现代平台/售后 → HP €1,599。**
-
-**想省 €153、主要要 RTX 5070 + 32GB，接受未来换平台 → Captiva €1,445.99。**
-
-**必须守 €1,300、主要目标是最大化 CUDA/GPU → Acer €1,199，但把它视为条件型特价，而不是五年 workstation 底座。**
-
-**如果现有 Z2 的瓶颈并不是 GPU/CUDA，而是 CPU-only 计算或日常 2D/Office → 今天没有必要为了换机而换机。**
-'''
-          Path('reports/2026-09-07.md').write_text(report, encoding='utf-8')
-
-          idx_path = Path('reports/index.json')
-          idx = json.loads(idx_path.read_text(encoding='utf-8'))
-          idx['updated_at'] = '2026-09-07T22:45:00+02:00'
-          entry = {
-              'date': '2026-09-07',
-              'title': 'Daily Angebot — HP holds; Captiva sets new 32GB+RTX5070 low, Acer reaches €1,199',
-              'summary': '强制跨商家复核后，Coolblue HP OMEN 35L（8700F + RTX5070 + 32GB/B650）€1,599 仍为 ✅ 很值综合冠军；最佳非同商家挑战者改为 NEXOC/Captiva 5700X + RTX5070 + 32GB，€1,445.99，刷新 32GB+RTX5070 历史低位。Acer 精确 SKU 经 nordiva-shop0/eBay 降至 €1,199，但 OEM/售后折衷仅条件型推荐。已移除无法复核的 MIFCOM 草稿记录；7日趋势改善，30日数据仍不足。',
-              'rating': '✅ 很值',
-              'path': 'reports/2026-09-07.md',
-              'url': 'https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-07.md'
-          }
-          idx['reports'] = [entry] + [r for r in idx.get('reports', []) if r.get('date') != '2026-09-07']
-          idx_path.write_text(json.dumps(idx, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-
-          app_path = Path('assets/app.js')
-          app = app_path.read_text(encoding='utf-8')
-          new_pick = r'''function pickBest(rows) {
+          p = Path('data/price_history.csv')
+          with p.open(newline='', encoding='utf-8') as f:
+              rd = csv.DictReader(f)
+              fields = rd.fieldnames
+              rows = list(rd)
+          rows = [r for r in rows if not (r.get('date') == '2026-09-07' and r.get('model','').startswith('MIFCOM Counter-Strike'))]
+          for r in rows:
+              if r.get('date') != '2026-09-07':
+                  continue
+              if r.get('model') == 'Captiva Highend Gaming R93-435':
+                  r['market_reference_eur'] = '1515'
+                  r['discount_vs_market_pct'] = '4.6'
+                  r['notes'] = 'Best different-seller challenger and new absolute tracked low for 32GB+RTX5070; direct NEXOC seller; €1445.99 free shipping, 2-3 business days, Win11 Home and Wi-Fi; Idealo shows seven current offers from €1445.99 to €1559.79; AM4/B550/DDR4 limits five-year CPU-platform upgrades; NEXOC 14-day withdrawal with consumer paying direct return shipping; CAPTIVA two-year warranty.'
+              if r.get('model','').startswith('Acer Predator Orion 3000'):
+                  r['market_reference_eur'] = '1249'
+                  r['discount_vs_market_pct'] = '4.0'
+                  r['notes'] = 'Strict-budget GPU outlier; actual seller nordiva-shop0 via eBay; exact SKU Idealo shows €1199 incl shipping and three new offers in €1199-1269 range; €50 below prior tracked €1249; hardware value is exceptional but marketplace warranty clarity and OEM/H610/DDR4/16GB expansion limits make this conditional rather than a five-year workstation base.'
+          def add(model, seller, price, cpu, gpu, ram, storage, psu, form, warranty, upgrade, eng, remote, value, rarity, rating, ref, disc, trend, url, notes):
+              if any(r.get('date') == '2026-09-07' and r.get('model') == model for r in rows):
+                  return
+              rows.append(dict(zip(fields, ['2026-09-07','22:45',model,'New',seller,'DE',str(price),cpu,gpu,str(ram),str(storage),psu,form,warranty,'yes',str(upgrade),str(eng),str(remote),str(value),str(rarity),rating,str(ref),str(disc),trend,url,notes])))
+          add('CSL Speed 4574 Core Ultra 5 225F / RTX 5070','CSL Computer',1399.00,'Intel Core Ultra 5 225F','NVIDIA GeForce RTX 5070 12GB',16,1000,'700W BoostBoxx Power Boost 80+ Gold ATX2.53','Mid Tower / H810M','24 months manufacturer warranty; 36 months optional; lifetime technical support',5.8,8.8,8.7,9.3,2,'✅ 很值',1500,6.7,'→ 持平','https://www.csl-computer.com/gaming-pcs/gaming-pcs-1000-1500-euro/pc-csl-speed-4574-core-ultra-5.html','Official page rechecked at €1399 with 3-5 business-day dispatch; strong RTX5070 value, but 16GB RAM, H810M, no Wi-Fi and no OS reduce long-term remote-workstation completeness.')
+          add('OMIXIMO Ryzen 7 5700 / RTX 5070 32GB/1TB','Omiximo B.V. via MediaMarkt',1549.00,'AMD Ryzen 7 5700','NVIDIA GeForce RTX 5070 12GB',32,1000,'Not disclosed','Tower / board not disclosed','Marketplace seller terms; MediaMarkt advertises 30-day voluntary return subject to marketplace conditions',4.5,7.9,8.6,8.4,4,'🟡 普通好价',1550,0.1,'→ 市场锚点','https://www.mediamarkt.de/de/product/_omiximo-ryzen-7-5700-rtx-5070-32gb1tb-gaming-pc-ryzentm-7-32-gb-ram-1-tb-ssd-nvidia-geforce-rtxtm-5070-windows-11-pro-168998229.html','Actual seller and shipper Omiximo B.V.; €1549 free shipping; Ryzen 7 5700, RTX5070, 32GB, 1TB, Win11 Pro; motherboard/PSU not disclosed, so component transparency and upgrade confidence are weaker.')
+          add('MemoryPC Ryzen 5 7500F / RTX 5070 32GB','MemoryPC',1879.00,'AMD Ryzen 5 7500F','NVIDIA GeForce RTX 5070 12GB',32,1000,'750W be quiet! System Power 11 M 80+ Gold','Mid Tower / MSI PRO B850-S WIFI6E','Manufacturer warranty; German assembly/support',9.2,8.3,9.2,7.1,2,'❌ 跳过',1700,-10.5,'→ 持平偏贵','https://www.memorypc.de/p/gaming-pc-amd-ryzen-5-7500f-rtx-5070-32-gb-ddr5-557100/','Official page rechecked at €1879; excellent B850/Wi-Fi/32GB/750W Gold foundation, but far above today HP/Captiva/CSL options.')
+          add('SYSTEMTREFF Ryzen 5 7500F / RTX 5070 32GB','SYSTEMTREFF',1909.90,'AMD Ryzen 5 7500F','NVIDIA GeForce RTX 5070 12GB',32,1000,'750W be quiet! System Power 11 M Gold','Mid Tower / B850-class','3 years + 30-day return',9,7.7,9,6.9,2,'❌ 跳过',1800,-6.1,'↓ 恶化 vs historical same model','https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-5-7500F-32GB-DDR5-GeForce-RTX-5070-12GB-1TB-4088','Official page €1949.90 less €40 code GAMING26 = about €1909.90 effective; good standard platform and service, but same tracked model was €1719.90 on 2026-08-30.')
+          with p.open('w', newline='', encoding='utf-8') as f:
+              wr = csv.DictWriter(f, fieldnames=fields, lineterminator='\n')
+              wr.writeheader(); wr.writerows(rows)
+          appp = Path('assets/app.js')
+          app = appp.read_text(encoding='utf-8')
+          replacement = """function pickBest(rows) {
             if (!rows.length) return null;
             const latest = rows.reduce((m, r) => r._dt > m ? r._dt : m, rows[0]._dt);
             const same = rows.filter((r) => r.date === latest.toISOString().slice(0, 10));
-            const tier = (r) => {
-              const c = ratingClass(r.rating);
-              return c === 'fire' ? 4 : c === 'good' ? 3 : c === 'normal' ? 2 : 1;
-            };
-            const score = (r) => tier(r) * 100
-              + (r.value_score ?? 0) * 4
-              + (r.engineering_score ?? 0) * 2
-              + (r.remote_score ?? 0)
-              + (r.upgrade_score ?? 0) * 2
-              + (r.rarity_score ?? 0) * .2;
+            const tier = (r) => { const c = ratingClass(r.rating); return c === 'fire' ? 4 : c === 'good' ? 3 : c === 'normal' ? 2 : 1; };
+            const score = (r) => tier(r) * 100 + (r.value_score ?? 0) * 4 + (r.engineering_score ?? 0) * 2 + (r.remote_score ?? 0) + (r.upgrade_score ?? 0) * 2 + (r.rarity_score ?? 0) * .2;
             return same.sort((a, b) => score(b) - score(a))[0] || rows[0];
-          }'''
-          app2, n = re.subn(r'function pickBest\(rows\) \{.*?\n\}\n\nfunction setMetrics', new_pick + '\n\nfunction setMetrics', app, count=1, flags=re.S)
+          }"""
+          app2, n = re.subn(r'function pickBest\(rows\) \{.*?\n\}\n\nfunction setMetrics', replacement + '\n\nfunction setMetrics', app, count=1, flags=re.S)
           if n != 1:
-              raise RuntimeError('Could not patch pickBest')
-          app_path.write_text(app2, encoding='utf-8')
+              raise SystemExit('pickBest patch failed')
+          appp.write_text(app2, encoding='utf-8')
           PY
       - name: Commit verified result
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/price_history.csv reports/2026-09-07.md reports/index.json assets/app.js
+          git add data/price_history.csv assets/app.js
           git diff --cached --quiet && exit 0
-          git commit -m "Verify desktop deals for 2026-09-07"
+          git commit -m "Correct verified desktop deal data for 2026-09-07"
           git push origin main
