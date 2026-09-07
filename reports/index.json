@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-07T22:20:00+02:00",
+  "updated_at": "2026-09-07T22:48:00+02:00",
   "reports": [
     {
       "date": "2026-09-07",
-      "title": "Daily Angebot — HP holds; MIFCOM standard-platform challenger and new RTX 5070 lows",
-      "summary": "强制跨商家扫描后，Coolblue HP OMEN 35L 8700F + RTX 5070 + 32GB 仍 €1,599，为 ✅ 很值综合冠军；最佳非同商家挑战者是 MIFCOM 7500F + RTX 5060 Ti 16GB + 32GB + B650 ATX + 750W ATX3.1，€1,499。NEXOC/Captiva 5700X + RTX 5070 + 32GB 降到 €1,445.99，成为新的 32GB+RTX5070 绝对低位；Acer Marketplace RTX5070 进一步到 €1,199，但售后与 OEM 平台风险使其仅条件型推荐。7 日市场低位改善，30 日数据仍不足。",
+      "title": "Daily Angebot — HP holds; Captiva sets new 32GB+RTX5070 low, Acer reaches €1,199",
+      "summary": "强制跨商家复核后，Coolblue HP OMEN 35L（8700F + RTX5070 + 32GB/B650）€1,599 仍为 ✅ 很值综合冠军；最佳非同商家挑战者改为 NEXOC/Captiva 5700X + RTX5070 + 32GB，€1,445.99，刷新 32GB+RTX5070 历史低位。Acer 精确 SKU 经 nordiva-shop0/eBay 降至 €1,199，但 OEM/售后折衷仅条件型推荐。已移除无法复核的 MIFCOM 草稿记录；7日趋势改善，30日数据仍不足。",
       "rating": "✅ 很值",
       "path": "reports/2026-09-07.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-07.md"
