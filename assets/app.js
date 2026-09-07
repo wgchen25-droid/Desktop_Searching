@@ -90,8 +90,9 @@ function pickBest(rows) {
   if (!rows.length) return null;
   const latest = rows.reduce((m, r) => r._dt > m ? r._dt : m, rows[0]._dt);
   const same = rows.filter((r) => r.date === latest.toISOString().slice(0, 10));
-  return same.sort((a, b) => ((b.value_score ?? 0) * .72 + (b.rarity_score ?? 0) * .28)
-    - ((a.value_score ?? 0) * .72 + (a.rarity_score ?? 0) * .28))[0] || rows[0];
+  const tier = (r) => { const c = ratingClass(r.rating); return c === 'fire' ? 4 : c === 'good' ? 3 : c === 'normal' ? 2 : 1; };
+  const score = (r) => tier(r) * 100 + (r.value_score ?? 0) * 4 + (r.engineering_score ?? 0) * 2 + (r.remote_score ?? 0) + (r.upgrade_score ?? 0) * 2 + (r.rarity_score ?? 0) * .2;
+  return same.sort((a, b) => score(b) - score(a))[0] || rows[0];
 }
 
 function setMetrics(rows) {
