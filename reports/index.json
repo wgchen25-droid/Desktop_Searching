@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-09-07T22:48:00+02:00",
+  "updated_at": "2026-09-08T22:00:00+02:00",
   "reports": [
+    {
+      "date": "2026-09-08",
+      "title": "Daily Angebot — Captiva holds the 32GB+RTX5070 low; HP OMEN jumps to €1,929",
+      "summary": "强制跨商家复核后，NEXOC/CAPTIVA 5700X + RTX5070 + 32GB 继续 €1,445.99，守住当前 32GB+RTX5070 历史低位并成为今日 ✅ 很值总冠军；最佳非同商家挑战者是 CSL Speed 4574 €1,399；Acer 精确 SKU 仍为 €1,199 的核心预算 GPU 异常价。HP OMEN 同一 SKU 从昨日 €1,599 涨到 €1,929，当前品牌整机备选宽度略恶化。7 日趋势持平在改善后的低位，30 日数据仍不足。",
+      "rating": "✅ 很值",
+      "path": "reports/2026-09-08.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-08.md"
+    },
     {
       "date": "2026-09-07",
       "title": "Daily Angebot — HP holds; Captiva sets new 32GB+RTX5070 low, Acer reaches €1,199",
