@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-09-09T22:02:00+02:00",
+  "updated_at": "2026-09-10T21:58:00+02:00",
   "reports": [
+    {
+      "date": "2026-09-10",
+      "title": "Daily Angebot — core-budget AM5/16GB CUDA balance at €1,299; Sprint 5787 drops to €1,099",
+      "summary": "按主预算 €900–€1,300 重新纠偏后，今日总冠军为 CSL Sprint 5753：Ryzen 7 8700F + RTX 5060 Ti 16GB + 16GB DDR5 + ASUS B840M-A WIFI + 1TB，€1,299，✅ 很值但不是神价；最佳非同商家挑战者为 NEXOC/CAPTIVA R93-435 €1,445.99。今日真正的新价格事件是 CSL Sprint 5787 从本仓库 €1,199 历史价降到 €1,099，刷新该型号新低。7日主预算价值小幅改善，30日样本仍不足。",
+      "rating": "✅ 很值",
+      "path": "reports/2026-09-10.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-10.md"
+    },
     {
       "date": "2026-09-09",
       "title": "Daily Angebot — Captiva holds €1,445.99 low; broad scan finds no better balanced replacement",
