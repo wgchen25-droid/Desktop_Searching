@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-10T21:58:00+02:00",
+  "updated_at": "2026-09-10T22:24:00+02:00",
   "reports": [
     {
       "date": "2026-09-10",
-      "title": "Daily Angebot — core-budget AM5/16GB CUDA balance at €1,299; Sprint 5787 drops to €1,099",
-      "summary": "按主预算 €900–€1,300 重新纠偏后，今日总冠军为 CSL Sprint 5753：Ryzen 7 8700F + RTX 5060 Ti 16GB + 16GB DDR5 + ASUS B840M-A WIFI + 1TB，€1,299，✅ 很值但不是神价；最佳非同商家挑战者为 NEXOC/CAPTIVA R93-435 €1,445.99。今日真正的新价格事件是 CSL Sprint 5787 从本仓库 €1,199 历史价降到 €1,099，刷新该型号新低。7日主预算价值小幅改善，30日样本仍不足。",
+      "title": "Daily Angebot — €1,299 AM5/16GB CUDA winner; NBB 9900X/64GB workstation at €1,499",
+      "summary": "今日总冠军为 CSL Sprint 5753：Ryzen 7 8700F + RTX 5060 Ti 16GB + 16GB DDR5 + ASUS B840M-A WIFI + 1TB，€1,299，✅ 很值但不是神价。强制广泛扫描补抓到 notebooksbilliger.de 直售 Captiva Workstation R99-514：Ryzen 9 9900X + 64GB DDR5 + B650M + Win11 Pro，€1,499，成为最佳非同商家 CPU/RAM workstation 挑战者；它无 NVIDIA 独显且 450W PSU 限制未来高端 GPU。今日真正的新历史低价是 CSL Sprint 5787 从 €1,199 降至 €1,099。7日主预算价值小幅改善，30日样本仍不足。",
       "rating": "✅ 很值",
       "path": "reports/2026-09-10.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-10.md"
