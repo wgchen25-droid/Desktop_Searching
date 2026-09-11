@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-09-10T22:24:00+02:00",
+  "updated_at": "2026-09-11T22:00:00+02:00",
   "reports": [
+    {
+      "date": "2026-09-11",
+      "title": "Daily Angebot — CSL €1,299 holds; NBB 270K Plus/32GB workstation emerges at the same price",
+      "summary": "今日总冠军仍为 CSL Sprint 5753：Ryzen 7 8700F + RTX 5060 Ti 16GB + 16GB DDR5 + B840M/Wi-Fi 6E，€1,299，✅ 很值但不是神价。强制广泛扫描的新发现是 notebooksbilliger.de 直售 Captiva Workstation I10-2574：Core Ultra 7 270K Plus + 32GB DDR5 + B860M + Win11 Pro，亦为 €1,299，成为最佳非同商家 CPU/远程 workstation 挑战者；同型号第二卖家也是 €1,299，说明这是当前真实市场价而非 UVP 幻觉。GPU 完整型 Captiva R93-435 仍 €1,445.99；7 日整体改善后持平在低位，30 日样本仍不足。",
+      "rating": "✅ 很值",
+      "path": "reports/2026-09-11.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-11.md"
+    },
     {
       "date": "2026-09-10",
       "title": "Daily Angebot — €1,299 AM5/16GB CUDA winner; NBB 9900X/64GB workstation at €1,499",
