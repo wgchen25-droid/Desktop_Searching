@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-09-11T22:00:00+02:00",
+  "updated_at": "2026-09-12T22:00:00+02:00",
   "reports": [
+    {
+      "date": "2026-09-12",
+      "title": "Daily Angebot — CSL €1,299 holds; NEXOC RTX5070 challenger stays at €1,445.99; NBB price confirmed Campus-only",
+      "summary": "今日总冠军仍为 CSL Sprint 5753：Ryzen 7 8700F + RTX 5060 Ti 16GB + 16GB DDR5 + B840M/Wi-Fi 6E，€1,299，✅ 很值但已长期持平，稀缺度降至 1/10。最佳非同商家挑战者改为普遍可买的 NEXOC/CAPTIVA R93-435：5700X + RTX5070 + 32GB + 850W + Windows/Wi-Fi，€1,445.99。NBB Captiva I10-2574 的 €1,299 今天确认是 Campus 会员专享价，因此降为条件型 CPU workstation。7 日整体为改善后持平在低位；30 日样本仍不足。",
+      "rating": "✅ 很值",
+      "path": "reports/2026-09-12.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-12.md"
+    },
     {
       "date": "2026-09-11",
       "title": "Daily Angebot — CSL €1,299 holds; NBB 270K Plus/32GB workstation emerges at the same price",
