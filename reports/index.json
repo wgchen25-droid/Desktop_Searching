@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-09-12T22:00:00+02:00",
+  "updated_at": "2026-09-13T22:00:00+02:00",
   "reports": [
+    {
+      "date": "2026-09-13",
+      "title": "Daily Angebot — CSL €1,299 holds; KIEBEL 32GB/Win11 drops to €1,289",
+      "summary": "今日总冠军仍为 CSL Sprint 5753：Ryzen 7 8700F + RTX 5060 Ti 16GB + 16GB DDR5 + B840M/Wi-Fi 6E，€1,299，✅ 很值但长期持平、稀缺度 1/10。最佳非同商家性能挑战者仍是 NEXOC/CAPTIVA R93-435：5700X + RTX5070 + 32GB + 850W + Windows/Wi-Fi，€1,445.99。今天的新发现是 kiebel 经 MediaMarkt 销售的 KIEBEL Invader XS V：5700X + RTX5060Ti 8GB + 32GB + 1TB + Win11，€1,289，低于页面30日低价约14%；同预算开箱更完整，但 AM4/A520 和 8GB VRAM 使五年升级与工程 GPU 长期价值不如 CSL。7日趋势持平在改善后的低位；30日样本仍不足。",
+      "rating": "✅ 很值",
+      "path": "reports/2026-09-13.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-13.md"
+    },
     {
       "date": "2026-09-12",
       "title": "Daily Angebot — CSL €1,299 holds; NEXOC RTX5070 challenger stays at €1,445.99; NBB price confirmed Campus-only",
