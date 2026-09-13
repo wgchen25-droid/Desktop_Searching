@@ -1,0 +1,38 @@
+name: Append price history 2026-09-13
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/append-price-history-2026-09-13.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  append:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Append verified 2026-09-13 records
+        shell: bash
+        run: |
+          cat >> data/price_history.csv <<'EOF'
+          2026-09-13,22:00,CSL Sprint 5753 Ryzen 7 8700F / RTX 5060 Ti 16GB,New,CSL Computer,DE,1299.00,AMD Ryzen 7 8700F,NVIDIA GeForce RTX 5060 Ti 16GB,16,1000,500W CSL 80+ Bronze ATX2.4,Mid Tower / ASUS PRIME B840M-A WIFI,24 months manufacturer warranty; 36 months optional; lifetime technical support,yes,8.4,8.6,8.8,9.4,1,✅ 很值,1500,13.4,→ 持平在历史低位,https://www.csl-computer.com/pc-systeme/amd/pc-csl-sprint-5753-ryzen-7.html,"Daily champion after broad vendor scan; official page today still €1299 and 3-5 business-day dispatch; 8700F/RTX5060Ti 16GB/16GB DDR5/1TB/ASUS B840M-A WIFI; first upgrade is 32/64GB RAM; 500W Bronze limits future high-power GPU; no OS; standard mATX/ATX parts and Wi-Fi6E support long-term remote-host use."
+          2026-09-13,22:00,Captiva Highend Gaming R93-435,New,NEXOC Store GmbH / CAPTIVA,DE,1445.99,AMD Ryzen 7 5700X,NVIDIA GeForce RTX 5070 12GB,32,1000,850W MSI MAG A850GL,Tower / B550M,24 months CAPTIVA hardware warranty; NEXOC direct sale,yes,5.8,8.4,8.8,9.2,2,✅ 很值,1515,4.6,→ 持平在32GB+RTX5070跟踪低位,https://www.nexoc-store.de/pc-systeme/pcs/gaming-pcs/captiva-pc-highend-gaming-r93-435-ryzen-7-5700x-rtx5070-12gb-gddr7-ssd-1tb-32gb-wlan-windows-11-home-64-bit,"Formal best non-CSL performance challenger; direct page today remains €1445.99, free shipping and 2-3 business days; +€146.99 vs champion buys RTX5070, 32GB, Win11 Home, Wi-Fi and named MSI 850W PSU; AM4/B550/DDR4 sharply reduce five-year CPU-platform upgrade headroom."
+          2026-09-13,22:00,KIEBEL Invader XS V Ryzen 7 5700X / RTX 5060 Ti 8GB / 32GB,New,kiebel via MediaMarkt,DE,1289.00,AMD Ryzen 7 5700X,NVIDIA GeForce RTX 5060 Ti 8GB,32,1000,Aerocool Aero 650W 80+ Bronze,ATX Midi / ASUS PRIME A520M-A II/CSM,24 months free service stated by seller; Marketplace seller terms apply,yes,4.5,7.8,8.7,9.0,7,✅ 很值,1499,14.0,↑ New tracked same-budget turnkey deal / page below 30-day low,https://www.mediamarkt.de/de/product/_kiebel-allround-gaming-pc-16-gb-ram-500-gb-ss-76871438.html,"New same-budget discovery; actual seller and shipper kiebel via MediaMarkt Marketplace; current page €1289 free shipping vs page-stated 30-day low €1499; Ryzen7 5700X/RTX5060Ti 8GB/32GB DDR4/1TB/A520M/650W Bronze/Win11/Wi-Fi ac USB. Turnkey completeness is excellent for €10 less than champion, but 8GB VRAM and AM4/A520 reduce engineering longevity versus CSL 16GB/AM5."
+          2026-09-13,22:00,Captiva Workstation I10-2574,New,notebooksbilliger.de,DE,1299.00,Intel Core Ultra 7 270K Plus,Intel Graphics integrated,32,1000,550W Captiva Power,Tower / B860M,NBB direct sale; optional 3/5-year protection; €1299 price requires Campus membership,yes,8.3,8.9,9.4,8.8,2,🟡 普通好价,1299,0.0,→ 价格持平但Campus资格门槛,https://www.notebooksbilliger.de/captiva%2Bpc%2Bworkstation%2Bi10%2B2574%2B923706,"Current NBB page remains €1299 for Campus members and in stock/Express; strong CPU-heavy/VM/RDP configuration with 270K Plus/32GB/B860/Win11 Pro/Wi-Fi6, but no NVIDIA dGPU; conditional only because price is not universally available."
+          2026-09-13,22:00,CSL Sprint 5787 Ryzen 7 5700 / RTX 5060 Ti 8GB,New,CSL Computer,DE,1099.00,AMD Ryzen 7 5700,NVIDIA GeForce RTX 5060 Ti 8GB,32,1000,500W CSL 80+ Bronze ATX2.4,Mid Tower / ASUS PRIME A520M-A II/CSM,24 months manufacturer warranty; 36 months optional; 14-day withdrawal,yes,4.5,7.0,7.4,9.2,4,✅ 很值,1199,8.3,→ 持平在历史低位,https://www.csl-computer.com/pc-systeme/amd/pc-csl-sprint-5787-ryzen-7.html,"Budget track remains €1099; 32GB useful, but AM4/A520, 8GB VRAM, no Wi-Fi/no OS and 500W Bronze make it a cheap endpoint rather than a five-year workstation platform."
+          2026-09-13,22:00,MemoryPC Ryzen 5 7500F / RTX 5070 32GB,New,MemoryPC,DE,1899.00,AMD Ryzen 5 7500F,NVIDIA GeForce RTX 5070 12GB,32,1000,750W,Mid Tower / MSI PRO B850-S WIFI6E,Manufacturer warranty; free return; German assembly/support,yes,9.2,8.3,9.2,7.0,1,❌ 跳过,1700,-11.7,→ 高位持平,https://www.memorypc.de/p/gaming-pc-amd-ryzen-5-7500f-rtx-5070-32-gb-ddr5-557100/,"Official page today remains €1899 and in stock/3-5 business days; excellent B850/Wi-Fi/32GB/750W standard-parts foundation and German support, but current price is far outside the value target."
+          2026-09-13,22:00,SYSTEMTREFF Ryzen 5 7500F / RTX 5070 32GB,New,SYSTEMTREFF,DE,1959.00,AMD Ryzen 5 7500F,NVIDIA GeForce RTX 5070 12GB,32,1000,750W be quiet! System Power 11 M Gold,Mid Tower / ASUS PRIME B850-Plus WIFI,3 years + 30-day return,yes,9,7.7,9.0,6.6,1,❌ 跳过,1800,-8.8,→ 高位/历史明显恶化,https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-5-7500F-32GB-DDR5-GeForce-RTX-5070-12GB-1TB-4088,"Official page today €1999 less €40 code GAMING26 = about €1959; B850/Wi-Fi/750W Gold/Win11 Pro/3-year service are strong, but same tracked model was €1719.90 on 2026-08-30 and current value remains poor."
+          EOF
+      - name: Commit price history
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/price_history.csv
+          git commit -m 'Append desktop prices for 2026-09-13'
+          git push origin main
