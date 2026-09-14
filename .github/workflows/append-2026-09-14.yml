@@ -1,0 +1,94 @@
+name: Append daily data 2026-09-14
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/append-2026-09-14.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Append candidates and update report index
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+
+          csv_path = Path('data/price_history.csv')
+          with csv_path.open('r', encoding='utf-8', newline='') as f:
+              reader = csv.DictReader(f)
+              fieldnames = reader.fieldnames
+              existing = list(reader)
+
+          rows = [
+            {
+              'date':'2026-09-14','time':'22:00','model':'CSL Sprint 5753 Ryzen 7 8700F / RTX 5060 Ti 16GB','condition':'New','seller':'CSL Computer','country':'DE','price_eur':'1299.00','cpu':'AMD Ryzen 7 8700F','gpu':'NVIDIA GeForce RTX 5060 Ti 16GB','ram_gb':'16','storage_gb':'1000','psu':'500W CSL 80+ Bronze ATX2.4','form_factor':'Mid Tower / ASUS PRIME B840M-A WIFI','warranty':'24 months manufacturer warranty; 36 months optional; pickup service optional','shipping_to_germany':'yes','upgrade_score':'8.4','engineering_score':'8.6','remote_score':'8.8','value_score':'9.4','rarity_score':'1','rating':'✅ 很值','market_reference_eur':'1450','discount_vs_market_pct':'10.4','trend_vs_history':'→ 持平在历史低位','product_url':'https://www.csl-computer.com/pc-systeme/amd/pc-csl-sprint-5753-ryzen-7.html','notes':'Daily champion after broad vendor scan; official direct price still €1299, 3-5 business days. AM5/B840, RTX5060Ti 16GB, Wi-Fi6E and standard mATX parts give strong five-year path; first upgrade is RAM to 32/64GB; 500W Bronze limits future high-power GPU; no OS.'
+            },
+            {
+              'date':'2026-09-14','time':'22:00','model':'KIEBEL Invader XS V Ryzen 7 5700X / RTX 5060 Ti 8GB / 32GB','condition':'New','seller':'kiebel via MediaMarkt','country':'DE','price_eur':'1289.00','cpu':'AMD Ryzen 7 5700X','gpu':'NVIDIA GeForce RTX 5060 Ti 8GB','ram_gb':'32','storage_gb':'1000','psu':'Aerocool Aero 650W 80+ Bronze','form_factor':'ATX Midi / ASUS PRIME A520M-A II/CSM','warranty':'24 months free service stated by seller; Marketplace seller terms apply','shipping_to_germany':'yes','upgrade_score':'4.5','engineering_score':'7.8','remote_score':'8.7','value_score':'9.0','rarity_score':'5','rating':'✅ 很值','market_reference_eur':'1499','discount_vs_market_pct':'14.0','trend_vs_history':'→ 昨日促销低位后持平','product_url':'https://www.mediamarkt.de/de/product/_kiebel-allround-gaming-pc-16-gb-ram-500-gb-ss-76871438.html','notes':'Best non-CSL same-budget challenger. Actual seller and shipper kiebel via MediaMarkt Marketplace; €1289 free shipping; page 30-day low anchor €1499. 32GB/Win11/650W turnkey completeness is strong, but 8GB VRAM and AM4/A520/DDR4 materially reduce engineering longevity vs CSL.'
+            },
+            {
+              'date':'2026-09-14','time':'22:00','model':'Captiva Highend Gaming R93-435','condition':'New','seller':'NEXOC Store GmbH / CAPTIVA','country':'DE','price_eur':'1445.99','cpu':'AMD Ryzen 7 5700X','gpu':'NVIDIA GeForce RTX 5070 12GB','ram_gb':'32','storage_gb':'1000','psu':'850W MSI MAG A850GL','form_factor':'Tower / B550M','warranty':'24 months CAPTIVA hardware warranty; NEXOC direct sale / withdrawal process','shipping_to_germany':'yes','upgrade_score':'5.8','engineering_score':'8.4','remote_score':'8.8','value_score':'9.2','rarity_score':'2','rating':'✅ 很值','market_reference_eur':'1515','discount_vs_market_pct':'4.6','trend_vs_history':'→ 32GB+RTX5070跟踪低位持平','product_url':'https://www.nexoc-store.de/pc-systeme/pcs/gaming-pcs/captiva-pc-highend-gaming-r93-435-ryzen-7-5700x-rtx5070-12gb-gddr7-ssd-1tb-32gb-wlan-windows-11-home-64-bit','notes':'Direct page remains €1445.99, free shipping and 2-3 business days; RTX5070/32GB/Win11/Wi-Fi/named 850W PSU make a strong turnkey GPU option; AM4/B550/DDR4 sharply reduce future CPU-platform upgrade headroom.'
+            },
+            {
+              'date':'2026-09-14','time':'22:00','model':'Acer Predator Orion 3000 PO3-665 DG.E4UEG.003','condition':'New','seller':'nordiva-shop0 via eBay','country':'DE','price_eur':'1199.00','cpu':'Intel Core i5-14400F','gpu':'NVIDIA GeForce RTX 5070 12GB','ram_gb':'16','storage_gb':'1000','psu':'OEM / not reliably disclosed','form_factor':'Acer OEM Tower','warranty':'Marketplace / seller terms; verify exact warranty and return terms before purchase','shipping_to_germany':'yes','upgrade_score':'4.5','engineering_score':'7.6','remote_score':'8.7','value_score':'9.5','rarity_score':'5','rating':'🟡 普通好价','market_reference_eur':'1249','discount_vs_market_pct':'4.0','trend_vs_history':'→ 预算RTX5070历史低位持平','product_url':'https://www.ebay.de/itm/205941893117','notes':'Idealo currently verifies exact SKU DG.E4UEG.003 at €1199 from actual seller nordiva-shop0 via eBay; i5-14400F/RTX5070 12GB/16GB DDR4/1TB/Win11 Home. Exceptional CUDA-per-euro but OEM platform and Marketplace aftersales/PSU/RAM-slot transparency weaken five-year workstation value.'
+            },
+            {
+              'date':'2026-09-14','time':'22:00','model':'Captiva Workstation I10-2574','condition':'New','seller':'notebooksbilliger.de','country':'DE','price_eur':'1299.00','cpu':'Intel Core Ultra 7 270K Plus','gpu':'Intel Graphics integrated','ram_gb':'32','storage_gb':'1000','psu':'550W Captiva Power','form_factor':'Tower / B860M','warranty':'NBB direct sale; optional 3/5-year protection; €1299 requires Campus membership','shipping_to_germany':'yes','upgrade_score':'8.3','engineering_score':'8.9','remote_score':'9.4','value_score':'8.8','rarity_score':'2','rating':'🟡 普通好价','market_reference_eur':'1299','discount_vs_market_pct':'0.0','trend_vs_history':'→ 价格持平但Campus资格门槛','product_url':'https://www.notebooksbilliger.de/captiva%2Bpc%2Bworkstation%2Bi10%2B2574%2B923706','notes':'Conditional CPU/VM/remote workstation; €1299 price is Campus-only. Core Ultra 7 270K Plus/32GB DDR5/B860/Win11 Pro/Wi-Fi6 is strong for CPU-heavy and native RDP use, but it does not solve CUDA/NVIDIA GPU needs.'
+            },
+            {
+              'date':'2026-09-14','time':'22:00','model':'AlzaPC GameBox Prime U5 / RTX5070 / 32GB / 2TB','condition':'New','seller':'Alza.de / AlzaPC','country':'DE','price_eur':'1619.00','cpu':'Intel Core Ultra 5 225F','gpu':'NVIDIA GeForce RTX 5070 12GB','ram_gb':'32','storage_gb':'2000','psu':'750W class / exact model not used for scoring','form_factor':'Midi Tower / Intel B860','warranty':'36 months','shipping_to_germany':'yes','upgrade_score':'8.5','engineering_score':'8.8','remote_score':'8.8','value_score':'8.7','rarity_score':'4','rating':'🟡 普通好价','market_reference_eur':'1700','discount_vs_market_pct':'4.8','trend_vs_history':'→ 仍高于€1600上限€19','product_url':'https://www.alza.de/alzapc-gamebox-prime-u5-rtx5070-32gb-ram-2tb-ssd-kein-betriebssystem-d13220921.htm','notes':'Modern B860/32GB DDR5/2TB/RTX5070/WLAN platform with 36-month warranty; no OS. Very interesting watch item but at €1619 it is €19 above the stated exceptional-value ceiling.'
+            },
+            {
+              'date':'2026-09-14','time':'22:00','model':'CSL Sprint 5787 Ryzen 7 5700 / RTX 5060 Ti 8GB','condition':'New','seller':'CSL Computer','country':'DE','price_eur':'1099.00','cpu':'AMD Ryzen 7 5700','gpu':'NVIDIA GeForce RTX 5060 Ti 8GB','ram_gb':'32','storage_gb':'1000','psu':'500W CSL 80+ Bronze ATX2.4','form_factor':'Mid Tower / ASUS PRIME A520M-A II/CSM','warranty':'24 months manufacturer warranty; 36 months optional; 14-day withdrawal','shipping_to_germany':'yes','upgrade_score':'4.5','engineering_score':'7.0','remote_score':'7.4','value_score':'9.2','rarity_score':'3','rating':'✅ 很值','market_reference_eur':'1199','discount_vs_market_pct':'8.3','trend_vs_history':'→ 历史低位持平','product_url':'https://www.csl-computer.com/pc-systeme/amd/pc-csl-sprint-5787-ryzen-7.html','notes':'Budget track remains at €1099; 32GB is useful, but AM4/A520, 8GB VRAM, no Wi-Fi/no OS and 500W Bronze make it a cheap endpoint rather than a five-year workstation platform.'
+            },
+            {
+              'date':'2026-09-14','time':'22:00','model':'MemoryPC Ryzen 5 7500F / RTX 5070 32GB','condition':'New','seller':'MemoryPC','country':'DE','price_eur':'1899.00','cpu':'AMD Ryzen 5 7500F','gpu':'NVIDIA GeForce RTX 5070 12GB','ram_gb':'32','storage_gb':'1000','psu':'750W be quiet! System Power 11 M Gold','form_factor':'Mid Tower / MSI PRO B850-S WIFI6E','warranty':'Manufacturer warranty; free return; German assembly/support','shipping_to_germany':'yes','upgrade_score':'9.2','engineering_score':'8.3','remote_score':'9.2','value_score':'7.0','rarity_score':'1','rating':'❌ 跳过','market_reference_eur':'1700','discount_vs_market_pct':'-11.7','trend_vs_history':'→ 高位持平','product_url':'https://www.memorypc.de/p/gaming-pc-amd-ryzen-5-7500f-rtx-5070-32-gb-ddr5-557100/','notes':'Official page remains €1899; excellent B850/Wi-Fi/32GB/750W standard-parts foundation and German assembly/support, but current price is far outside the value target.'
+            },
+            {
+              'date':'2026-09-14','time':'22:00','model':'SYSTEMTREFF Ryzen 5 7500F / RTX 5070 32GB','condition':'New','seller':'SYSTEMTREFF','country':'DE','price_eur':'1959.00','cpu':'AMD Ryzen 5 7500F','gpu':'NVIDIA GeForce RTX 5070 12GB','ram_gb':'32','storage_gb':'1000','psu':'750W be quiet! System Power 11 M Gold','form_factor':'Mid Tower / ASUS PRIME B850-Plus WIFI','warranty':'3 years + 30-day return','shipping_to_germany':'yes','upgrade_score':'9','engineering_score':'7.7','remote_score':'9.0','value_score':'6.6','rarity_score':'1','rating':'❌ 跳过','market_reference_eur':'1800','discount_vs_market_pct':'-8.8','trend_vs_history':'→ 高位/历史明显恶化','product_url':'https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-5-7500F-32GB-DDR5-GeForce-RTX-5070-12GB-1TB-4088','notes':'Official page €1999 less €40 GAMING26 code = about €1959; B850/Wi-Fi/750W Gold/Win11 Pro/3-year service are strong, but same tracked model was €1719.90 on 2026-08-30 and current value remains poor.'
+            }
+          ]
+
+          existing_keys = {(r.get('date'), r.get('model')) for r in existing}
+          with csv_path.open('a', encoding='utf-8', newline='') as f:
+              w = csv.DictWriter(f, fieldnames=fieldnames)
+              for row in rows:
+                  if (row['date'], row['model']) not in existing_keys:
+                      w.writerow({k: row.get(k, '') for k in fieldnames})
+
+          idx_path = Path('reports/index.json')
+          idx = json.loads(idx_path.read_text(encoding='utf-8'))
+          entry = {
+            'date':'2026-09-14',
+            'title':'Daily Angebot — CSL €1,299 holds; KIEBEL €1,289 is the closest non-CSL challenger',
+            'summary':'强制跨商家扫描后，今日总冠军仍为 CSL Sprint 5753：8700F + RTX5060Ti 16GB + 16GB DDR5 + B840M/Wi-Fi 6E，€1,299，✅ 很值但长期持平、稀缺度 1/10。最佳非同商家挑战者改为更接近同预算的 kiebel / MediaMarkt KIEBEL Invader XS V：5700X + RTX5060Ti 8GB + 32GB + Win11，€1,289；开箱更完整但 AM4/A520 与 8GB VRAM 弱化五年工程价值。NEXOC 32GB+RTX5070 仍 €1,445.99，Acer RTX5070 预算异常价仍 €1,199。过去7天整体持平在改善后的低位；30天样本仍不足。',
+            'rating':'✅ 很值',
+            'path':'reports/2026-09-14.md',
+            'url':'https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-14.md'
+          }
+          idx['updated_at'] = '2026-09-14T22:00:00+02:00'
+          idx['reports'] = [entry] + [r for r in idx.get('reports', []) if r.get('date') != '2026-09-14']
+          idx_path.write_text(json.dumps(idx, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+      - name: Commit updates
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/price_history.csv reports/index.json
+          if git diff --cached --quiet; then
+            echo 'No data changes needed.'
+          else
+            git commit -m 'data: add 2026-09-14 desktop scan'
+            git push
+          fi
