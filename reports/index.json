@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-09-14T22:00:00+02:00",
+  "updated_at": "2026-09-15T22:10:00+02:00",
   "reports": [
+    {
+      "date": "2026-09-15",
+      "title": "Daily Angebot — CSL €1,299 holds; GameMachines €1,079 creates a new budget turnkey low",
+      "summary": "总冠军仍是 CSL Sprint 5753 €1,299：AM5 + RTX5060Ti 16GB，✅ 很值但稀缺度 1/10。最佳非同商家同预算挑战者 KIEBEL €1,289。新异常价 GameMachines via MediaMarkt €1,079（5700X + RTX5060Ti 8GB + Win11 Pro），较页面30日低价€1,299低约16.9%，但 AM4/8GB VRAM/未披露主板PSU使其更适合预算终点型用途。7日小幅改善；30日样本不足。",
+      "rating": "✅ 很值",
+      "path": "reports/2026-09-15.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-15.md"
+    },
     {
       "date": "2026-09-14",
       "title": "Daily Angebot — CSL €1,299 holds; KIEBEL €1,289 is the closest non-CSL challenger",
