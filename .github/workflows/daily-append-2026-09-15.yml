@@ -1,0 +1,142 @@
+name: Append desktop deal data 2026-09-15
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/daily-append-2026-09-15.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Append prices and write report/index
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+
+          date = '2026-09-15'
+          time = '22:10'
+          csv_path = Path('data/price_history.csv')
+          rows = [
+            [date,time,'CSL Sprint 5753 Ryzen 7 8700F / RTX 5060 Ti 16GB','New','CSL Computer','DE','1299.00','AMD Ryzen 7 8700F','NVIDIA GeForce RTX 5060 Ti 16GB','16','1000','500W CSL 80+ Bronze ATX2.4','Mid Tower / ASUS PRIME B840M-A WIFI','24 months manufacturer warranty; 36 months optional; lifetime technical support','yes','8.4','8.6','8.8','9.4','1','✅ 很值','1450','10.4','→ 历史低位持平','https://www.csl-computer.com/pc-systeme/amd/pc-csl-sprint-5753-ryzen-7.html','Daily champion after broad vendor scan; official direct price remains €1299 and 3-5 business-day dispatch. AM5/B840, RTX5060Ti 16GB, Wi-Fi6E and standard mATX parts support the five-year path; first upgrade is RAM to 32/64GB; 500W Bronze limits future high-power GPU; no OS.'],
+            [date,time,'KIEBEL Invader XS V Ryzen 7 5700X / RTX 5060 Ti 8GB / 32GB','New','kiebel via MediaMarkt','DE','1289.00','AMD Ryzen 7 5700X','NVIDIA GeForce RTX 5060 Ti 8GB','32','1000','Aerocool Aero 650W 80+ Bronze','ATX Midi / ASUS PRIME A520M-A II/CSM','24 months free service stated by seller; Marketplace seller terms apply','yes','4.5','7.8','8.7','9.0','4','✅ 很值','1499','14.0','→ 促销低位持平','https://www.mediamarkt.de/de/product/_kiebel-allround-gaming-pc-16-gb-ram-500-gb-ss-76871438.html','Best non-CSL same-budget challenger. Actual seller and shipper is kiebel via MediaMarkt Marketplace; €1289 free shipping vs page-stated 30-day low €1499. 32GB/Win11/650W are turnkey strengths, but 8GB VRAM and AM4/A520/DDR4 materially reduce engineering longevity. Marketplace seller terms govern returns; do not assume MediaMarkt direct-sale voluntary return terms.'],
+            [date,time,'GameMachines Trinity Ryzen 7 5700X / RTX 5060 Ti 8GB / 16GB','New','GameMachines via MediaMarkt','DE','1079.00','AMD Ryzen 7 5700X','NVIDIA GeForce RTX 5060 Ti 8GB','16','1000','Not disclosed','Tower / motherboard not disclosed','Marketplace seller terms; exact commercial warranty not clearly disclosed on product page','yes','4.0','7.2','8.6','9.2','8','✅ 很值','1299','16.9','↑ 新发现的预算开箱低位','https://www.mediamarkt.de/de/product/_gamemachines-trinity-rgb-kuhler-gaming-pc-mit-amd-ryzentm-7-5700x-prozessor-16-gb-ram-1000-gb-ssd-nvidia-geforce-rtxtm-5060-ti-windows-11-pro-170126496.html','New budget anomaly: seller and shipper GameMachines via MediaMarkt Marketplace; €1079 free shipping vs page-stated 30-day low €1299. 5700X/RTX5060Ti 8GB/16GB DDR4/1TB/Wi-Fi/Windows 11 Pro. Good turnkey remote endpoint, but 16GB system RAM, 8GB VRAM, AM4 and undisclosed motherboard/PSU reduce long-term workstation confidence.'],
+            [date,time,'Captiva Highend Gaming R93-435','New','NEXOC Store GmbH / CAPTIVA','DE','1445.99','AMD Ryzen 7 5700X','NVIDIA GeForce RTX 5070 12GB','32','1000','850W MSI MAG A850GL','Tower / B550M','24 months CAPTIVA hardware warranty; NEXOC direct sale / withdrawal process','yes','5.8','8.4','8.8','9.2','2','✅ 很值','1515','4.6','→ 32GB+RTX5070 跟踪低位持平','https://www.nexoc-store.de/pc-systeme/pcs/gaming-pcs/captiva-pc-highend-gaming-r93-435-ryzen-7-5700x-rtx5070-12gb-gddr7-ssd-1tb-32gb-wlan-windows-11-home-64-bit','Direct page remains €1445.99, free shipping and 2-3 business days; RTX5070/32GB/Win11 Home/Wi-Fi/named MSI 850W PSU are a strong turnkey GPU package. AM4/B550/DDR4 sharply reduce future CPU-platform upgrade headroom.'],
+            [date,time,'Acer Predator Orion 3000 PO3-665 DG.E4UEG.003','New','nordiva-shop0 via eBay','DE','1199.00','Intel Core i5-14400F','NVIDIA GeForce RTX 5070 12GB','16','1000','OEM / not reliably disclosed','Acer OEM Tower','Marketplace / seller terms; verify exact warranty and return terms before purchase','yes','4.5','7.6','8.7','9.5','4','🟡 普通好价','1249','4.0','→ 预算RTX5070历史低位持平','https://www.ebay.de/itm/205941893117','Idealo still verifies exact SKU DG.E4UEG.003 at €1199 from actual seller nordiva-shop0 via eBay; i5-14400F/RTX5070 12GB/16GB DDR4/1TB/Win11 Home. Exceptional CUDA-per-euro but OEM platform and Marketplace aftersales/PSU/RAM-slot transparency weaken five-year workstation value.'],
+            [date,time,'Captiva Workstation I10-2574','New','notebooksbilliger.de','DE','1299.00','Intel Core Ultra 7 270K Plus','Intel Graphics integrated','32','1000','550W Captiva Power','Tower / B860M','NBB direct sale; optional 3/5-year protection; €1299 requires Campus membership','yes','8.3','8.9','9.4','8.8','2','🟡 普通好价','1299','0.0','→ Campus价持平','https://www.notebooksbilliger.de/captiva%2Bpc%2Bworkstation%2Bi10%2B2574%2B923706','Conditional CPU/VM/remote workstation; €1299 remains Campus-only. Core Ultra 7 270K Plus/32GB DDR5/B860/Win11 Pro/Wi-Fi6 is strong for CPU-heavy work and native RDP, but it does not solve CUDA/NVIDIA GPU needs.'],
+            [date,time,'CSL Sprint 5787 Ryzen 7 5700 / RTX 5060 Ti 8GB','New','CSL Computer','DE','1099.00','AMD Ryzen 7 5700','NVIDIA GeForce RTX 5060 Ti 8GB','32','1000','500W CSL 80+ Bronze ATX2.4','Mid Tower / ASUS PRIME A520M-A II/CSM','24 months manufacturer warranty; 36 months optional; lifetime technical support','yes','4.5','7.0','7.4','9.2','3','✅ 很值','1199','8.3','→ 历史低位持平','https://www.csl-computer.com/angebote/pc-csl-sprint-5787-ryzen-7.html','Budget track remains €1099; 32GB is useful, but AM4/A520, 8GB VRAM, no Wi-Fi/no OS and 500W Bronze make it a cheap endpoint rather than a five-year workstation platform.'],
+            [date,time,'MemoryPC Ryzen 5 7500F / RTX 5070 32GB','New','MemoryPC','DE','1899.00','AMD Ryzen 5 7500F','NVIDIA GeForce RTX 5070 12GB','32','1000','750W','Mid Tower / MSI PRO B850-S WIFI6E','Manufacturer warranty; free return; German assembly/support','yes','9.2','8.3','9.2','7.0','1','❌ 跳过','1700','-11.7','→ 高位持平','https://www.memorypc.de/p/gaming-pc-amd-ryzen-5-7500f-rtx-5070-32-gb-ddr5-557100/','Official page remains €1899; excellent B850/Wi-Fi/32GB/standard-parts foundation and German assembly/support, but current price is far outside the value target.'],
+            [date,time,'SYSTEMTREFF Ryzen 5 7500F / RTX 5070 32GB','New','SYSTEMTREFF','DE','1909.90','AMD Ryzen 5 7500F','NVIDIA GeForce RTX 5070 12GB','32','1000','750W be quiet! System Power 11 M Gold','Mid Tower / ASUS PRIME B850-Plus WIFI','3 years + 30-day return','yes','9.0','7.7','9.0','6.8','2','❌ 跳过','1800','-6.1','↑ 自身价格改善但仍明显偏贵','https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-5-7500F-32GB-DDR5-GeForce-RTX-5070-12GB-1TB-4088','Official tracked SKU shows €1949.90 before €40 GAMING26 code, about €1909.90 effective. B850/Wi-Fi/750W Gold/Win11 Pro/3-year service are strong; nevertheless same model was €1719.90 on 2026-08-30 and value remains poor.']
+          ]
+
+          with csv_path.open('r', encoding='utf-8', newline='') as f:
+              existing = list(csv.reader(f))
+          existing_keys = {(r[0], r[2]) for r in existing[1:] if len(r) > 2}
+          to_add = [r for r in rows if (r[0], r[2]) not in existing_keys]
+          if to_add:
+              with csv_path.open('a', encoding='utf-8', newline='') as f:
+                  w = csv.writer(f, lineterminator='\n')
+                  w.writerows(to_add)
+
+          report = '''# Desktop / Workstation Angebot Report — 2026-09-15
+
+## 今日结论
+
+**今日总冠军：✅ 很值 — CSL Sprint 5753，€1,299。** 这是今天跨商家重新竞争后的长期综合冠军，不是神价：机会稀缺度 **1/10**。官方当前配置为 Ryzen 7 8700F + RTX 5060 Ti 16GB + 16GB DDR5 + 1TB PCIe 4.0 SSD + ASUS PRIME B840M-A WIFI + 500W Bronze；3–5 个工作日发货，24 个月厂家保修可扩到 36 个月。它的核心价值仍是 **AM5/B840 + 16GB VRAM + 标准 mATX 体系**，而不是商家写的 UVP。第一升级项应直接是 32/64GB RAM；未来若换高功耗 GPU，再换 PSU。
+
+**最佳非同商家挑战者：✅ 很值 — KIEBEL Invader XS V，€1,289，实际销售/发货方 kiebel，经 MediaMarkt Marketplace。** 它只便宜 €10，却给 32GB DDR4、1TB、650W Bronze、Windows 11 和 Wi-Fi，开箱更完整；代价是 Ryzen 7 5700X + RTX 5060 Ti 8GB + A520/AM4/DDR4。对普通远程桌面和中等 CAD，KIEBEL 更省事；对 CUDA、大模型/大纹理、GPU solver、大场景渲染和五年渐进升级，CSL 的 16GB VRAM 与 AM5 明显更符合目标。Marketplace 卖家条款适用，不能把 MediaMarkt 对自营商品的自愿退货政策自动套到第三方卖家。
+
+**今日新增值得记录的预算异常价：✅ GameMachines Trinity，€1,079。** 实际销售/发货方 GameMachines，经 MediaMarkt Marketplace；5700X + RTX 5060 Ti 8GB + 16GB DDR4 + 1TB + Wi-Fi + Windows 11 Pro。页面标出的 30 日低价是 €1,299，当前低约 **16.9%**。它非常适合作为“便宜、开箱可远程”的终点型主机，但 16GB 系统内存、8GB VRAM、AM4，以及商品页未透明披露主板/PSU，使它不取代 CSL 的五年综合冠军位置。
+
+## 今日候选
+
+| 评级 / 稀缺度 | 当前价 / 合理参考 | 实际销售方 · 域名 | 核心配置 | 工程 / 远程 / 五年升级 | 历史判断 |
+|---|---:|---|---|---|---|
+| ✅ 总冠军 · 1/10 | **€1,299 / ~€1,450（约 -10.4%）** | CSL Computer · csl-computer.com | 8700F / RTX5060Ti **16GB** / 16GB DDR5 / 1TB / B840M Wi-Fi / 500W | 8.6 / 8.8 / 8.4 | → 历史最低持平 |
+| ✅ 非同商家挑战者 · 4/10 | **€1,289 / €1,499（约 -14.0%）** | kiebel via MediaMarkt · mediamarkt.de | 5700X / RTX5060Ti **8GB** / 32GB / 1TB / A520M / 650W / Win11 | 7.8 / 8.7 / 4.5 | → 促销低位持平 |
+| ✅ 新预算异常价 · 8/10 | **€1,079 / €1,299（约 -16.9%）** | GameMachines via MediaMarkt · mediamarkt.de | 5700X / RTX5060Ti 8GB / 16GB / 1TB / Win11 Pro / Wi-Fi | 7.2 / 8.6 / 4.0 | ↑ 新发现的预算开箱低位 |
+| ✅ GPU 完整型 · 2/10 | **€1,445.99 / ~€1,515（约 -4.6%）** | NEXOC Store GmbH / CAPTIVA · nexoc-store.de | 5700X / RTX5070 12GB / 32GB / 1TB / B550M / MSI 850W / Win11 | 8.4 / 8.8 / 5.8 | → 32GB+RTX5070 低位持平 |
+| 🟡 条件型 · 4/10 | **€1,199 / ~€1,249（约 -4.0%）** | nordiva-shop0 via eBay · ebay.de | i5-14400F / RTX5070 12GB / 16GB DDR4 / 1TB / Acer OEM | 7.6 / 8.7 / 4.5 | → 预算 RTX5070 历史低位 |
+| 🟡 Campus 条件型 · 2/10 | **€1,299 / €1,299** | notebooksbilliger.de · notebooksbilliger.de | Ultra 7 270K Plus / 32GB DDR5 / 1TB / B860 / Win11 Pro / iGPU | 8.9 / 9.4 / 8.3 | → Campus价持平 |
+| ✅ 预算终点 · 3/10 | **€1,099 / ~€1,199（约 -8.3%）** | CSL Computer · csl-computer.com | 5700 / RTX5060Ti 8GB / 32GB / 1TB / A520 / 500W | 7.0 / 7.4 / 4.5 | → 历史低位持平 |
+| ❌ 跳过 · 1/10 | **€1,899 / ~€1,700** | MemoryPC · memorypc.de | 7500F / RTX5070 / 32GB / B850 / Wi-Fi / 750W | 8.3 / 9.2 / 9.2 | → 高位持平 |
+| ❌ 跳过 · 2/10 | **约 €1,909.90 / ~€1,800** | SYSTEMTREFF · systemtreff.de | 7500F / RTX5070 / 32GB / B850 / 750W Gold / Win11 Pro | 7.7 / 9.0 / 9.0 | ↑ 自身价改善但仍明显偏贵 |
+
+## 直接商品页与来源
+
+- CSL Sprint 5753 — https://www.csl-computer.com/pc-systeme/amd/pc-csl-sprint-5753-ryzen-7.html
+- KIEBEL Invader XS V — https://www.mediamarkt.de/de/product/_kiebel-allround-gaming-pc-16-gb-ram-500-gb-ss-76871438.html
+- GameMachines Trinity — https://www.mediamarkt.de/de/product/_gamemachines-trinity-rgb-kuhler-gaming-pc-mit-amd-ryzentm-7-5700x-prozessor-16-gb-ram-1000-gb-ssd-nvidia-geforce-rtxtm-5060-ti-windows-11-pro-170126496.html
+- Captiva R93-435 / NEXOC — https://www.nexoc-store.de/pc-systeme/pcs/gaming-pcs/captiva-pc-highend-gaming-r93-435-ryzen-7-5700x-rtx5070-12gb-gddr7-ssd-1tb-32gb-wlan-windows-11-home-64-bit
+- Acer DG.E4UEG.003 / nordiva-shop0 via eBay — https://www.ebay.de/itm/205941893117
+- Captiva Workstation I10-2574 / NBB — https://www.notebooksbilliger.de/captiva%2Bpc%2Bworkstation%2Bi10%2B2574%2B923706
+- CSL Sprint 5787 — https://www.csl-computer.com/angebote/pc-csl-sprint-5787-ryzen-7.html
+- MemoryPC 7500F / RTX5070 — https://www.memorypc.de/p/gaming-pc-amd-ryzen-5-7500f-rtx-5070-32-gb-ddr5-557100/
+- SYSTEMTREFF 7500F / RTX5070 — https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-5-7500F-32GB-DDR5-GeForce-RTX-5070-12GB-1TB-4088
+
+## 强制广泛扫描结果
+
+今天重新扫描了 CSL、SYSTEMTREFF、MemoryPC、Dubaro、Alternate/Outlet、notebooksbilliger.de、Cyberport、MediaMarkt、Saturn、Amazon.de/Marketplace、Dell、HP、Lenovo、x-kom、Alza、NEXOC，并用 Idealo、Geizhals、Mydealz 做异常价格发现。Alternate Outlet 当前抓到的 RTX5070 B-Ware Thermaltake 为 €2,478，配置虽强但完全脱离预算；Cyberport 的类似 32GB/RTX5060Ti16GB Captiva 约 €1,799；Dubaro 的 AM5/32GB/RTX5060Ti16GB 约 €1,929；HP 官方的 32GB/RTX5060Ti16GB OMEN 约 €1,699 且缺货；Dell/Lenovo 当前可核验的独显塔机明显更贵或不可用；x-kom RTX5070 完整机也显著高于本轮优选。Amazon/Marketplace 与价格比较站出现若干看起来异常的摘要价，但未能回到可核验的精确商家商品页、卖家和配置的，不写入正式价格历史。
+
+## 相对固定 Reference：HP Z2 Tower G9 / i7-12700K / 32GB / UHD 770
+
+Reference 的 `price_eur` 仍为空，继续只作为固定硬件基准，**没有写入 price_history.csv，也没有参与 7日/30日均值、折扣或历史最低价统计**。
+
+对 CSL 5753 而言，CPU 不是明确升级：8700F 是 8核/16线程、65W 级 AM5 CPU；Reference 的 12700K 是 12核/20线程，并拥有更高的长期已知多线程余量。公开合成基准通常把 12700K 放在 8700F 之上，因此 CPU-only solver、编译、CPU 渲染等场景不应因为换 CSL 就期待加速。这里不把合成 benchmark 百分比直接当作 ANSYS/Abaqus/SolidWorks/MATLAB 的实际提升。
+
+真正的结构性升级是 UHD 770 → RTX 5060 Ti 16GB：CUDA、OptiX、NVIDIA GPU solver、本地 AI、GPU rendering、大纹理与复杂 3D 视口明显更适合。反过来，CSL 开箱只有 16GB RAM，较 Reference 的 32GB 是明确退步，因此把内存升到 32GB/64GB 应直接算入购机计划。
+
+远程主机方面，CSL 有 Wi-Fi 6E 作为备用管理链路，但长期放地下室仍建议使用有线 LAN；它没有预装 OS，如果要用微软原生 Remote Desktop 作为被控 Host，建议装 Windows 11 Pro。多屏输出由 RTX 显卡承担。功耗/散热方面，8700F 的 CPU 功耗等级较低，但加上独显后，GPU 长时高负载下整机热量会明显高于只用 UHD770 的 Reference；地下室主机应保持良好进排风、留出显卡散热空间并定期清灰。
+
+## 历史趋势
+
+- **今天 vs 昨天：↑ 小幅改善。** 长期综合冠军 CSL 5753 仍为 €1,299，KIEBEL 仍 €1,289，NEXOC 32GB+RTX5070 仍 €1,445.99；但新增 GameMachines Trinity €1,079，把“5700X + RTX5060Ti 8GB + Win11 Pro 的开箱预算路线”推到新的跟踪低位。
+- **过去 7 天：↑ 小幅改善后低位横盘。** 主线 AM5/16GB-VRAM 冠军未刷新；预算成品层出现新的 €1,079 节点。
+- **过去 30 天：数据不足。** 当前仓库从 2026-08-30 开始，至今天只有 17 个自然日，不能伪造完整 30 日均值。
+- **历史最好价：分档看。** CSL 5753 的历史最低仍为 €1,299；32GB+RTX5070 完整型仍为 NEXOC €1,445.99；预算 RTX5070 仍为 Acer €1,199；预算 5060Ti 8GB 开箱型今天新增 GameMachines €1,079。
+
+## 决策建议
+
+如果现有 Z2 已明确受 CUDA / GPU / 16GB 显存需求限制，而且希望未来五年还能逐步换 CPU/RAM/GPU，今天仍选 **CSL Sprint 5753 €1,299**；如果最看重同预算开箱 32GB + Windows，选 **KIEBEL €1,289**；如果只想把预算压到最低并立即获得 Win11 Pro + RTX5060Ti，**GameMachines €1,079** 很有吸引力，但应把它当“低价终点型机器”，而不是五年升级平台；如果愿意上到 €1,445.99 换更强 GPU、32GB 与 850W 电源，NEXOC Captiva R93-435 仍是最完整的 RTX5070 成品选择。
+'''
+          Path('reports/2026-09-15.md').write_text(report, encoding='utf-8')
+
+          index_path = Path('reports/index.json')
+          index = json.loads(index_path.read_text(encoding='utf-8'))
+          new_entry = {
+              'date': date,
+              'title': 'Daily Angebot — CSL €1,299 holds; GameMachines €1,079 creates a new budget turnkey low',
+              'summary': '今日总冠军仍是 CSL Sprint 5753：8700F + RTX5060Ti 16GB + B840M/AM5，€1,299，✅ 很值但稀缺度仅 1/10。最佳非同商家同预算挑战者仍为 kiebel/MediaMarkt KIEBEL Invader XS V €1,289。今天的新异常价是 GameMachines via MediaMarkt：5700X + RTX5060Ti 8GB + 16GB + Win11 Pro，€1,079，较页面30日低价€1,299低约16.9%，但 AM4/8GB VRAM/未披露主板PSU使它只适合作为预算终点型机器。7日整体小幅改善，30日样本仍不足。',
+              'rating': '✅ 很值',
+              'path': 'reports/2026-09-15.md',
+              'url': 'https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-15.md'
+          }
+          reports = [r for r in index.get('reports', []) if r.get('date') != date]
+          index['updated_at'] = '2026-09-15T22:10:00+02:00'
+          index['reports'] = [new_entry] + reports
+          index_path.write_text(json.dumps(index, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+
+      - name: Commit daily update
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/price_history.csv reports/2026-09-15.md reports/index.json
+          if git diff --cached --quiet; then
+            echo 'No changes to commit'
+          else
+            git commit -m 'daily: desktop Angebote 2026-09-15'
+            git push origin HEAD:main
+          fi
