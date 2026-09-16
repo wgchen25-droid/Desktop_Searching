@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-09-15T22:10:00+02:00",
+  "updated_at": "2026-09-16T22:01:00+02:00",
   "reports": [
+    {
+      "date": "2026-09-16",
+      "title": "Daily Angebot — CSL €1,299 holds; Cyberport adds direct-retail 16GB-VRAM comparator at €1,389",
+      "summary": "总冠军仍是 CSL Sprint 5753 €1,299：AM5 + RTX5060Ti 16GB，✅ 很值但稀缺度 1/10。最佳非同商家挑战者为 kiebel/MediaMarkt KIEBEL €1,289。今天新增 Cyberport 直售 Hyrican Rockstar 8002 €1,389（RTX5060Ti 16GB + Win11），售后更省心但 A520/AM4/400W/16GB 使五年升级明显弱于 CSL；GameMachines €1,079 预算异常价继续持平。7日小幅改善后横盘，30日样本仍不足。",
+      "rating": "✅ 很值",
+      "path": "reports/2026-09-16.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-16.md"
+    },
     {
       "date": "2026-09-15",
       "title": "Daily Angebot — CSL €1,299 holds; GameMachines €1,079 creates a new budget turnkey low",
