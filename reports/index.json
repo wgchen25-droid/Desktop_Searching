@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-09-16T22:01:00+02:00",
+  "updated_at": "2026-09-17T22:01:00+02:00",
   "reports": [
+    {
+      "date": "2026-09-17",
+      "title": "Daily Angebot — GameMachines 32GB + RTX5060Ti 16GB crashes to €999",
+      "summary": "强制跨商家扫描出现真正的新历史低位：GameMachines Flow 5700X + RTX5060Ti 16GB + 32GB + 1TB + Win11 Pro 当前精确配置价格源显示 €999，成为 🔥 错过可惜 / 稀缺度 9/10 今日总冠军；最佳非同商家挑战者为 CSL Sprint 5753 €1,299，+€300 主要换 AM5/B840/DDR5 与更强五年平台路线。Amazon 直页爬虫受限，购买前必须确认 ASIN B0FM1767QT 结账仍为 €999 且实际卖家 GameMachines。7日显著改善并刷新32GB+16GB CUDA成品低位；30日样本仍不足。",
+      "rating": "🔥 错过可惜",
+      "path": "reports/2026-09-17.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-17.md"
+    },
     {
       "date": "2026-09-16",
       "title": "Daily Angebot — CSL €1,299 holds; Cyberport adds direct-retail 16GB-VRAM comparator at €1,389",
