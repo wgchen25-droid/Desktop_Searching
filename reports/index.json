@@ -1,11 +1,19 @@
 {
-  "updated_at": "2026-09-17T22:01:00+02:00",
+  "updated_at": "2026-09-18T22:00:00+02:00",
   "reports": [
     {
+      "date": "2026-09-18",
+      "title": "Daily Angebot — CSL €1,299 wins after rejecting GameMachines variant mismatch; Cyberport Hyrican challenges at €1,259",
+      "summary": "今天先纠错：2026-09-17 的 GameMachines €999 / €1,089 RTX5060Ti16 记录被 Amazon 原始 ASIN/变体核验推翻，价格比较站发生配置错配，相关历史低价与推荐已撤销。重新广泛扫描后，今日总冠军为 CSL Sprint 5753 €1,299（8700F + RTX5060Ti16 + AM5/B840），✅ 很值 / 稀缺度1；最佳非同商家挑战者为 Cyberport 直售 Hyrican GAMEMAX Infinity Mini BK 7796 €1,259（5700X + RTX5060Ti16 + Win11 Home），便宜€40但 AM4/DDR4/400W 的五年升级性明显更弱。7日有效趋势小幅改善；30日样本仍不足。",
+      "rating": "✅ 很值",
+      "path": "reports/2026-09-18.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-18.md"
+    },
+    {
       "date": "2026-09-17",
-      "title": "Daily Angebot — GameMachines 32GB + RTX5060Ti 16GB crashes to €999",
-      "summary": "强制跨商家扫描出现真正的新历史低位：GameMachines Flow 5700X + RTX5060Ti 16GB + 32GB + 1TB + Win11 Pro 当前精确配置价格源显示 €999，成为 🔥 错过可惜 / 稀缺度 9/10 今日总冠军；最佳非同商家挑战者为 CSL Sprint 5753 €1,299，+€300 主要换 AM5/B840/DDR5 与更强五年平台路线。Amazon 直页爬虫受限，购买前必须确认 ASIN B0FM1767QT 结账仍为 €999 且实际卖家 GameMachines。7日显著改善并刷新32GB+16GB CUDA成品低位；30日样本仍不足。",
-      "rating": "🔥 错过可惜",
+      "title": "CORRECTED — GameMachines €999 RTX5060Ti16 claim invalidated by Amazon variant verification",
+      "summary": "2026-09-18 纠错：初版报告把 Idealo 的 GameMachines Amazon 变体错误映射为 RTX5060Ti 16GB。原始 Amazon ASIN 核验显示 B0FM1767QT 实际对应 RX9060，B0F9VT7Z4M 也对应 RX9060；可核验 RTX5060Ti Amazon 变体为8GB。因此 €999/€1089 的 RTX5060Ti16 记录与历史最低价结论撤销，纠错后 9/17 可核验综合冠军为 CSL Sprint 5753 €1,299。",
+      "rating": "✅ 很值",
       "path": "reports/2026-09-17.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-17.md"
     },
