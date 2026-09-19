@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-09-18T22:00:00+02:00",
+  "updated_at": "2026-09-19T22:00:00+02:00",
   "reports": [
+    {
+      "date": "2026-09-19",
+      "title": "Daily Angebot — €1,159 Acer RTX 5070 refurb beats the core-budget field; CSL €1,299 remains the long-term platform challenger",
+      "summary": "强制跨商家重新扫描后，今日总冠军改为 GG-Net GmbH / AcerSonderposten.de 的 Acer Predator Orion 3000-665 DG.E4UEG.003 refurbished：i5-14400F + RTX5070 12GB + 16GB + 1TB + Win11 Home，€1,159 + Versand，✅ 很值 / 值得出手 / 稀缺度7。精确新机同 SKU 当前约€1,269，而仓库新机历史最低€1,199，因此今天是新的 refurb 获取成本低点但不是无条件神价。最佳非同商家挑战者为 CSL Sprint 5753 €1,299：RTX5060Ti16 + AM5/B840/DDR5，贵€140但标准mATX、4 DIMM、3 M.2、2.5GbE/Wi-Fi6E和2年保修使五年升级明显更强。7日综合获取价值改善；新机-only Acer价格较历史低点恶化；30日样本仍不足。",
+      "rating": "✅ 很值",
+      "path": "reports/2026-09-19.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-19.md"
+    },
     {
       "date": "2026-09-18",
       "title": "Daily Angebot — CSL €1,299 wins after rejecting GameMachines variant mismatch; Cyberport Hyrican challenges at €1,259",
