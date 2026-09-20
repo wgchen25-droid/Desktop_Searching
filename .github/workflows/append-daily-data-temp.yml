@@ -1,0 +1,62 @@
+name: Append daily desktop data (temporary)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/pending_price_rows.csv'
+
+permissions:
+  contents: write
+
+jobs:
+  append:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Append price rows and update report index
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+
+          csv_path = Path('data/price_history.csv')
+          pending = Path('data/pending_price_rows.csv')
+          current = csv_path.read_text(encoding='utf-8').rstrip('\n')
+          rows = pending.read_text(encoding='utf-8').strip('\n')
+          marker = '2026-09-20,22:00,Acer Predator Orion 3000 PO3-665 DG.E4UEG.003,'
+          if marker not in current:
+              csv_path.write_text(current + '\n' + rows + '\n', encoding='utf-8')
+
+          idx_path = Path('reports/index.json')
+          idx = json.loads(idx_path.read_text(encoding='utf-8'))
+          entry = {
+              'date': '2026-09-20',
+              'title': 'Daily Angebot — €1,159 Acer RTX 5070 refurb holds; CSL €1,299 remains the five-year platform challenger',
+              'summary': '强制跨商家扫描后，今日总冠军继续是 GG-Net GmbH / AcerSonderposten.de 的 Acer Predator Orion 3000-665 DG.E4UEG.003 refurbished：i5-14400F + RTX5070 12GB + 16GB + 1TB + Win11 Home，€1,159 + Versand，✅ 很值 / 值得出手 / 稀缺度6。AcerSonderposten 当前至少列出两台同 SKU €1,159，因此不是单台神价；精确新机当日市场约€1,199–€1,269，€1,245 作为合理参考，refurb 约低6.9%。最佳非同商家挑战者继续 CSL Sprint 5753 €1,299：贵€140、GPU降到RTX5060Ti16，但AM5/B840/DDR5、标准mATX、4 DIMM、3 M.2、2.5GbE/Wi-Fi6E和2年保修带来明显更强的五年升级性。今天vs昨持平，7日综合获取价值改善，30日样本不足；固定 HP Z2 hardware reference 继续排除价格统计。',
+              'rating': '✅ 很值',
+              'path': 'reports/2026-09-20.md',
+              'url': 'https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-20.md'
+          }
+          reports = [r for r in idx.get('reports', []) if r.get('date') != '2026-09-20']
+          idx['updated_at'] = '2026-09-20T22:00:00+02:00'
+          idx['reports'] = [entry] + reports
+          idx_path.write_text(json.dumps(idx, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          pending.unlink()
+          PY
+
+      - name: Commit appended data
+        run: |
+          git config user.name 'desktop-searching-bot'
+          git config user.email 'desktop-searching-bot@users.noreply.github.com'
+          git add -A data/price_history.csv data/pending_price_rows.csv reports/index.json
+          if git diff --cached --quiet; then
+            echo 'No changes to commit'
+            exit 0
+          fi
+          git commit -m 'Update 2026-09-20 desktop deal data'
+          git push origin HEAD:main
