@@ -1,0 +1,85 @@
+name: Append desktop deal data 2026-09-21
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/append-price-history-2026-09-21.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Append price history and update report index
+        shell: bash
+        run: |
+          python - <<'PY'
+          import csv, json
+          from pathlib import Path
+
+          csv_path = Path('data/price_history.csv')
+          with csv_path.open('r', encoding='utf-8', newline='') as f:
+              reader = csv.DictReader(f)
+              fieldnames = reader.fieldnames
+              existing = list(reader)
+
+          if not any(r.get('date') == '2026-09-21' for r in existing):
+              rows = [
+                  {
+                      'date':'2026-09-21','time':'22:00','model':'Acer Predator Orion 3000 PO3-665 DG.E4UEG.003','condition':'Refurbished (cosmetic mark)','seller':'GG-Net GmbH / AcerSonderposten.de','country':'DE','price_eur':'1159.00','cpu':'Intel Core i5-14400F','gpu':'NVIDIA GeForce RTX 5070 12GB','ram_gb':'16','storage_gb':'1000','psu':'850W 80+ Gold (exact-SKU public spec)','form_factor':'Acer OEM Tower / H610-class','warranty':'1 year Acer manufacturer warranty; at least 12mo statutory used-goods warranty; 30-day return','shipping_to_germany':'yes','upgrade_score':'4.3','engineering_score':'8.4','remote_score':'8.6','value_score':'9.5','rarity_score':'6','rating':'✅ 很值','market_reference_eur':'1269','discount_vs_market_pct':'8.7','trend_vs_history':'→ refurb historical floor unchanged; current new market worsened vs €1199 historical low','product_url':'https://www.acersonderposten.de/Predator-Orion-3000-665/31197','notes':'Daily champion. GG-Net GmbH / AcerSonderposten.de; €1159 plus shipping. Exact SKU: i5-14400F/RTX5070 12GB/16GB DDR4 2x8 max32GB/1TB M.2/1GbE/Wi-Fi6E/850W/Win11 Home. Current new-market references ~€1249-1269; repo New historical low €1199. Strong GPU/euro, but OEM/H610/2-DIMM/max32GB/proprietary-parts risk limits five-year platform value.'
+                  },
+                  {
+                      'date':'2026-09-21','time':'22:00','model':'CSL Sprint 5753','condition':'New','seller':'CSL Computer','country':'DE','price_eur':'1299.00','cpu':'AMD Ryzen 7 8700F','gpu':'NVIDIA GeForce RTX 5060 Ti 16GB','ram_gb':'16','storage_gb':'1000','psu':'500W CSL 80+ Bronze ATX2.4','form_factor':'Mid Tower / ASUS PRIME B840M-A WIFI','warranty':'24 months manufacturer warranty; 36 months optional; lifetime technical support','shipping_to_germany':'yes','upgrade_score':'8.4','engineering_score':'8.6','remote_score':'8.8','value_score':'9.3','rarity_score':'1','rating':'✅ 很值','market_reference_eur':'1350','discount_vs_market_pct':'3.8','trend_vs_history':'→ own €1299 historical low unchanged','product_url':'https://www.csl-computer.com/pc-systeme/amd/ryzen-7-1/pc-csl-sprint-5753-ryzen-7.html','notes':'Formal best different-seller challenger. Official €1299, 3-5 workdays. +€140 vs Acer buys new condition and much stronger AM5/B840/DDR5 standard-mATX five-year path with 4 DIMM, 3 M.2, 2.5GbE/Wi-Fi6E and 24mo warranty; current 16GB RAM and 500W PSU are first upgrade constraints; no OS.'
+                  },
+                  {
+                      'date':'2026-09-21','time':'22:00','model':'Hyrican GAMEMAX Infinity Mini BK 7796 PCK07796','condition':'New','seller':'Cyberport / Hyrican','country':'DE','price_eur':'1259.00','cpu':'AMD Ryzen 7 5700X','gpu':'NVIDIA GeForce RTX 5060 Ti 16GB','ram_gb':'16','storage_gb':'1000','psu':'400W (Cyberport direct datasheet)','form_factor':'Midi Tower / AM4','warranty':'Cyberport direct sale; manufacturer warranty framework; 30-day free return','shipping_to_germany':'yes','upgrade_score':'4.4','engineering_score':'8.0','remote_score':'8.6','value_score':'9.1','rarity_score':'2','rating':'✅ 很值','market_reference_eur':'1275','discount_vs_market_pct':'1.3','trend_vs_history':'→ current price flat; direct-vendor 400W spec overrides prior secondary 750W claim','product_url':'https://www.cyberport.de/gaming/gaming-pcs/pdp/1125-4FJ/Hyrican-GAMEMAX-Infinity-Mini-BK--7796--Gaming-PC-Ryzen-7-5700X-16GB-1TB-SSD-RTX-5060Ti-Win11.html','notes':'Cyberport direct; €1259, immediately available, free return. 5700X/RTX5060Ti16/16GB DDR4/1TB/Win11 Home/WLAN. Direct Cyberport datasheet lists 400W, 2 DIMM/max64GB, 1GbE and Wi-Fi5; AM4/DDR4 and low PSU headroom weaken five-year upgrades.'
+                  },
+                  {
+                      'date':'2026-09-21','time':'22:00','model':'Captiva Highend Gaming R93-435','condition':'New','seller':'NEXOC Store GmbH / CAPTIVA','country':'DE','price_eur':'1445.99','cpu':'AMD Ryzen 7 5700X','gpu':'NVIDIA GeForce RTX 5070 12GB','ram_gb':'32','storage_gb':'1000','psu':'MSI MAG A850GL 850W','form_factor':'Tower / B550M','warranty':'24 months CAPTIVA warranty; NEXOC direct sale','shipping_to_germany':'yes','upgrade_score':'5.8','engineering_score':'8.4','remote_score':'8.8','value_score':'9.1','rarity_score':'2','rating':'✅ 很值','market_reference_eur':'1515','discount_vs_market_pct':'4.6','trend_vs_history':'→ current 850W exact configuration at tracked low; 9/20 650W page capture treated as config drift','product_url':'https://www.nexoc-store.de/pc-systeme/pcs/gaming-pcs/captiva-pc-highend-gaming-r93-435-ryzen-7-5700x-rtx5070-12gb-gddr7-ssd-1tb-32gb-wlan-windows-11-home-64-bit','notes':'NEXOC direct current page €1445.99, free shipping, 2-3 workdays. Current exact config is 5700X/RTX5070/32GB/1TB/B550M/Win11 Home/Wi-Fi6/MSI MAG A850GL 850W. Treat 9/20 €1434.92/650W capture as configuration drift rather than like-for-like price low.'
+                  },
+                  {
+                      'date':'2026-09-21','time':'22:00','model':'Dubaro Ryzen 7 5700X / RTX 5070','condition':'New','seller':'Dubaro','country':'DE','price_eur':'1839.00','cpu':'AMD Ryzen 7 5700X','gpu':'NVIDIA GeForce RTX 5070 12GB','ram_gb':'16','storage_gb':'1000','psu':'750W MSI MAG A750GL 80+ Gold ATX3.1','form_factor':'Mid Tower / Gigabyte B550 Gaming X V2','warranty':'2 years warranty','shipping_to_germany':'yes','upgrade_score':'6.5','engineering_score':'8.0','remote_score':'8.2','value_score':'6.0','rarity_score':'1','rating':'❌ 跳过','market_reference_eur':'1600','discount_vs_market_pct':'-14.9','trend_vs_history':'→ high price remains noncompetitive','product_url':'https://www.dubaro.de/p/gaming-pc-amd-ryzen-7-5700x-mit-rtx-5070-400199/','notes':'Transparent standard parts and German support are positives, but current direct price around €1839 is far above Acer/NEXOC alternatives in the same GPU class.'
+                  },
+                  {
+                      'date':'2026-09-21','time':'22:00','model':'MemoryPC Ryzen 5 7500F / RTX 5070 32GB B850','condition':'New','seller':'MemoryPC','country':'DE','price_eur':'1979.00','cpu':'AMD Ryzen 5 7500F','gpu':'NVIDIA GeForce RTX 5070 12GB','ram_gb':'32','storage_gb':'1000','psu':'750W be quiet! System Power 11 M Gold','form_factor':'Mid Tower / MSI PRO B850-S WIFI6E','warranty':'Manufacturer support; German assembly/testing; free return','shipping_to_germany':'yes','upgrade_score':'9.2','engineering_score':'8.3','remote_score':'9.2','value_score':'6.2','rarity_score':'1','rating':'❌ 跳过','market_reference_eur':'1700','discount_vs_market_pct':'-16.4','trend_vs_history':'↓ €80 worse than 9/20 tracked price','product_url':'https://www.memorypc.de/p/gaming-pc-amd-ryzen-5-7500f-rtx-5070-32-gb-ddr5-557100/','notes':'Official current page €1979, in stock 3-5 workdays; B850/32GB DDR5/Wi-Fi6E/750W Gold and German assembly are excellent, but price rose €80 vs 9/20 and is not competitive.'
+                  },
+                  {
+                      'date':'2026-09-21','time':'22:00','model':'SYSTEMTREFF Ryzen 5 7500F / RTX 5070 32GB','condition':'New','seller':'SYSTEMTREFF','country':'DE','price_eur':'1999.00','cpu':'AMD Ryzen 5 7500F','gpu':'NVIDIA GeForce RTX 5070 12GB','ram_gb':'32','storage_gb':'1000','psu':'750W be quiet! System Power 11 M Gold','form_factor':'Mid Tower / ASUS PRIME B850-PLUS WIFI','warranty':'3 years warranty + 30-day return','shipping_to_germany':'yes','upgrade_score':'9.0','engineering_score':'7.7','remote_score':'9.0','value_score':'6.2','rarity_score':'1','rating':'❌ 跳过','market_reference_eur':'1800','discount_vs_market_pct':'-11.1','trend_vs_history':'↑ €25.90 better than 9/20 but still far above €1719.90 historical same-line low','product_url':'https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-5-7500F-32GB-DDR5-GeForce-RTX-5070-12GB-1TB-4088','notes':'Official configured page €1999, 8-10 workdays; 32GB DDR5/B850 Wi-Fi/RTX5070/750W Gold/Win11 Pro/3-year warranty/30-day return are strong, but same tracked line was €1719.90 on 2026-08-30.'
+                  }
+              ]
+              with csv_path.open('a', encoding='utf-8', newline='') as f:
+                  w = csv.DictWriter(f, fieldnames=fieldnames, extrasaction='ignore', lineterminator='\n')
+                  for row in rows:
+                      w.writerow(row)
+
+          index_path = Path('reports/index.json')
+          data = json.loads(index_path.read_text(encoding='utf-8'))
+          if not any(r.get('date') == '2026-09-21' for r in data.get('reports', [])):
+              entry = {
+                  'date': '2026-09-21',
+                  'title': 'Daily Angebot — €1,159 Acer RTX 5070 refurb holds; current new market rises while CSL stays the long-term platform challenger',
+                  'summary': '强制跨商家扫描后，今日总冠军继续是 GG-Net GmbH / AcerSonderposten.de 的 Acer Predator Orion 3000-665 DG.E4UEG.003 refurbished：i5-14400F + RTX5070 12GB + 16GB + 1TB + 850W + Win11 Home，€1,159 + Versand，✅ 很值 / 稀缺度6。当前同 SKU 新机市场约€1,249–1,269，明显高于仓库 New 历史最低€1,199，因此 refurb 相对当前新机约低8.7%。最佳非同商家挑战者继续 CSL Sprint 5753 €1,299：贵€140但AM5/B840/DDR5、标准mATX、4 DIMM、3 M.2、2.5GbE/Wi-Fi6E和2年保修显著增强五年升级性。今天主冠军持平、外围略恶化；7日综合获取价值改善；30日样本仍不足。固定 HP Z2 reference 继续严格排除价格统计。',
+                  'rating': '✅ 很值',
+                  'path': 'reports/2026-09-21.md',
+                  'url': 'https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-21.md'
+              }
+              data['reports'] = [entry] + data.get('reports', [])
+          data['updated_at'] = '2026-09-21T22:00:00+02:00'
+          index_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+
+          git config user.name "desktop-deal-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/price_history.csv reports/index.json
+          if git diff --cached --quiet; then
+            echo "No data changes needed"
+            exit 0
+          fi
+          git commit -m "data: append 2026-09-21 desktop prices [skip ci]"
+          git push origin HEAD:main
