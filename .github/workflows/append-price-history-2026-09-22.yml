@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   workflow_run:
-    workflows: ["Deploy dashboard to GitHub Pages"]
+    workflows: ["Deploy dashboard to GitHub Pages", ".github/workflows/daily-update-2026-09-16.yml"]
     types: [completed]
 
 permissions:
