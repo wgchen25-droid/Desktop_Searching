@@ -1,0 +1,39 @@
+name: Append staged desktop deal data 2026-09-22
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/append-price-history-2026-09-22-v3.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  append:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Append staged rows
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -q '^2026-09-22,' data/price_history.csv; then
+            echo '2026-09-22 already present'
+            exit 0
+          fi
+          cat data/price_history_2026-09-22.pending.csv >> data/price_history.csv
+      - name: Commit and push
+        shell: bash
+        run: |
+          if git diff --quiet -- data/price_history.csv; then
+            echo 'No changes to commit.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/price_history.csv
+          git commit -m 'data: append 2026-09-22 desktop deal history'
+          git push
