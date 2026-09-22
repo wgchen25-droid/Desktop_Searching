@@ -3,6 +3,9 @@ name: Append 2026-09-22 price history
 on:
   push:
     branches: [main]
+  workflow_run:
+    workflows: ["Deploy dashboard to GitHub Pages"]
+    types: [completed]
 
 permissions:
   contents: write
