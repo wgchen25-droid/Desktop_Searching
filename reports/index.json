@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-22T22:02:00+02:00",
+  "updated_at": "2026-09-22T22:45:00+02:00",
   "reports": [
     {
       "date": "2026-09-22",
-      "title": "Daily Angebot — Acer RTX 5070 refurb holds €1,159; CSL 5753 worsens to €1,399 and changes motherboard",
-      "summary": "今日总冠军继续是 GG-Net GmbH / AcerSonderposten.de 的 Acer Predator Orion 3000-665 DG.E4UEG.003 refurbished：i5-14400F + RTX5070 12GB + 16GB + 1TB + 850W + Win11 Home，€1,159 + Versand，✅ 很值 / 稀缺度5。当前同 SKU 新机约€1,269，refurb 相对当前新机约低8.7%。最佳非同商家平台挑战者改为🟡 CSL Sprint 5753 €1,399：较昨日/历史低位€1,299上涨€100，并从 ASUS B840M-A WIFI 漂移到 GIGABYTE B840M DS3H WIFI6；AM5/DDR5/4 DIMM/2 M.2/2.5GbE 的五年升级性仍强，但当前时点不值得追涨。今天vs昨日略恶化；过去7日综合获取价值仍改善；30日样本仍不足。固定 HP Z2 reference 继续严格排除价格统计。",
+      "title": "Daily Angebot — Acer RTX 5070 refurb holds €1,159; Cyberport becomes the closest new-machine challenger",
+      "summary": "今日总冠军继续是 GG-Net GmbH / AcerSonderposten.de 的 Acer Predator Orion 3000-665 DG.E4UEG.003 refurbished：i5-14400F + RTX5070 12GB + 16GB + 1TB + 850W + Win11 Home，€1,159 + Versand，✅ 很值 / 稀缺度4。重新核对 exact-SKU 新机最低市场价后，New 当前可到约€1,199，因此 refurb 严格折扣仅约3.3%，其价值主要来自绝对GPU/欧元而非巨大翻新折扣。最佳非同商家挑战者改为 Cyberport 直售 Hyrican GAMEMAX Infinity Mini BK 7796 €1,259：5700X + RTX5060Ti16 + 16GB + 1TB + Win11 Home，全新直售且RAM最大64GB，但AM4/400W/Wi-Fi5限制五年升级。CSL Sprint 5753 今天升到€1,399并切换为GIGABYTE B840M DS3H WIFI6，降为长期平台观察项。今天vs昨日略恶化；过去7日改善后横盘在低位；30日样本仍不足。固定HP Z2 reference继续严格排除价格统计。",
       "rating": "✅ 很值",
       "path": "reports/2026-09-22.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-22.md"
