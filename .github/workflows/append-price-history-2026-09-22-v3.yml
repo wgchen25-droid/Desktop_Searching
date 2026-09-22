@@ -1,5 +1,6 @@
 name: Append staged desktop deal data 2026-09-22
 
+# retriggered 2026-09-22 22:47 Europe/Berlin after fresh market correction
 on:
   push:
     branches: [main]
