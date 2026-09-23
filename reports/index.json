@@ -1,6 +1,14 @@
 {
-  "updated_at": "2026-09-22T22:45:00+02:00",
+  "updated_at": "2026-09-23T22:00:00+02:00",
   "reports": [
+    {
+      "date": "2026-09-23",
+      "title": "Daily Angebot — Acer RTX 5070 refurb holds €1,159; Cyberport €1,259 remains the best new-machine challenger",
+      "summary": "今日总冠军继续是 GG-Net GmbH / AcerSonderposten.de 的 Acer Predator Orion 3000-665 DG.E4UEG.003 refurbished：i5-14400F + RTX5070 12GB + 16GB + 1TB + 850W + Win11 Home，€1,159 + Versand，✅ 很值 / 稀缺度4。精确SKU新机可见低位约€1,199，因此严格折扣约3.3%；它赢在主预算内的绝对GPU/欧元而非巨大翻新折扣。最佳非同商家挑战者继续 Cyberport直售 Hyrican GAMEMAX Infinity Mini BK 7796 €1,259：5700X + RTX5060Ti16 + 16GB + 1TB + Win11 Home，400W、2 DIMM/max64GB、1GbE/Wi-Fi5。CSL鲜活类目仍€1,399，不追涨。今天vs昨日主线持平；过去7日改善后低位横盘；30日样本仍不足。固定HP Z2 hardware reference继续严格排除价格统计。",
+      "rating": "✅ 很值",
+      "path": "reports/2026-09-23.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-23.md"
+    },
     {
       "date": "2026-09-22",
       "title": "Daily Angebot — Acer RTX 5070 refurb holds €1,159; Cyberport becomes the closest new-machine challenger",
