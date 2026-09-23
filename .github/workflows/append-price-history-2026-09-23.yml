@@ -1,0 +1,65 @@
+name: Append staged desktop deal data 2026-09-23
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/append-price-history-2026-09-23.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  append-and-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Append missing staged rows and refresh report index
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import json
+
+          hist = Path('data/price_history.csv')
+          text = hist.read_text(encoding='utf-8')
+          changed = False
+          for date in ('2026-09-22', '2026-09-23'):
+              staged = Path(f'data/price_history_{date}.pending.csv')
+              if staged.exists() and not any(line.startswith(date + ',') for line in text.splitlines()):
+                  if text and not text.endswith('\n'):
+                      text += '\n'
+                  text += staged.read_text(encoding='utf-8').rstrip('\n') + '\n'
+                  changed = True
+          if changed:
+              hist.write_text(text, encoding='utf-8')
+
+          index_path = Path('reports/index.json')
+          obj = json.loads(index_path.read_text(encoding='utf-8'))
+          if not any(r.get('date') == '2026-09-23' for r in obj.get('reports', [])):
+              obj['reports'].insert(0, {
+                  'date': '2026-09-23',
+                  'title': 'Daily Angebot — Acer RTX 5070 refurb holds €1,159; Cyberport €1,259 remains the best new-machine challenger',
+                  'summary': '今日总冠军继续是 GG-Net GmbH / AcerSonderposten.de 的 Acer Predator Orion 3000-665 DG.E4UEG.003 refurbished：i5-14400F + RTX5070 12GB + 16GB + 1TB + 850W + Win11 Home，€1,159 + Versand，✅ 很值 / 稀缺度4。精确SKU新机可见低位约€1,199，因此严格折扣约3.3%；它赢在主预算内的绝对GPU/欧元而非巨大翻新折扣。最佳非同商家挑战者继续 Cyberport直售 Hyrican GAMEMAX Infinity Mini BK 7796 €1,259：5700X + RTX5060Ti16 + 16GB + 1TB + Win11 Home，400W、2 DIMM/max64GB、1GbE/Wi-Fi5。CSL鲜活类目仍€1,399，不追涨。今天vs昨日主线持平；过去7日改善后低位横盘；30日样本仍不足。固定HP Z2 hardware reference继续严格排除价格统计。',
+                  'rating': '✅ 很值',
+                  'path': 'reports/2026-09-23.md',
+                  'url': 'https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-23.md'
+              })
+          obj['updated_at'] = '2026-09-23T22:00:00+02:00'
+          index_path.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+      - name: Commit and push
+        shell: bash
+        run: |
+          if git diff --quiet -- data/price_history.csv reports/index.json; then
+            echo 'No changes to commit.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/price_history.csv reports/index.json
+          git commit -m 'data: append 2026-09-22 and 2026-09-23 desktop history'
+          git push
