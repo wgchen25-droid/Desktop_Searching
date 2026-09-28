@@ -1,6 +1,22 @@
 {
-  "updated_at": "2026-09-23T22:00:00+02:00",
+  "updated_at": "2026-09-28T21:58:00+02:00",
   "reports": [
+    {
+      "date": "2026-09-28",
+      "title": "Daily Angebot — Cyberport €1,199 returns after one-off RTX5070 B-Ware sells out",
+      "summary": "总冠军回到 Cyberport 直售 Hyrican PCK07796：5700X + RTX5060Ti16 + 16GB + 1TB + Win11 Home，€1,199，✅很值/稀缺度4。9/27单件RTX5070 B-Ware已Gone，因此今天较昨日略恶化；但PCK07796相对9/22–23的€1,259仍改善4.8%。最佳非同商家挑战者是kiebel via MediaMarkt同价KIEBEL Invader XS V。固定HP Z2 reference继续排除价格统计。",
+      "rating": "✅ 很值",
+      "path": "reports/2026-09-28.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-28.md"
+    },
+    {
+      "date": "2026-09-27",
+      "title": "Daily Angebot — Cyberport B-Ware RTX5070 drops into core budget",
+      "summary": "Cyberport B-Ware Hyrican PCK07804 €1,286.99 was the 9/27 winner; NEXOC R93-435 €1,445.99 was the different-seller challenger.",
+      "rating": "✅ 很值",
+      "path": "reports/2026-09-27.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-27.md"
+    },
     {
       "date": "2026-09-26",
       "title": "Daily Angebot — Cyberport €1,199 holds; 400W PSU is the key risk",
