@@ -1,4 +1,5 @@
 const DATA_URL = 'data/price_history.csv';
+const PENDING_DATA_URLS = ['data/price_history_2026-10-08.pending.csv'];
 const REFERENCE_DATA = 'data/reference_systems.csv';
 const REPORT_INDEX = 'reports/index.json';
 const REPO = 'https://github.com/wgchen25-droid/Desktop_Searching';
@@ -199,15 +200,19 @@ function renderReports(index) {
 
 async function init() {
   try {
-    const [csv, references, reports] = await Promise.all([
+    const [csv, references, reports, pendingCsv] = await Promise.all([
       fetch(DATA_URL, { cache: 'no-store' }).then((r) => {
         if (!r.ok) throw new Error('price_history.csv ' + r.status);
         return r.text();
       }),
       fetch(REFERENCE_DATA, { cache: 'no-store' }).then((r) => r.ok ? r.text() : '').catch(() => ''),
-      fetch(REPORT_INDEX, { cache: 'no-store' }).then((r) => r.ok ? r.json() : ({ reports: [] })).catch(() => ({ reports: [] }))
+      fetch(REPORT_INDEX, { cache: 'no-store' }).then((r) => r.ok ? r.json() : ({ reports: [] })).catch(() => ({ reports: [] })),
+      Promise.all(PENDING_DATA_URLS.map((url) => fetch(url, { cache: 'no-store' }).then((r) => r.ok ? r.text() : '').catch(() => ''))).then((parts) => parts.flatMap((part) => csvParse(part)))
     ]);
-    const rows = csvParse(csv).map(norm).filter((r) => r.date);
+    // The master CSV is canonical; merge outstanding daily writes until they can be consolidated.
+    const all = [...csvParse(csv), ...pendingCsv];
+    const unique = all.filter((r, i) => all.findIndex((x) => x.date === r.date && x.product_url === r.product_url && x.price_eur === r.price_eur) === i);
+    const rows = unique.map(norm).filter((r) => r.date);
     setMetrics(rows);
     renderReferences(csvParse(references));
     renderTable(rows);
