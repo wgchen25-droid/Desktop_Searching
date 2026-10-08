@@ -1,10 +1,21 @@
 {
-  "updated_at": "2026-10-04T22:00:00+02:00",
+  "updated_at": "2026-10-08T22:05:00+02:00",
   "reports": [
+    {
+      "date": "2026-10-08",
+      "title": "Daily Angebot — CSL 5541 €1,149, ALTERNATE challenger €1,049",
+      "summary": "🟡 总冠军CSL 5541 €1,149，异商家ALTERNATE i5-14400F/RTX5060 €1,049。MemoryPC当日涨€110至€1,279。历史7/30天相对最好机会恶化，Reference HP Z2不计价格。",
+      "rating": "🟡 普通好价",
+      "path": "reports/2026-10-08.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-08.md",
+      "seller": "CSL Computer GmbH",
+      "seller_domain": "csl-computer.com",
+      "product_url": "https://www.csl-computer.com/gaming-pcs/pc-csl-sprint-5541-ryzen-5.html"
+    },
     {
       "date": "2026-09-26",
       "title": "Daily Angebot — Cyberport €1,199 holds; 400W PSU is the key risk",
-      "summary": "总冠军继续为 Cyberport 直售 Hyrican PCK07796：5700X + RTX5060Ti16 + 16GB + 1TB + Win11 Home，€1,199，✅很值/稀缺度4。最佳非同商家挑战者为 kiebel via MediaMarkt 的 KIEBEL Invader XS V，同价但8GB VRAM、650W和明确ASUS A520M。NEXOC €1,445.99 是最完整的 RTX5070 stretch。",
+      "summary": "总冠军继续为 Cyberport 直售 Hyrican PCK07796：5700X + RTX5060Ti16 + 16GB + 1TB + Win11 Home，€1,199，✅很值/稀缺度4。最佳非同商家挑战者为 kiebel via MediaMarkt 的 KIEBEL Invader XS V，同价但8GB",
       "rating": "✅ 很值",
       "path": "reports/2026-09-26.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-26.md"
@@ -20,7 +31,7 @@
     {
       "date": "2026-09-23",
       "title": "Daily Angebot — Acer RTX 5070 refurb holds €1,159; Cyberport €1,259 remains the best new-machine challenger",
-      "summary": "今日总冠军继续是 GG-Net GmbH / AcerSonderposten.de 的 Acer Predator Orion 3000-665 DG.E4UEG.003 refurbished：i5-14400F + RTX5070 12GB + 16GB + 1TB + 850W + Win11 Home，€1,159 + Versand，✅ 很值 / 稀缺度4。精确SKU新机可见低位约€1,199，因此严格折扣约3.3%；它赢在主预算内的绝对GPU/欧元而非巨大翻新折扣。最佳非同商家挑战者继续 Cyberport直售 Hyrican GAMEMAX Infinity Mini BK 7796 €1,259：5700X + RTX5060Ti16 + 16GB + 1TB + Win11 Home，400W、2 DIMM/max64GB、1GbE/Wi-Fi5。CSL鲜活类目仍€1,399，不追涨。今天vs昨日主线持平；过去7日改善后低位横盘；30日样本仍不足。固定HP Z2 hardware reference继续严格排除价格统计。",
+      "summary": "今日总冠军继续是 GG-Net GmbH / AcerSonderposten.de 的 Acer Predator Orion 3000-665 DG.E4UEG.003 refurbished：i5-14400F + RTX5070 12GB + 16GB + 1TB + 850W + Win11 Home，€1,",
       "rating": "✅ 很值",
       "path": "reports/2026-09-23.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-23.md"
@@ -28,7 +39,7 @@
     {
       "date": "2026-09-22",
       "title": "Daily Angebot — Acer RTX 5070 refurb holds €1,159; Cyberport becomes the closest new-machine challenger",
-      "summary": "今日总冠军继续是 GG-Net GmbH / AcerSonderposten.de 的 Acer Predator Orion 3000-665 DG.E4UEG.003 refurbished：i5-14400F + RTX5070 12GB + 16GB + 1TB + 850W + Win11 Home，€1,159 + Versand，✅ 很值 / 稀缺度4。重新核对 exact-SKU 新机最低市场价后，New 当前可到约€1,199，因此 refurb 严格折扣仅约3.3%，其价值主要来自绝对GPU/欧元而非巨大翻新折扣。最佳非同商家挑战者改为 Cyberport 直售 Hyrican GAMEMAX Infinity Mini BK 7796 €1,259：5700X + RTX5060Ti16 + 16GB + 1TB + Win11 Home，全新直售且RAM最大64GB，但AM4/400W/Wi-Fi5限制五年升级。CSL Sprint 5753 今天升到€1,399并切换为GIGABYTE B840M DS3H WIFI6，降为长期平台观察项。今天vs昨日略恶化；过去7日改善后横盘在低位；30日样本仍不足。固定HP Z2 reference继续严格排除价格统计。",
+      "summary": "今日总冠军继续是 GG-Net GmbH / AcerSonderposten.de 的 Acer Predator Orion 3000-665 DG.E4UEG.003 refurbished：i5-14400F + RTX5070 12GB + 16GB + 1TB + 850W + Win11 Home，€1,",
       "rating": "✅ 很值",
       "path": "reports/2026-09-22.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-22.md"
@@ -36,7 +47,7 @@
     {
       "date": "2026-09-21",
       "title": "Daily Angebot — €1,159 Acer RTX 5070 refurb holds; current new market rises while CSL stays the long-term platform challenger",
-      "summary": "强制跨商家扫描后，今日总冠军继续是 GG-Net GmbH / AcerSonderposten.de 的 Acer Predator Orion 3000-665 DG.E4UEG.003 refurbished：i5-14400F + RTX5070 12GB + 16GB + 1TB + 850W + Win11 Home，€1,159 + Versand，✅ 很值 / 稀缺度6。当前同 SKU 新机市场约€1,249–1,269，明显高于仓库 New 历史最低€1,199，因此 refurb 相对当前新机约低8.7%。最佳非同商家挑战者继续 CSL Sprint 5753 €1,299：贵€140但AM5/B840/DDR5、标准mATX、4 DIMM、3 M.2、2.5GbE/Wi-Fi6E和2年保修显著增强五年升级性。今天主冠军持平、外围略恶化；7日综合获取价值改善；30日样本仍不足。固定 HP Z2 reference 继续严格排除价格统计。",
+      "summary": "强制跨商家扫描后，今日总冠军继续是 GG-Net GmbH / AcerSonderposten.de 的 Acer Predator Orion 3000-665 DG.E4UEG.003 refurbished：i5-14400F + RTX5070 12GB + 16GB + 1TB + 850W + Win11",
       "rating": "✅ 很值",
       "path": "reports/2026-09-21.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-21.md"
@@ -44,7 +55,7 @@
     {
       "date": "2026-09-20",
       "title": "Daily Angebot — €1,159 Acer RTX 5070 refurb holds; CSL €1,299 remains the five-year platform challenger",
-      "summary": "强制跨商家扫描后，今日总冠军继续是 GG-Net GmbH / AcerSonderposten.de 的 Acer Predator Orion 3000-665 DG.E4UEG.003 refurbished：i5-14400F + RTX5070 12GB + 16GB + 1TB + Win11 Home，€1,159 + Versand，✅ 很值 / 值得出手 / 稀缺度6。AcerSonderposten 当前至少列出两台同 SKU €1,159，因此不是单台神价；精确新机当日市场约€1,199–€1,269，€1,245 作为合理参考，refurb 约低6.9%。最佳非同商家挑战者继续 CSL Sprint 5753 €1,299：贵€140、GPU降到RTX5060Ti16，但AM5/B840/DDR5、标准mATX、4 DIMM、3 M.2、2.5GbE/Wi-Fi6E和2年保修带来明显更强的五年升级性。今天vs昨持平，7日综合获取价值改善，30日样本不足；固定 HP Z2 hardware reference 继续排除价格统计。",
+      "summary": "强制跨商家扫描后，今日总冠军继续是 GG-Net GmbH / AcerSonderposten.de 的 Acer Predator Orion 3000-665 DG.E4UEG.003 refurbished：i5-14400F + RTX5070 12GB + 16GB + 1TB + Win11 Home，€",
       "rating": "✅ 很值",
       "path": "reports/2026-09-20.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-20.md"
@@ -52,7 +63,7 @@
     {
       "date": "2026-09-19",
       "title": "Daily Angebot — €1,159 Acer RTX 5070 refurb beats the core-budget field; CSL €1,299 remains the long-term platform challenger",
-      "summary": "强制跨商家重新扫描后，今日总冠军改为 GG-Net GmbH / AcerSonderposten.de 的 Acer Predator Orion 3000-665 DG.E4UEG.003 refurbished：i5-14400F + RTX5070 12GB + 16GB + 1TB + Win11 Home，€1,159 + Versand，✅ 很值 / 值得出手 / 稀缺度7。精确新机同 SKU 当前约€1,269，而仓库新机历史最低€1,199，因此今天是新的 refurb 获取成本低点但不是无条件神价。最佳非同商家挑战者为 CSL Sprint 5753 €1,299：RTX5060Ti16 + AM5/B840/DDR5，贵€140但标准mATX、4 DIMM、3 M.2、2.5GbE/Wi-Fi6E和2年保修使五年升级明显更强。7日综合获取价值改善；新机-only Acer价格较历史低点恶化；30日样本仍不足。",
+      "summary": "强制跨商家重新扫描后，今日总冠军改为 GG-Net GmbH / AcerSonderposten.de 的 Acer Predator Orion 3000-665 DG.E4UEG.003 refurbished：i5-14400F + RTX5070 12GB + 16GB + 1TB + Win11 Home，",
       "rating": "✅ 很值",
       "path": "reports/2026-09-19.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-19.md"
@@ -60,7 +71,7 @@
     {
       "date": "2026-09-18",
       "title": "Daily Angebot — CSL €1,299 wins after rejecting GameMachines variant mismatch; Cyberport Hyrican challenges at €1,259",
-      "summary": "今天先纠错：2026-09-17 的 GameMachines €999 / €1,089 RTX5060Ti16 记录被 Amazon 原始 ASIN/变体核验推翻，价格比较站发生配置错配，相关历史低价与推荐已撤销。重新广泛扫描后，今日总冠军为 CSL Sprint 5753 €1,299（8700F + RTX5060Ti16 + AM5/B840），✅ 很值 / 稀缺度1；最佳非同商家挑战者为 Cyberport 直售 Hyrican GAMEMAX Infinity Mini BK 7796 €1,259（5700X + RTX5060Ti16 + Win11 Home），便宜€40但 AM4/DDR4/400W 的五年升级性明显更弱。7日有效趋势小幅改善；30日样本仍不足。",
+      "summary": "今天先纠错：2026-09-17 的 GameMachines €999 / €1,089 RTX5060Ti16 记录被 Amazon 原始 ASIN/变体核验推翻，价格比较站发生配置错配，相关历史低价与推荐已撤销。重新广泛扫描后，今日总冠军为 CSL Sprint 5753 €1,299（8700F + RTX50",
       "rating": "✅ 很值",
       "path": "reports/2026-09-18.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-18.md"
@@ -68,7 +79,7 @@
     {
       "date": "2026-09-17",
       "title": "CORRECTED — GameMachines €999 RTX5060Ti16 claim invalidated by Amazon variant verification",
-      "summary": "2026-09-18 纠错：初版报告把 Idealo 的 GameMachines Amazon 变体错误映射为 RTX5060Ti 16GB。原始 Amazon ASIN 核验显示 B0FM1767QT 实际对应 RX9060，B0F9VT7Z4M 也对应 RX9060；可核验 RTX5060Ti Amazon 变体为8GB。因此 €999/€1089 的 RTX5060Ti16 记录与历史最低价结论撤销，纠错后 9/17 可核验综合冠军为 CSL Sprint 5753 €1,299。",
+      "summary": "2026-09-18 纠错：初版报告把 Idealo 的 GameMachines Amazon 变体错误映射为 RTX5060Ti 16GB。原始 Amazon ASIN 核验显示 B0FM1767QT 实际对应 RX9060，B0F9VT7Z4M 也对应 RX9060；可核验 RTX5060Ti Amazon 变体",
       "rating": "✅ 很值",
       "path": "reports/2026-09-17.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-17.md"
@@ -76,7 +87,7 @@
     {
       "date": "2026-09-16",
       "title": "Daily Angebot — CSL €1,299 holds; Cyberport adds direct-retail 16GB-VRAM comparator at €1,389",
-      "summary": "总冠军仍是 CSL Sprint 5753 €1,299：AM5 + RTX5060Ti 16GB，✅ 很值但稀缺度 1/10。最佳非同商家挑战者为 kiebel/MediaMarkt KIEBEL €1,289。今天新增 Cyberport 直售 Hyrican Rockstar 8002 €1,389（RTX5060Ti 16GB + Win11），售后更省心但 A520/AM4/400W/16GB 使五年升级明显弱于 CSL；GameMachines €1,079 预算异常价继续持平。7日小幅改善后横盘，30日样本仍不足。",
+      "summary": "总冠军仍是 CSL Sprint 5753 €1,299：AM5 + RTX5060Ti 16GB，✅ 很值但稀缺度 1/10。最佳非同商家挑战者为 kiebel/MediaMarkt KIEBEL €1,289。今天新增 Cyberport 直售 Hyrican Rockstar 8002 €1,389（RTX506",
       "rating": "✅ 很值",
       "path": "reports/2026-09-16.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-16.md"
@@ -84,7 +95,7 @@
     {
       "date": "2026-09-15",
       "title": "Daily Angebot — CSL €1,299 holds; GameMachines €1,079 creates a new budget turnkey low",
-      "summary": "总冠军仍是 CSL Sprint 5753 €1,299：AM5 + RTX5060Ti 16GB，✅ 很值但稀缺度 1/10。最佳非同商家同预算挑战者 KIEBEL €1,289。新异常价 GameMachines via MediaMarkt €1,079（5700X + RTX5060Ti 8GB + Win11 Pro），较页面30日低价€1,299低约16.9%，但 AM4/8GB VRAM/未披露主板PSU使其更适合预算终点型用途。7日小幅改善；30日样本不足。",
+      "summary": "总冠军仍是 CSL Sprint 5753 €1,299：AM5 + RTX5060Ti 16GB，✅ 很值但稀缺度 1/10。最佳非同商家同预算挑战者 KIEBEL €1,289。新异常价 GameMachines via MediaMarkt €1,079（5700X + RTX5060Ti 8GB + Win11",
       "rating": "✅ 很值",
       "path": "reports/2026-09-15.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-15.md"
@@ -92,7 +103,7 @@
     {
       "date": "2026-09-14",
       "title": "Daily Angebot — CSL €1,299 holds; KIEBEL €1,289 is the closest non-CSL challenger",
-      "summary": "强制跨商家扫描后，今日总冠军仍为 CSL Sprint 5753：8700F + RTX5060Ti 16GB + 16GB DDR5 + B840M/Wi-Fi 6E，€1,299，✅ 很值但长期持平、稀缺度 1/10。最佳非同商家挑战者为更接近同预算的 kiebel / MediaMarkt KIEBEL Invader XS V：5700X + RTX5060Ti 8GB + 32GB + Win11，€1,289；开箱更完整但 AM4/A520 与 8GB VRAM 弱化五年工程价值。NEXOC 32GB+RTX5070 仍 €1,445.99，Acer RTX5070 预算异常价仍 €1,199。过去7天整体持平在改善后的低位；30天样本仍不足。",
+      "summary": "强制跨商家扫描后，今日总冠军仍为 CSL Sprint 5753：8700F + RTX5060Ti 16GB + 16GB DDR5 + B840M/Wi-Fi 6E，€1,299，✅ 很值但长期持平、稀缺度 1/10。最佳非同商家挑战者为更接近同预算的 kiebel / MediaMarkt KIEBEL Inva",
       "rating": "✅ 很值",
       "path": "reports/2026-09-14.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-14.md"
@@ -100,7 +111,7 @@
     {
       "date": "2026-09-13",
       "title": "Daily Angebot — CSL €1,299 holds; KIEBEL 32GB/Win11 drops to €1,289",
-      "summary": "今日总冠军仍为 CSL Sprint 5753：Ryzen 7 8700F + RTX 5060 Ti 16GB + 16GB DDR5 + B840M/Wi-Fi 6E，€1,299，✅ 很值但长期持平、稀缺度 1/10。最佳非同商家性能挑战者仍是 NEXOC/CAPTIVA R93-435：5700X + RTX5070 + 32GB + 850W + Windows/Wi-Fi，€1,445.99。今天的新发现是 kiebel 经 MediaMarkt 销售的 KIEBEL Invader XS V：5700X + RTX5060Ti 8GB + 32GB + 1TB + Win11，€1,289，低于页面30日低价约14%；同预算开箱更完整，但 AM4/A520 和 8GB VRAM 使五年升级与工程 GPU 长期价值不如 CSL。7日趋势持平在改善后的低位；30日样本仍不足。",
+      "summary": "今日总冠军仍为 CSL Sprint 5753：Ryzen 7 8700F + RTX 5060 Ti 16GB + 16GB DDR5 + B840M/Wi-Fi 6E，€1,299，✅ 很值但长期持平、稀缺度 1/10。最佳非同商家性能挑战者仍是 NEXOC/CAPTIVA R93-435：5700X + RTX5",
       "rating": "✅ 很值",
       "path": "reports/2026-09-13.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-13.md"
@@ -108,7 +119,7 @@
     {
       "date": "2026-09-12",
       "title": "Daily Angebot — CSL €1,299 holds; NEXOC RTX5070 challenger stays at €1,445.99; NBB price confirmed Campus-only",
-      "summary": "今日总冠军仍为 CSL Sprint 5753：Ryzen 7 8700F + RTX 5060 Ti 16GB + 16GB DDR5 + B840M/Wi-Fi 6E，€1,299，✅ 很值但已长期持平，稀缺度降至 1/10。最佳非同商家挑战者改为普遍可买的 NEXOC/CAPTIVA R93-435：5700X + RTX5070 + 32GB + 850W + Windows/Wi-Fi，€1,445.99。NBB Captiva I10-2574 的 €1,299 今天确认是 Campus 会员专享价，因此降为条件型 CPU workstation。7 日整体为改善后持平在低位；30 日样本仍不足。",
+      "summary": "今日总冠军仍为 CSL Sprint 5753：Ryzen 7 8700F + RTX 5060 Ti 16GB + 16GB DDR5 + B840M/Wi-Fi 6E，€1,299，✅ 很值但已长期持平，稀缺度降至 1/10。最佳非同商家挑战者改为普遍可买的 NEXOC/CAPTIVA R93-435：5700X ",
       "rating": "✅ 很值",
       "path": "reports/2026-09-12.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-12.md"
@@ -116,7 +127,7 @@
     {
       "date": "2026-09-11",
       "title": "Daily Angebot — CSL €1,299 holds; NBB 270K Plus/32GB workstation emerges at the same price",
-      "summary": "今日总冠军仍为 CSL Sprint 5753：Ryzen 7 8700F + RTX 5060 Ti 16GB + 16GB DDR5 + B840M/Wi-Fi 6E，€1,299，✅ 很值但不是神价。强制广泛扫描的新发现是 notebooksbilliger.de 直售 Captiva Workstation I10-2574：Core Ultra 7 270K Plus + 32GB DDR5 + B860M + Win11 Pro，亦为 €1,299，成为最佳非同商家 CPU/远程 workstation 挑战者；同型号第二卖家也是 €1,299，说明这是当前真实市场价而非 UVP 幻觉。GPU 完整型 Captiva R93-435 仍 €1,445.99；7 日整体改善后持平在低位，30 日样本仍不足。",
+      "summary": "今日总冠军仍为 CSL Sprint 5753：Ryzen 7 8700F + RTX 5060 Ti 16GB + 16GB DDR5 + B840M/Wi-Fi 6E，€1,299，✅ 很值但不是神价。强制广泛扫描的新发现是 notebooksbilliger.de 直售 Captiva Workstation I",
       "rating": "✅ 很值",
       "path": "reports/2026-09-11.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-11.md"
@@ -124,7 +135,7 @@
     {
       "date": "2026-09-10",
       "title": "Daily Angebot — €1,299 AM5/16GB CUDA winner; NBB 9900X/64GB workstation at €1,499",
-      "summary": "今日总冠军为 CSL Sprint 5753：Ryzen 7 8700F + RTX 5060 Ti 16GB + 16GB DDR5 + ASUS B840M-A WIFI + 1TB，€1,299，✅ 很值但不是神价。强制广泛扫描补抓到 notebooksbilliger.de 直售 Captiva Workstation R99-514：Ryzen 9 9900X + 64GB DDR5 + B650M + Win11 Pro，€1,499，成为最佳非同商家 CPU/RAM workstation 挑战者；它无 NVIDIA 独显且 450W PSU 限制未来高端 GPU。今日真正的新历史低价是 CSL Sprint 5787 从 €1,199 降至 €1,099。7日主预算价值小幅改善，30日样本仍不足。",
+      "summary": "今日总冠军为 CSL Sprint 5753：Ryzen 7 8700F + RTX 5060 Ti 16GB + 16GB DDR5 + ASUS B840M-A WIFI + 1TB，€1,299，✅ 很值但不是神价。强制广泛扫描补抓到 notebooksbilliger.de 直售 Captiva Worksta",
       "rating": "✅ 很值",
       "path": "reports/2026-09-10.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-10.md"
@@ -132,7 +143,7 @@
     {
       "date": "2026-09-09",
       "title": "Daily Angebot — Captiva holds €1,445.99 low; broad scan finds no better balanced replacement",
-      "summary": "强制跨商家复核后，NEXOC/CAPTIVA 5700X + RTX5070 + 32GB 继续 €1,445.99，连续第三天守住当前 32GB+RTX5070 历史低位并成为今日 ✅ 很值总冠军；最佳非同商家挑战者仍是 CSL Speed 4574 €1,399。Acer 精确 SKU 仍为 €1,199 的核心预算 GPU 异常价。新增 SYSTEMTREFF/MediaMarkt €1,614.90 作为标准件近上限对照；7 日趋势为改善后持平在低位，30 日数据仍不足。",
+      "summary": "强制跨商家复核后，NEXOC/CAPTIVA 5700X + RTX5070 + 32GB 继续 €1,445.99，连续第三天守住当前 32GB+RTX5070 历史低位并成为今日 ✅ 很值总冠军；最佳非同商家挑战者仍是 CSL Speed 4574 €1,399。Acer 精确 SKU 仍为 €1,199 的核心预",
       "rating": "✅ 很值",
       "path": "reports/2026-09-09.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-09.md"
@@ -140,7 +151,7 @@
     {
       "date": "2026-09-08",
       "title": "Daily Angebot — Captiva holds the 32GB+RTX5070 low; HP OMEN jumps to €1,929",
-      "summary": "强制跨商家复核后，NEXOC/CAPTIVA 5700X + RTX5070 + 32GB 继续 €1,445.99，守住当前 32GB+RTX5070 历史低位并成为今日 ✅ 很值总冠军；最佳非同商家挑战者是 CSL Speed 4574 €1,399；Acer 精确 SKU 仍为 €1,199 的核心预算 GPU 异常价。HP OMEN 同一 SKU 从昨日 €1,599 涨到 €1,929，当前品牌整机备选宽度略恶化。7 日趋势持平在改善后的低位，30 日数据仍不足。",
+      "summary": "强制跨商家复核后，NEXOC/CAPTIVA 5700X + RTX5070 + 32GB 继续 €1,445.99，守住当前 32GB+RTX5070 历史低位并成为今日 ✅ 很值总冠军；最佳非同商家挑战者是 CSL Speed 4574 €1,399；Acer 精确 SKU 仍为 €1,199 的核心预算 GPU ",
       "rating": "✅ 很值",
       "path": "reports/2026-09-08.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-08.md"
@@ -148,7 +159,7 @@
     {
       "date": "2026-09-07",
       "title": "Daily Angebot — HP holds; Captiva sets new 32GB+RTX5070 low, Acer reaches €1,199",
-      "summary": "强制跨商家复核后，Coolblue HP OMEN 35L（8700F + RTX5070 + 32GB/B650）€1,599 仍为 ✅ 很值综合冠军；最佳非同商家挑战者改为 NEXOC/Captiva 5700X + RTX5070 + 32GB，€1,445.99，刷新 32GB+RTX5070 历史低位。Acer 精确 SKU 经 nordiva-shop0/eBay 降至 €1,199，但 OEM/售后折衷仅条件型推荐。已移除无法复核的 MIFCOM 草稿记录；7日趋势改善，30日数据仍不足。",
+      "summary": "强制跨商家复核后，Coolblue HP OMEN 35L（8700F + RTX5070 + 32GB/B650）€1,599 仍为 ✅ 很值综合冠军；最佳非同商家挑战者改为 NEXOC/Captiva 5700X + RTX5070 + 32GB，€1,445.99，刷新 32GB+RTX5070 历史低位。Ace",
       "rating": "✅ 很值",
       "path": "reports/2026-09-07.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-07.md"
@@ -156,7 +167,7 @@
     {
       "date": "2026-09-06",
       "title": "Daily Angebot — HP holds; cheaper RTX 5070 options have platform/availability caveats",
-      "summary": "强制跨商家扫描没有出现新的全能历史低价：Coolblue HP OMEN 35L 8700F + RTX 5070 + 32GB 仍 €1,599，为 ✅ 很值总冠军；最佳非同商家挑战者 CSL Speed 4574 仍 €1,399；核心预算 Acer RTX 5070 仍 €1,249。x-kom 历史 €1,467.62 机型直达页当前显示不可用，因此不计作今日可买；7 日可用性相对该历史低点略恶化，30 日数据仍不足。",
+      "summary": "强制跨商家扫描没有出现新的全能历史低价：Coolblue HP OMEN 35L 8700F + RTX 5070 + 32GB 仍 €1,599，为 ✅ 很值总冠军；最佳非同商家挑战者 CSL Speed 4574 仍 €1,399；核心预算 Acer RTX 5070 仍 €1,249。x-kom 历史 €1,46",
       "rating": "✅ 很值",
       "path": "reports/2026-09-06.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-06.md"
@@ -164,7 +175,7 @@
     {
       "date": "2026-09-05",
       "title": "Daily Angebot — broad scan holds; HP OMEN €1,599 remains balanced winner",
-      "summary": "今日强制跨商家扫描没有发现新的全能新低：Coolblue HP OMEN 35L 8700F + RTX 5070 + 32GB + B650 仍为 €1,599，评级降为 ✅ 很值 / 持平；最佳非同商家挑战者 x-kom/Kaufland SMX 7600 + RTX 5070 + 32GB 仍为 €1,467.62，页面显示该价仅剩 1 台；7 日可比 32GB+RTX5070 低位较 8/30 下降约14.7%，30日窗口仍不足。",
+      "summary": "今日强制跨商家扫描没有发现新的全能新低：Coolblue HP OMEN 35L 8700F + RTX 5070 + 32GB + B650 仍为 €1,599，评级降为 ✅ 很值 / 持平；最佳非同商家挑战者 x-kom/Kaufland SMX 7600 + RTX 5070 + 32GB 仍为 €1,467.6",
       "rating": "✅ 很值",
       "path": "reports/2026-09-05.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-05.md"
@@ -172,7 +183,7 @@
     {
       "date": "2026-09-04",
       "title": "Daily Angebot — broad scan finds 32GB RTX 5070 deals beyond CSL",
-      "summary": "强制跨商家扫描后，今日总冠军为 Coolblue 的 HP OMEN 35L：Ryzen 7 8700F + RTX 5070 + 32GB DDR5 + 1TB + B650 + Windows 11，€1,599，🔥 错过可惜；最佳非同商家挑战者为 x-kom 经 Kaufland 的 SMX 7600 + RTX 5070 + 32GB，€1,467.62；另发现 Hurricane24/Kaufland 的 Acer RTX 5070 整机 €1,249 作为预算内 GPU 异常价。",
+      "summary": "强制跨商家扫描后，今日总冠军为 Coolblue 的 HP OMEN 35L：Ryzen 7 8700F + RTX 5070 + 32GB DDR5 + 1TB + B650 + Windows 11，€1,599，🔥 错过可惜；最佳非同商家挑战者为 x-kom 经 Kaufland 的 SMX 7600 + RT",
       "rating": "🔥 错过可惜",
       "path": "reports/2026-09-04.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-04.md"
@@ -180,7 +191,7 @@
     {
       "date": "2026-09-03",
       "title": "Daily Angebot — balanced RX 9070 GRE / 32GB AM5 at €1,499",
-      "summary": "今日新 Angebot：CSL Sprint 5789，Ryzen 7 8700F + Radeon RX 9070 GRE 12GB + 32GB DDR5 + 1TB + B840/Wi-Fi 6E，€1,499，✅ 很值；最终刷新时同级 SYSTEMTREFF / MediaMarkt 为 €1,799.90。CUDA 场景仍优先 €1,399 的 RTX 5070 CSL Speed 4574。",
+      "summary": "今日新 Angebot：CSL Sprint 5789，Ryzen 7 8700F + Radeon RX 9070 GRE 12GB + 32GB DDR5 + 1TB + B840/Wi-Fi 6E，€1,499，✅ 很值；最终刷新时同级 SYSTEMTREFF / MediaMarkt 为 €1,799.90。C",
       "rating": "✅ 很值",
       "path": "reports/2026-09-03.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-03.md"
@@ -188,7 +199,7 @@
     {
       "date": "2026-09-02",
       "title": "Daily Angebot — RTX 5070 €1,399 + new Ryzen 9 9900X/B850 option",
-      "summary": "今日主推仍为 CSL Speed 4574：Core Ultra 5 225F + RTX 5070 12GB，€1,399，🔥 错过可惜；价格连续第三次观察持平。新增 CSL Sprint 5928：Ryzen 9 9900X + B850 + RX 9060 8GB，€1,349，成为 CPU-heavy 工程与五年升级方向的新价值锚点。",
+      "summary": "今日主推仍为 CSL Speed 4574：Core Ultra 5 225F + RTX 5070 12GB，€1,399，🔥 错过可惜；价格连续第三次观察持平。新增 CSL Sprint 5928：Ryzen 9 9900X + B850 + RX 9060 8GB，€1,349，成为 CPU-heavy 工程与",
       "rating": "🔥 错过可惜",
       "path": "reports/2026-09-02.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-02.md"
@@ -196,7 +207,7 @@
     {
       "date": "2026-09-01",
       "title": "Daily Angebot — RTX 5070 €1,399 + HP Z2 Reference",
-      "summary": "今日 Angebot：CSL Speed 4574，Core Ultra 5 225F + RTX 5070 12GB + 16GB DDR5 + 1TB，€1,399；🔥 错过可惜。价格与昨日历史最低持平，并新增相对固定 HP Z2 Tower G9 i7-12700K / 32GB / UHD 770 的硬件升级与退步分析。",
+      "summary": "今日 Angebot：CSL Speed 4574，Core Ultra 5 225F + RTX 5070 12GB + 16GB DDR5 + 1TB，€1,399；🔥 错过可惜。价格与昨日历史最低持平，并新增相对固定 HP Z2 Tower G9 i7-12700K / 32GB / UHD 770 的硬件升级",
       "rating": "🔥 错过可惜",
       "path": "reports/2026-09-01.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-09-01.md"
