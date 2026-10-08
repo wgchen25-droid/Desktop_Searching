@@ -1,5 +1,5 @@
 const DATA_URL = 'data/price_history.csv';
-const PENDING_DATA_URLS = ['data/price_history_2026-10-08.pending.csv'];
+const PENDING_DATA_URLS = ['https://raw.githubusercontent.com/wgchen25-droid/Desktop_Searching/main/data/price_history_2026-10-08.pending.csv'];
 const REFERENCE_DATA = 'data/reference_systems.csv';
 const REPORT_INDEX = 'reports/index.json';
 const REPO = 'https://github.com/wgchen25-droid/Desktop_Searching';
