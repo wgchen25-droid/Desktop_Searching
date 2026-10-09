@@ -1,6 +1,17 @@
 {
-  "updated_at": "2026-10-08T22:05:00+02:00",
+  "updated_at": "2026-10-09T22:03:25+02:00",
   "reports": [
+    {
+      "date": "2026-10-09",
+      "title": "Daily Angebot — x-kom M1A €1,069 beats CSL €1,149",
+      "summary": "✅ x-kom i5-14400F/RTX5060Ti8/16GB/1TB €1069；最佳异商家CSL Sprint5541 €1149；对比7天30天GPU峰值未刷新。Reference HP Z2价格为空。",
+      "rating": "✅ 很值",
+      "path": "reports/2026-10-09.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-09.md",
+      "seller": "x-kom.de",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001542351-smx-battlestation-m1a-i5-14400f-16gb-1tb-rtx5060ti"
+    },
     {
       "date": "2026-10-08",
       "title": "Daily Angebot — CSL 5541 €1,149, ALTERNATE challenger €1,049",
