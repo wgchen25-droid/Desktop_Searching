@@ -1,6 +1,28 @@
 {
-  "updated_at": "2026-10-09T22:03:25+02:00",
+  "updated_at": "2026-10-13T21:57:06+02:00",
   "reports": [
+    {
+      "date": "2026-10-13",
+      "title": "Daily Angebot — CSL 5758 €1,199 confirmed; x-kom 32GB challenger cached €1,199.99",
+      "summary": "🟡 CSL Ryzen5700/RTX5060Ti8/16GB/B550M/700W at €1199; best alternate x-kom i5-14400F/5060Ti8/32GB/W11 Home €1199.99 recently cached only. No 7/30-day best price refresh. Reference HP Z2 kept out of price history.",
+      "rating": "🟡 普通好价",
+      "path": "reports/2026-10-13.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-13.md",
+      "seller": "CSL Computer GmbH",
+      "seller_domain": "csl-computer.com",
+      "product_url": "https://www.csl-computer.com/gaming-pcs/pc-csl-sprint-5758-ryzen-7-9678.html"
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Daily Angebot — x-kom M3A €1,049; CSL 5758 challenger",
+      "summary": "x-kom M3A 16GB RTX5060Ti8 €1049, CSL Sprint5758 €1199; historic good budget entry but not new daily reduction; Reference separate.",
+      "rating": "✅ 很值",
+      "path": "reports/2026-10-12.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-12.md",
+      "seller": "x-kom.de direct",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001540870-smx-battlestation-m3a-i5-14000f-16gb-1tb-rtx5060ti"
+    },
     {
       "date": "2026-10-09",
       "title": "Daily Angebot — x-kom M1A €1,069 beats CSL €1,149",
