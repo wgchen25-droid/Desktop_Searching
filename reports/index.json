@@ -1,6 +1,17 @@
 {
-  "updated_at": "2026-10-13T21:57:06+02:00",
+  "updated_at": "2026-10-15T22:25:15+02:00",
   "reports": [
+    {
+      "date": "2026-10-15",
+      "title": "Daily Desktop Angebot: x-kom M3A €1,199.99 (CSL 5758 challenger)",
+      "summary": "🟡 普通好价：x-kom M3A i5-14400F / RTX5060Ti8 / 32GB / 1TB / Win11 Home €1,199.99 vs CSL 5758 €1,199+Versand; 7/30-day best not refreshed; Reference excluded.",
+      "rating": "🟡 普通好价",
+      "path": "reports/2026-10-15.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-15.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001540865-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti-w11x"
+    },
     {
       "date": "2026-10-13",
       "title": "Daily Angebot — CSL 5758 €1,199 confirmed; x-kom 32GB challenger cached €1,199.99",
