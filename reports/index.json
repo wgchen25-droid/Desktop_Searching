@@ -1,6 +1,28 @@
 {
-  "updated_at": "2026-10-13T21:57:06+02:00",
+  "updated_at": "2026-10-16T22:15:00+02:00",
   "reports": [
+    {
+      "date": "2026-10-16",
+      "title": "Daily Angebot — x-kom M3A €1199.99; CSL5758 challenger",
+      "summary": "x-kom 32GB RTX5060Ti8 €1199.99, best non-x-kom CSL Sprint5758; Reference HP Z2 remains outside market price history.",
+      "rating": "🟡 普通好价",
+      "path": "reports/2026-10-16.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-16.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001540865-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti-w11x"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Daily Angebot — x-kom M3A €1199.99; CSL5758 challenger",
+      "summary": "x-kom 32GB RTX5060Ti8 €1199.99, best non-x-kom CSL Sprint5758; Reference HP Z2 remains outside market price history.",
+      "rating": "🟡 普通好价",
+      "path": "reports/2026-10-15.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-15.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001540865-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti-w11x"
+    },
     {
       "date": "2026-10-13",
       "title": "Daily Angebot — CSL 5758 €1,199 confirmed; x-kom 32GB challenger cached €1,199.99",
