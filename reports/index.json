@@ -1,6 +1,72 @@
 {
-  "updated_at": "2026-10-16T22:15:00+02:00",
+  "updated_at": "2026-10-22T22:25:00+02:00",
   "reports": [
+    {
+      "date": "2026-10-22",
+      "title": "Daily Angebot — x-kom M8A mesh €1049; SYSTEMTREFF challenger",
+      "summary": "✅ x-kom M8A €1049; SYSTEMTREFF Ed58 €1309.90 challenger; G3A/NEXOC out of stock; fixed HP Z2 outside price data.",
+      "rating": "✅ 很值",
+      "path": "reports/2026-10-22.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-22.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001520808-smx-battlestation-m8a-i5-14400f-32gb-1tb-rtx5060ti"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Daily Angebot — x-kom M8A mesh €1049",
+      "summary": "Daily Angebot: x-kom M8A mesh €1049; compare fixed HP Z2 separately from market.",
+      "rating": "✅ 很值",
+      "path": "reports/2026-10-21.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-21.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001520808-smx-battlestation-m8a-i5-14400f-32gb-1tb-rtx5060ti"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Daily Angebot — x-kom M8A mesh €1049",
+      "summary": "Daily Angebot: x-kom M8A mesh €1049; compare fixed HP Z2 separately from market.",
+      "rating": "✅ 很值",
+      "path": "reports/2026-10-20.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-20.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001520808-smx-battlestation-m8a-i5-14400f-32gb-1tb-rtx5060ti"
+    },
+    {
+      "date": "2026-10-19",
+      "title": "Daily Angebot — x-kom G3A €1049",
+      "summary": "Daily Angebot: x-kom G3A €1049; compare fixed HP Z2 separately from market.",
+      "rating": "✅ 很值",
+      "path": "reports/2026-10-19.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-19.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001520824-smx-battlestation-g3a-i5-14400f-32gb-1tb-rtx5060ti"
+    },
+    {
+      "date": "2026-10-18",
+      "title": "Daily Angebot — x-kom M3A €1199.99, CSL €949",
+      "summary": "Daily Angebot: x-kom M3A €1199.99, CSL €949; compare fixed HP Z2 separately from market.",
+      "rating": "🟡 普通好价",
+      "path": "reports/2026-10-18.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-18.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001540865-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti-w11x"
+    },
+    {
+      "date": "2026-10-17",
+      "title": "Daily Angebot — x-kom M3A €1199.99",
+      "summary": "Daily Angebot: x-kom M3A €1199.99; compare fixed HP Z2 separately from market.",
+      "rating": "🟡 普通好价",
+      "path": "reports/2026-10-17.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-17.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001540865-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti-w11x"
+    },
     {
       "date": "2026-10-16",
       "title": "Daily Angebot — x-kom M3A €1199.99; CSL5758 challenger",
