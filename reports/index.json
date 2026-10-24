@@ -1,6 +1,17 @@
 {
-  "updated_at": "2026-10-23T21:55:00+02:00",
+  "updated_at": "2026-10-24T22:00:00+02:00",
   "reports": [
+    {
+      "date": "2026-10-24",
+      "title": "Daily Angebot — x-kom M8A €1049 stable, CSL5758 challenger",
+      "summary": "✅ x-kom M8A €1049 (32GB RTX5060Ti8 1TB mesh, Germany delivery included); CSL5758 €1249+ship; no 🔥. HP Z2 fixed reference excluded from prices.",
+      "rating": "✅ 很值",
+      "path": "reports/2026-10-24.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-24.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001520808-smx-battlestation-m8a-i5-14400f-32gb-1tb-rtx5060ti"
+    },
     {
       "date": "2026-10-23",
       "title": "Daily Angebot — x-kom M8A €1049 still best, CSL 5758 challenger",
