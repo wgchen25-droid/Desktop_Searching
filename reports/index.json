@@ -1,6 +1,17 @@
 {
-  "updated_at": "2026-10-25T22:00:00+01:00",
+  "updated_at": "2026-10-26T22:01:29+01:00",
   "reports": [
+    {
+      "date": "2026-10-26",
+      "title": "Daily Angebot — x-kom M8A EUR1049 confirmed; SYSTEMTREFF Ed54 EUR1299.90 (+25)",
+      "summary": "✅ x-kom M8A official SKU €1049 in stock and free DE shipping; IT-Systemtreff Ed54 €1299.90+shipping, up €25. 9 live source-linked candidate records. Fixed HP Z2 Reference not in market CSV.",
+      "rating": "✅ 很值",
+      "path": "reports/2026-10-26.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-26.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001520808-smx-battlestation-m8a-i5-14400f-32gb-1tb-rtx5060ti"
+    },
     {
       "date": "2026-10-25",
       "title": "Daily Angebot — x-kom M8A €1049 latest catalogue; SYSTEMTREFF Ed54 verified challenger",
