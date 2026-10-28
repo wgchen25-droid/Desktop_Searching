@@ -1,6 +1,17 @@
 {
-  "updated_at": "2026-10-27T21:12:16.429Z",
+  "updated_at": "2026-10-28T21:05:00Z",
   "reports": [
+    {
+      "date": "2026-10-28",
+      "title": "Daily Angebot — M8A €1049 out of stock; x-kom M3A €1159 winner",
+      "summary": "✅ M3A €1159 in stock DE free; CSL5758 €1249 plus shipping challenger; previously winning M8A €1049 out of stock, 7d buyable value worsens. 9 candidate records; HP Z2 hardware reference excluded.",
+      "rating": "✅ 很值",
+      "path": "reports/2026-10-28.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-28.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001540865-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti-w11x"
+    },
     {
       "date": "2026-10-27",
       "title": "Daily Angebot — x-kom M8A €1049 unchanged; SYSTEMTREFF Ed54 €1299.90 alternative",
