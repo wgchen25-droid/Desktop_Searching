@@ -1,6 +1,17 @@
 {
-  "updated_at": "2026-10-29T20:57:00Z",
+  "updated_at": "2026-10-30T20:55:00Z",
   "reports": [
+    {
+      "date": "2026-10-30",
+      "title": "Daily Angebot — x-kom M3A €1159 available; MediaMarkt SYSTEMTREFF €1284.90 (-€25); M8A unavailable",
+      "summary": "✅ x-kom M3A €1159 in stock DE free; challenger CSL Sprint5758 €1249+shipping. MediaMarkt SYSTEMTREFF 32GB WinPro €1284.90 (-€25) but 450W PSU; M8A €1049 unavailable; 13 source-linked offers, 450 total, fixed HP Z2 reference excluded.",
+      "rating": "✅ 很值",
+      "path": "reports/2026-10-30.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-30.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001540865-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti-w11x"
+    },
     {
       "date": "2026-10-29",
       "title": "Daily Angebot — x-kom M3A €1159 in stock; M8A €1049 unavailable; CSL5753 16GB rises to €1599",
