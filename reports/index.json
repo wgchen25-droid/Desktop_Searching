@@ -1,6 +1,17 @@
 {
-  "updated_at": "2026-10-30T20:55:00Z",
+  "updated_at": "2026-10-31T20:56:00Z",
   "reports": [
+    {
+      "date": "2026-10-31",
+      "title": "Daily Angebot — x-kom M3A €1159 available; Cyberport +€130 to €1429; M8A out of stock",
+      "summary": "✅ x-kom M3A €1159 in stock DE free; different seller IT-Systemtreff via MediaMarkt €1284.90 free; Cyberport R92-769 rises €1299→€1429; M8A €1049 unavailable. 12 offers; 462 market records; HP Z2 fixed reference excluded.",
+      "rating": "✅ 很值",
+      "path": "reports/2026-10-31.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-10-31.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001540865-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti-w11x"
+    },
     {
       "date": "2026-10-30",
       "title": "Daily Angebot — x-kom M3A €1159 available; MediaMarkt SYSTEMTREFF €1284.90 (-€25); M8A unavailable",
