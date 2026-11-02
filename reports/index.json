@@ -1,6 +1,17 @@
 {
-  "updated_at": "2026-11-01T21:06:37.939Z",
+  "updated_at": "2026-11-02T21:06:54.614Z",
   "reports": [
+    {
+      "date": "2026-11-02",
+      "title": "Daily Angebot — x-kom M3A €1159; SYSTEMTREFF Black November €1259.90; cross-seller MediaMarkt €1284.90",
+      "summary": "Champion x-kom M3A €1159 today on official category page (direct detail timed out; stock recheck). Challenger SYSTEMTREFF via MediaMarkt €1284.90; SYSTEMTREFF Ed54 €1259.90 and Ed58 €1289.90 Black November deals. 14 new offers, 491 total historical entries; HP Z2 fixed reference excluded.",
+      "rating": "✅ 很值",
+      "path": "reports/2026-11-02.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-11-02.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001540865-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti-w11x"
+    },
     {
       "date": "2026-11-01",
       "title": "Daily Angebot — x-kom M3A €1159; SYSTEMTREFF via MediaMarkt €1284.90; M8A unavailable",
