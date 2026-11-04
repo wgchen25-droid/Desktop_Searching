@@ -1,6 +1,17 @@
 {
-  "updated_at": "2026-11-03T21:00:00.000Z",
+  "updated_at": "2026-11-04T21:04:00.000Z",
   "reports": [
+    {
+      "date": "2026-11-04",
+      "title": "Daily Angebot — x-kom M3A €1159 stable; NBB Campus €1249 (-€150 conditional); Ed54 €1259.90",
+      "summary": "2026-11-04: x-kom M3A €1159 official in stock DE free; best non-x-kom SYSTEMTREFF Ed54 €1259.90+shipping ATX/B550/650W/WinPro; NBB Campus Hyrican €1249 restricted (-€150 vs Nov03); 16 source-linked offers, 522 market quotes, 7d 96 and 30d 312; HP Z2 fixed unpriced Reference excluded; no 🔥.",
+      "rating": "✅ 很值",
+      "path": "reports/2026-11-04.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-11-04.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001540865-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti-w11x"
+    },
     {
       "date": "2026-11-03",
       "title": "Daily Angebot — x-kom M3A €1159 available; Ed54 €1259.90; MemoryPC +€90, Dubaro +€100",
