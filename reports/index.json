@@ -1,6 +1,17 @@
 {
-  "updated_at": "2026-11-04T21:04:00.000Z",
+  "updated_at": "2026-11-05T21:02:00.000Z",
   "reports": [
+    {
+      "date": "2026-11-05",
+      "title": "Daily Angebot — x-kom M3A €1159, Ed54 €1259.90; no new low",
+      "summary": "No exceptional offer Nov05: M3A €1159 in stock free DE; different-seller Ed54 €1259.90+shipping B550 ATX 650W WinPro. 15 new verified offers, market price history 537 total, 7d 100 and 30d 327; HP Z2 fixed unpriced Reference excluded.",
+      "rating": "✅ 很值",
+      "path": "reports/2026-11-05.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-11-05.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001540865-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti-w11x"
+    },
     {
       "date": "2026-11-04",
       "title": "Daily Angebot — x-kom M3A €1159 stable; NBB Campus €1249 (-€150 conditional); Ed54 €1259.90",
