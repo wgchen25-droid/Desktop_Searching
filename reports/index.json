@@ -1,6 +1,17 @@
 {
-  "updated_at": "2026-11-09T21:00:00.000Z",
+  "updated_at": "2026-11-10T21:00:00.000Z",
   "reports": [
+    {
+      "date": "2026-11-10",
+      "title": "Daily Angebot — x-kom €1159 holds; Dubaro -€100; MediaMarkt Marketplace +€25–30",
+      "summary": "Multi-vendor scan 2026-11-10. No 🔥. x-kom M3A 32GB RTX5060Ti8 €1159 ✅, exact SKU stable 7d/30d/all history min. Different seller SYSTEMTREFF Ed76 €1279.90+ship B550 ATX/WinPro/650W but 16GB RAM. Dubaro €1549 (-100 vs Nov09) not new historic low. MediaMarkt third-party SYSTEMTREFF 5600X/32GB +30 to 1314.90, 5600/32GB +25 to 1299.90. CSL 5772 €1479 above historic €1349. NBB Campus limited; Ed54 CPU unavailable; stale Cyberport snippet rejected. Today 15 observations, cumulative 613; past7 107, 30d 376. HP Z2 G9 fixed unpriced Reference separate.",
+      "rating": "✅ 很值",
+      "path": "reports/2026-11-10.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-11-10.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001540865-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti-w11x"
+    },
     {
       "date": "2026-11-09",
       "title": "Daily Angebot — x-kom M3A €1159 holds, Ed76 ATX €1279.90 challenge, CSL RTX5070 +€80",
