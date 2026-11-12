@@ -1,6 +1,17 @@
 {
-  "updated_at": "2026-11-11T21:00:00.000Z",
+  "updated_at": "2026-11-12T20:56:00.000Z",
   "reports": [
+    {
+      "date": "2026-11-12",
+      "title": "Daily Angebot — x-kom M3A €1159 stable; Galaxus 5700X/32GB/Pro €1257.99 found, Saturn +€5",
+      "summary": "2026-11-12 multi-vendor DE scan. Champion x-kom GmbH SMX M3A i5-14400F RTX5060Ti8 32GB €1159 via 2026-11-12 exact-SKU x-kom offer in idealo (seller direct HTTP403 today); ✅, stable 7/30/alltime, not new discount. Separate seller challenger IT-Systemtreff GmbH Ed76 Ryzen5700X 16GB Ti8 €1279.90+ship with standard B550 ATX 4DIMM 2M2 650W be quiet and Windows Pro/3yr+30d. New Galaxus Hyrican CTS01006 €1257.99 delivered with 32GB and WinPro but 400W PSU/A520/unknown actual default seller. Saturn Marketplace actual SYSTEMTREFF EUR1349.90 (+5). 17 new historical observations, 645 market rows, past7 108, past30 388; unpriced HP fixed reference NEVER counted.",
+      "rating": "✅ 很值",
+      "path": "reports/2026-11-12.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-11-12.md",
+      "seller": "x-kom GmbH",
+      "seller_domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001540865-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti-w11x"
+    },
     {
       "date": "2026-11-11",
       "title": "Daily Angebot — x-kom M3A €1159 stable, SYSTEMTREFF Ed76 €1279.90 challenger; no new 🔥",
