@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-14T21:02:44Z",
+  "updated_at": "2026-11-14T21:30:25Z",
   "reports": [
     {
       "date": "2026-11-14",
-      "title": "德国 Desktop Angebot — x-kom SMX M3A €1,159 holds (🟡普通好价)",
-      "summary": "Cross-vendor scan: x-kom SMX M3A €1,159 remains the best new balanced offer (flat vs 7d/30d/all-time same-SKU low); SYSTEMTREFF Ed76 €1,279.90 is the best long-term remote/ATX challenger; CSL Sprint5815 €1,199+shipping is the closest price challenger. Secondbuy HP Z2 G9 T1000 refurb €899 is a lower-cost second host, not a Reference replacement. No 🔥 anomaly.",
+      "title": "2026-11-14 Desktop Angebot Search — x-kom M3A €1,159 remains 🟡 ordinary good price; Secondbuy HP Z2 T1000 refurb €899 as a secondary host; 22:30 supplement adds MemoryPC/Galaxus/Kiebel/BEASTCOM and price-discovery leads",
+      "summary": "Cross-vendor first pass plus 22:30 supplement. Champion remains x-kom SMX M3A €1,159 (flat 7d/30d/exact-SKU historical floor, 🟡 ordinary good price); best non-same seller challenger SYSTEMTREFF Ed76 €1,279.90 + shipping (B550 ATX, 650W be quiet!, Win11 Pro, 3y guarantee/30d returns). Secondbuy HP Z2 G9 i7-12700/T1000 8GB refurb €899 is a lower-cost secondary remote host, not a Reference replacement; 12-month used-goods warranty and 30-day return confirmed, market discount not counted because Refurbed comparator delivery window expired. Supplemental direct-page candidates: MemoryPC 7500F/RX9060XT8 €1,249, Galaxus Hyrican €1,257.99 (actual seller undisclosed), Kiebel InvaderXS V MM Marketplace €1,319, BEASTCOM Q5 Pro MM Marketplace €1,449; none changes ranking. NBB White Forest V €1,249 and MediaMarkt CSL M12980H €1,249 are price-discovery leads only because direct SKU URLs were not resolved. No 🔥 anomaly; no stretch-budget anomaly.",
       "rating": "🟡普通好价",
       "seller": "x-kom GmbH",
       "domain": "x-kom.de",
@@ -14,10 +14,54 @@
       "challenger_product_url": "https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-7-5700X-16GB-DDR4-GeForce-RTX-5060-Ti-8GB-1TB-4176",
       "price_close_challenger_seller": "CSL Computer GmbH",
       "price_close_challenger_domain": "csl-computer.com",
-      "price_close_challenger_product_url": "https://www.csl-computer.com/gaming-pcs/amd-ryzen-gaming-pcs/pc-csl-sprint-5815-ryzen-7.html",
+      "price_close_challenger_product_url": "https://www.csl-computer.com/gaming-pcs/pc-csl-sprint-5815-ryzen-7.html",
       "reference_systems_count": 1,
-      "market_price_rows": 695,
-      "scan_time_local": "2026-11-14 22:02:44 CET"
+      "market_price_rows": 698,
+      "scan_time_local": "2026-11-14 22:30:25 CET",
+      "path": "reports/2026-11-14.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-11-14.md",
+      "rolling7_count": 131,
+      "rolling30_count": 429,
+      "candidate_count": 30,
+      "price_discovery_leads": 2,
+      "upgrade_platform_challenger_seller": "CSL Computer GmbH",
+      "upgrade_platform_challenger_domain": "csl-computer.com",
+      "upgrade_platform_challenger_product_url": "https://www.csl-computer.com/angebote/pc-csl-sprint-5548-ryzen-5.html",
+      "refurbished_alternative_seller": "Second IT Store GmbH",
+      "refurbished_alternative_domain": "secondbuy.de",
+      "refurbished_alternative_product_url": "https://www.secondbuy.de/pc/hp/hp-z2-tower-g9-i7-12700-32gb-512gb-nvme-nvidia-t1000-win11-pro-SISSK23177.7",
+      "additional_candidates": [
+        {
+          "seller": "Memory PC GmbH",
+          "domain": "memorypc.eu",
+          "product_url": "https://www.memorypc.eu/configurator/569133",
+          "price_eur": 1249,
+          "rating": "🟡普通好价"
+        },
+        {
+          "seller": "Galaxus.de platform (actual seller undisclosed)",
+          "domain": "galaxus.de",
+          "product_url": "https://www.galaxus.de/de/s1/product/hyrican-business-desktop-pc-amd-ryzen-7-5700x-1000-gb-32-gb-geforce-rtx-5060-ti-pc-71384608",
+          "price_eur": 1257.99,
+          "rating": "❌跳过"
+        },
+        {
+          "seller": "Kiebel GmbH (MediaMarkt Marketplace)",
+          "domain": "mediamarkt.de",
+          "product_url": "https://www.mediamarkt.de/de/product/_kiebel-invaderxs-v-amd-ryzen-7-5700x-gaming-pc-mit-amd-ryzentm-7-ryzen-7-5700x-prozessor-16-gb-ram-1000-gb-ssd-nvidia-geforce-rtxtm-5060-ti-windows-11-home-188210228.html",
+          "price_eur": 1319,
+          "rating": "❌跳过"
+        },
+        {
+          "seller": "BEASTCOM GmbH (MediaMarkt Marketplace)",
+          "domain": "mediamarkt.de",
+          "product_url": "https://www.mediamarkt.de/de/product/_beastcom-q5-pro-gaming-gaming-pc-mit-amd-ryzentm-7-5700x-prozessor-32-gb-ram-1-tb-ssd-nvidia-nvidia-geforce-rtxtm-5060-ti-windows-11-pro-176855495.html",
+          "price_eur": 1449,
+          "rating": "❌跳过"
+        }
+      ],
+      "github_pages_deployment_status": "pending after supplemental commit",
+      "github_pages_run_id": null
     },
     {
       "date": "2026-11-13",
