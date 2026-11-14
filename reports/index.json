@@ -3,26 +3,26 @@
   "reports": [
     {
       "date": "2026-11-14",
-      "title": "2026-11-14 Desktop Angebot Search — final 23:00 direct recheck: x-kom M3A SKU001540864 noOS €1,099.99 final champion; SYSTEMTREFF Ed76 challenger; SKU001540865 Home direct price €1,199.99",
-      "summary": "Final 23:00 direct-merchant recheck supersedes the 22:02 snapshot: x-kom SMX M3A SKU001540864 noOS €1,099.99 is final budget champion (ordinary good price, 8.33% vs sibling Windows Home SKU €1,199.99; no same-SKU history, OS/license cost excluded). x-kom SKU001540865 Windows Home latest direct price €1,199.99, up €40.99 (+3.54%) from earlier same-day €1,159 observation and above same-SKU 7d/30d/all-time floor €1,159. Best non-same seller challenger remains SYSTEMTREFF Ed76 €1,279.90+shipping (B550 ATX/650W be quiet!/WinPro/3y guarantee/30d return). Cyberport Captiva R92-769 direct page now €1,429 (stale indexed €1,199 price ignored); stretch budget skip. No 🔥 anomaly; HP Z2 i7-12700K/32GB/UHD770 remains fixed price-less Reference, excluded from price history. Broad vendor scan already covered CSL, SYSTEMTREFF, MemoryPC, Dubaro, Alternate, NBB, Cyberport, MM/Saturn Marketplace, Amazon, Dell/HP/Lenovo Outlet and EU vendors; unresolved outlet/marketplace seller/config listings remain leads only.",
+      "title": "2026-11-14 Desktop Angebot Search — final: x-kom M3A SKU001540864 noOS €1,099.99 champion; CSL Sprint5815 closest-price challenger; SYSTEMTREFF Ed76 remote/upgrade alternative",
+      "summary": "Final direct-page comparison: champion x-kom SMX M3A SKU001540864 noOS €1,099.99 (ordinary good price; €100 below sister Windows Home SKU001540865 currently €1,199.99; noOS licensing/install costs excluded). Closest non-x-kom challenger is CSL Sprint5815 direct €1,199+shipping: Ryzen7 5700X/Ti8/32GB/1TB, ASUS PRIME A520M-A II/CSM mATX (4 DIMM/128GB/1 M.2/PCIe3), 500W CSL Bronze, noOS/noWiFi, 2y warranty/lifetime support; €99.01+shipping more than champion but clearer motherboard/DIMM repairability and weaker PSU/expansion. SYSTEMTREFF Ed76 €1,279.90+shipping retained as remote-maintenance/upgrade alternative (WinPro/RDP, B550 ATX, 650W be quiet!, 3y guarantee/30d returns, initial16GB). x-kom SKU001540865 Windows Home latest direct price €1,199.99 up€40.99 from earlier €1,159 snapshot and above same-SKU 7d/30d/all-time floor. Cyberport Captiva R92-769 direct page €1,429 (stale indexed €1,199 ignored). No 🔥 anomaly. HP Z2 i7-12700K/32GB/UHD770 remains fixed price-less Reference and excluded from price history.",
       "rating": "🟡普通好价",
       "seller": "x-kom GmbH",
       "domain": "x-kom.de",
       "product_url": "https://x-kom.de/001540864-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti",
-      "challenger_seller": "IT-Systemtreff GmbH",
-      "challenger_domain": "systemtreff.de",
-      "challenger_product_url": "https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-7-5700X-16GB-DDR4-GeForce-RTX-5060-Ti-8GB-1TB-4176",
+      "challenger_seller": "CSL Computer GmbH",
+      "challenger_domain": "csl-computer.com",
+      "challenger_product_url": "https://www.csl-computer.com/gaming-pcs/amd-ryzen-gaming-pcs/pc-csl-sprint-5815-ryzen-7.html",
       "price_close_challenger_seller": "CSL Computer GmbH",
       "price_close_challenger_domain": "csl-computer.com",
       "price_close_challenger_product_url": "https://www.csl-computer.com/gaming-pcs/pc-csl-sprint-5815-ryzen-7.html",
       "reference_systems_count": 1,
-      "market_price_rows": 702,
+      "market_price_rows": 703,
       "scan_time_local": "2026-11-14 23:00:04 CET",
       "path": "reports/2026-11-14.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-11-14.md",
-      "rolling7_count": 135,
-      "rolling30_count": 433,
-      "candidate_count": 34,
+      "rolling7_count": 136,
+      "rolling30_count": 434,
+      "candidate_count": 35,
       "price_discovery_leads": 2,
       "upgrade_platform_challenger_seller": "CSL Computer GmbH",
       "upgrade_platform_challenger_domain": "csl-computer.com",
@@ -74,10 +74,18 @@
           "price_eur": 1429,
           "rating": "❌跳过",
           "notes": "Direct page price €1,429; stale search cache €1,199 ignored"
+        },
+        {
+          "seller": "IT-Systemtreff GmbH",
+          "domain": "systemtreff.de",
+          "product_url": "https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-7-5700X-16GB-DDR4-GeForce-RTX-5060-Ti-8GB-1TB-4176",
+          "price_eur": 1279.9,
+          "rating": "🟡普通好价",
+          "notes": "Remote/RDP and standardized ATX upgrade alternative, not closest-price challenger"
         }
       ],
-      "github_pages_deployment_status": "success (final direct-recheck content commit deployed; workflow run 43646021770)",
-      "github_pages_run_id": 43646021770
+      "github_pages_deployment_status": "pending after CSL direct-page challenger revalidation commit",
+      "github_pages_run_id": null
     },
     {
       "date": "2026-11-13",
