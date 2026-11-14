@@ -3,12 +3,12 @@
   "reports": [
     {
       "date": "2026-11-14",
-      "title": "2026-11-14 Desktop Angebot Search — x-kom M3A €1,159 remains 🟡 ordinary good price; Secondbuy HP Z2 T1000 refurb €899 as a secondary host; 22:30 supplement adds MemoryPC/Galaxus/Kiebel/BEASTCOM and price-discovery leads",
-      "summary": "Cross-vendor first pass plus 22:30 supplement. Champion remains x-kom SMX M3A €1,159 (flat 7d/30d/exact-SKU historical floor, 🟡 ordinary good price); best non-same seller challenger SYSTEMTREFF Ed76 €1,279.90 + shipping (B550 ATX, 650W be quiet!, Win11 Pro, 3y guarantee/30d returns). Secondbuy HP Z2 G9 i7-12700/T1000 8GB refurb €899 is a lower-cost secondary remote host, not a Reference replacement; 12-month used-goods warranty and 30-day return confirmed, market discount not counted because Refurbed comparator delivery window expired. Supplemental direct-page candidates: MemoryPC 7500F/RX9060XT8 €1,249, Galaxus Hyrican €1,257.99 (actual seller undisclosed), Kiebel InvaderXS V MM Marketplace €1,319, BEASTCOM Q5 Pro MM Marketplace €1,449; none changes ranking. NBB White Forest V €1,249 and MediaMarkt CSL M12980H €1,249 are price-discovery leads only because direct SKU URLs were not resolved. No 🔥 anomaly; no stretch-budget anomaly.",
+      "title": "2026-11-14 Desktop Angebot Search — final 23:00 direct recheck: x-kom M3A SKU001540864 noOS €1,099.99 final champion; SYSTEMTREFF Ed76 challenger; SKU001540865 Home direct price €1,199.99",
+      "summary": "Final 23:00 direct-merchant recheck supersedes the 22:02 snapshot: x-kom SMX M3A SKU001540864 noOS €1,099.99 is final budget champion (ordinary good price, 8.33% vs sibling Windows Home SKU €1,199.99; no same-SKU history, OS/license cost excluded). x-kom SKU001540865 Windows Home latest direct price €1,199.99, up €40.99 (+3.54%) from earlier same-day €1,159 observation and above same-SKU 7d/30d/all-time floor €1,159. Best non-same seller challenger remains SYSTEMTREFF Ed76 €1,279.90+shipping (B550 ATX/650W be quiet!/WinPro/3y guarantee/30d return). Cyberport Captiva R92-769 direct page now €1,429 (stale indexed €1,199 price ignored); stretch budget skip. No 🔥 anomaly; HP Z2 i7-12700K/32GB/UHD770 remains fixed price-less Reference, excluded from price history. Broad vendor scan already covered CSL, SYSTEMTREFF, MemoryPC, Dubaro, Alternate, NBB, Cyberport, MM/Saturn Marketplace, Amazon, Dell/HP/Lenovo Outlet and EU vendors; unresolved outlet/marketplace seller/config listings remain leads only.",
       "rating": "🟡普通好价",
       "seller": "x-kom GmbH",
       "domain": "x-kom.de",
-      "product_url": "https://x-kom.de/001540865-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti-w11x",
+      "product_url": "https://x-kom.de/001540864-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti",
       "challenger_seller": "IT-Systemtreff GmbH",
       "challenger_domain": "systemtreff.de",
       "challenger_product_url": "https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-7-5700X-16GB-DDR4-GeForce-RTX-5060-Ti-8GB-1TB-4176",
@@ -16,13 +16,13 @@
       "price_close_challenger_domain": "csl-computer.com",
       "price_close_challenger_product_url": "https://www.csl-computer.com/gaming-pcs/pc-csl-sprint-5815-ryzen-7.html",
       "reference_systems_count": 1,
-      "market_price_rows": 699,
-      "scan_time_local": "2026-11-14 22:30:25 CET",
+      "market_price_rows": 702,
+      "scan_time_local": "2026-11-14 23:00:04 CET",
       "path": "reports/2026-11-14.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-11-14.md",
-      "rolling7_count": 132,
-      "rolling30_count": 430,
-      "candidate_count": 31,
+      "rolling7_count": 135,
+      "rolling30_count": 433,
+      "candidate_count": 34,
       "price_discovery_leads": 2,
       "upgrade_platform_challenger_seller": "CSL Computer GmbH",
       "upgrade_platform_challenger_domain": "csl-computer.com",
@@ -58,10 +58,26 @@
           "product_url": "https://www.mediamarkt.de/de/product/_beastcom-q5-pro-gaming-gaming-pc-mit-amd-ryzentm-7-5700x-prozessor-32-gb-ram-1-tb-ssd-nvidia-nvidia-geforce-rtxtm-5060-ti-windows-11-pro-176855495.html",
           "price_eur": 1449,
           "rating": "❌跳过"
+        },
+        {
+          "seller": "x-kom GmbH",
+          "domain": "x-kom.de",
+          "product_url": "https://x-kom.de/001540865-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti-w11x",
+          "price_eur": 1199.99,
+          "rating": "🟡普通好价",
+          "notes": "Latest 23:00 direct page; previous same-day €1,159 snapshot is superseded"
+        },
+        {
+          "seller": "Cyberport SE",
+          "domain": "cyberport.de",
+          "product_url": "https://www.cyberport.de/en/pc-und-zubehoer/pc-systeme/pc-charts/captiva/pdp/1132-0yq/captiva-pc-advanced-gaming-pc-r92-769-r7-5700x-32gb-1tb-ssd-rtx5060ti-win-11.html",
+          "price_eur": 1429,
+          "rating": "❌跳过",
+          "notes": "Direct page price €1,429; stale search cache €1,199 ignored"
         }
       ],
-      "github_pages_deployment_status": "success (first supplemental content deploy; run 43645210748)",
-      "github_pages_run_id": 43645210748
+      "github_pages_deployment_status": "pending after final 23:00 direct-recheck commit",
+      "github_pages_run_id": null
     },
     {
       "date": "2026-11-13",
