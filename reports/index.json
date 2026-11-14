@@ -16,13 +16,13 @@
       "price_close_challenger_domain": "csl-computer.com",
       "price_close_challenger_product_url": "https://www.csl-computer.com/gaming-pcs/pc-csl-sprint-5815-ryzen-7.html",
       "reference_systems_count": 1,
-      "market_price_rows": 698,
+      "market_price_rows": 699,
       "scan_time_local": "2026-11-14 22:30:25 CET",
       "path": "reports/2026-11-14.md",
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-11-14.md",
-      "rolling7_count": 131,
-      "rolling30_count": 429,
-      "candidate_count": 30,
+      "rolling7_count": 132,
+      "rolling30_count": 430,
+      "candidate_count": 31,
       "price_discovery_leads": 2,
       "upgrade_platform_challenger_seller": "CSL Computer GmbH",
       "upgrade_platform_challenger_domain": "csl-computer.com",
@@ -60,8 +60,8 @@
           "rating": "❌跳过"
         }
       ],
-      "github_pages_deployment_status": "pending after supplemental commit",
-      "github_pages_run_id": null
+      "github_pages_deployment_status": "success (first supplemental content deploy; run 43645210748)",
+      "github_pages_run_id": 43645210748
     },
     {
       "date": "2026-11-13",
