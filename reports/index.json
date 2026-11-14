@@ -84,8 +84,8 @@
           "notes": "Remote/RDP and standardized ATX upgrade alternative, not closest-price challenger"
         }
       ],
-      "github_pages_deployment_status": "pending after CSL direct-page challenger revalidation commit",
-      "github_pages_run_id": null
+      "github_pages_deployment_status": "success (final CSL challenger/content commit deployed; workflow run 43646237018)",
+      "github_pages_run_id": 43646237018
     },
     {
       "date": "2026-11-13",
