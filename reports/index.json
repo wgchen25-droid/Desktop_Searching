@@ -76,8 +76,8 @@
           "notes": "Direct page price €1,429; stale search cache €1,199 ignored"
         }
       ],
-      "github_pages_deployment_status": "pending after final 23:00 direct-recheck commit",
-      "github_pages_run_id": null
+      "github_pages_deployment_status": "success (final direct-recheck content commit deployed; workflow run 43646021770)",
+      "github_pages_run_id": 43646021770
     },
     {
       "date": "2026-11-13",
