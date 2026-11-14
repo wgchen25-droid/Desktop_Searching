@@ -1,6 +1,24 @@
 {
-  "updated_at": "2026-11-13T20:56:35Z",
+  "updated_at": "2026-11-14T21:02:44Z",
   "reports": [
+    {
+      "date": "2026-11-14",
+      "title": "德国 Desktop Angebot — x-kom SMX M3A €1,159 holds (🟡普通好价)",
+      "summary": "Cross-vendor scan: x-kom SMX M3A €1,159 remains the best new balanced offer (flat vs 7d/30d/all-time same-SKU low); SYSTEMTREFF Ed76 €1,279.90 is the best long-term remote/ATX challenger; CSL Sprint5815 €1,199+shipping is the closest price challenger. Secondbuy HP Z2 G9 T1000 refurb €899 is a lower-cost second host, not a Reference replacement. No 🔥 anomaly.",
+      "rating": "🟡普通好价",
+      "seller": "x-kom GmbH",
+      "domain": "x-kom.de",
+      "product_url": "https://x-kom.de/001540865-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti-w11x",
+      "challenger_seller": "IT-Systemtreff GmbH",
+      "challenger_domain": "systemtreff.de",
+      "challenger_product_url": "https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-7-5700X-16GB-DDR4-GeForce-RTX-5060-Ti-8GB-1TB-4176",
+      "price_close_challenger_seller": "CSL Computer GmbH",
+      "price_close_challenger_domain": "csl-computer.com",
+      "price_close_challenger_product_url": "https://www.csl-computer.com/gaming-pcs/amd-ryzen-gaming-pcs/pc-csl-sprint-5815-ryzen-7.html",
+      "reference_systems_count": 1,
+      "market_price_rows": 695,
+      "scan_time_local": "2026-11-14 22:02:44 CET"
+    },
     {
       "date": "2026-11-13",
       "title": "German Desktop Angebot — x-kom M3A €1,159 budget champion; SYSTEMTREFF Ed76 direct challenger; CSL Sprint 5787 new low",
