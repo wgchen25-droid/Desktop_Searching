@@ -1,6 +1,153 @@
 {
-  "updated_at": "2026-11-14T21:30:25Z",
+  "updated_at": "2026-11-15T22:00:00+01:00",
   "reports": [
+    {
+      "date": "2026-11-15",
+      "title": "2026-11-15 Desktop Angebot Search — CSL Sprint5815 €1,199 champion; SYSTEMTREFF Ed76 direct challenger; NBB Campus conditional alternative",
+      "summary": "Broad cross-vendor scan with 14 current candidate observations. General-access champion CSL Sprint5815 direct €1,199+shipping (Ryzen7 5700X/RTX5060Ti8/32GB/1TB, ASUS A520M-A II/CSM mATX, 500W CSL Bronze, noOS); ordinary good price, peer-market reference €1,260/4.84% listed discount, exact-SKU history shallow and flat. Best non-CSL direct challenger SYSTEMTREFF Ed76 €1,279.90+DE shipping €9.90 landed €1,289.80 (5700X/Ti8/16GB/WD1TB/B550 ATX/650W be quiet!/WinPro, 3y/30d direct terms); costs €80.90 listed more and trades RAM down for better ATX/PSU/RDP. Conditional NBB Campus Hyrican CTS01006 €1,249+€8.99 shipping includes 5700X/Ti8/32GB/1TB/WiFi/WinPro but motherboard/PSU not disclosed. 14 offers recorded; no 🔥 anomaly. HP Z2 i7-12700K/32GB/UHD770 remains fixed price-less Reference, excluded from market stats.",
+      "rating": "🟡普通好价",
+      "seller": "CSL Computer GmbH",
+      "domain": "csl-computer.com",
+      "product_url": "https://www.csl-computer.com/gaming-pcs/amd-ryzen-gaming-pcs/pc-csl-sprint-5815-ryzen-7.html",
+      "price_eur": 1199,
+      "market_reference_eur": 1260,
+      "discount_vs_market_pct": 4.84,
+      "engineering_score": 7.8,
+      "remote_score": 6.2,
+      "upgrade_score": 4.8,
+      "rarity_score": 3,
+      "regret_risk_score": 3,
+      "trend_summary": "CSL Sprint5815 7d/30d/tracked floor €1,199 flat (only3 observations across2 dates); CSL Sprint5787 7d/30d €1,199 but all-time best €1,099 (current +9.1%); x-kom noOS SKU001540864 rose €159.01/14.46% from Nov14 €1,099.99; MemoryPC Ti8 16GB current €1,349 is €90 above 30d low and €180 above historical best. Overall flat-to-slightly-worse, no anomaly.",
+      "challenger_seller": "IT-Systemtreff GmbH",
+      "challenger_domain": "systemtreff.de",
+      "challenger_product_url": "https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-7-5700X-16GB-DDR4-GeForce-RTX-5060-Ti-8GB-1TB-4176",
+      "price_close_challenger_seller": "IT-Systemtreff GmbH",
+      "price_close_challenger_domain": "systemtreff.de",
+      "price_close_challenger_product_url": "https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-7-5700X-16GB-DDR4-GeForce-RTX-5060-Ti-8GB-1TB-4176",
+      "reference_systems_count": 1,
+      "market_price_rows": 717,
+      "scan_time_local": "2026-11-15 ~22:00 CET",
+      "path": "reports/2026-11-15.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-11-15.md",
+      "rolling7_count": 135,
+      "rolling30_count": 435,
+      "candidate_count": 14,
+      "price_discovery_leads": 5,
+      "upgrade_platform_alternative_seller": "CSL Computer GmbH",
+      "upgrade_platform_alternative_domain": "csl-computer.com",
+      "upgrade_platform_alternative_product_url": "https://www.csl-computer.com/gaming-pcs/pc-csl-sprint-5548-ryzen-5.html",
+      "conditional_campus_alternative_seller": "notebooksbilliger.de AG",
+      "conditional_campus_alternative_domain": "notebooksbilliger.de",
+      "conditional_campus_alternative_product_url": "https://www.notebooksbilliger.de/hyrican+business+desktop+pc+cts01006+921851",
+      "additional_candidates": [
+        {
+          "seller": "IT-Systemtreff GmbH",
+          "domain": "systemtreff.de",
+          "product_url": "https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-7-5700X-16GB-DDR4-GeForce-RTX-5060-Ti-8GB-1TB-4176",
+          "price_eur": 1279.9,
+          "rating": "🟡普通好价",
+          "notes": "Direct Ed76, €9.90 Germany shipping, landed €1289.80, WinPro/B550 ATX/650W be quiet!/3y+30d direct terms."
+        },
+        {
+          "seller": "notebooksbilliger.de AG (Campus-only)",
+          "domain": "notebooksbilliger.de",
+          "product_url": "https://www.notebooksbilliger.de/hyrican+business+desktop+pc+cts01006+921851",
+          "price_eur": 1249,
+          "rating": "🟡普通好价",
+          "notes": "Campus eligibility required; €8.99 DE standard shipping, landed €1257.99; board/PSU undisclosed."
+        },
+        {
+          "seller": "CSL Computer GmbH",
+          "domain": "csl-computer.com",
+          "product_url": "https://www.csl-computer.com/gaming-pcs/pc-csl-sprint-5787-ryzen-7.html",
+          "price_eur": 1199,
+          "rating": "🟡普通好价",
+          "notes": "Ryzen7 5700/Ti8/32GB/1TB; exact SKU historical best €1099."
+        },
+        {
+          "seller": "x-kom GmbH",
+          "domain": "x-kom.de",
+          "product_url": "https://x-kom.de/001540864-smx-battlestation-m3a-i5-14400f-32gb-1tb-rtx5060ti",
+          "price_eur": 1259,
+          "rating": "❌跳过",
+          "notes": "NoOS M3A SKU001540864; direct price jumped from Nov14 €1099.99."
+        },
+        {
+          "seller": "ALTERNATE GmbH",
+          "domain": "alternate.de",
+          "product_url": "https://www.alternate.de/ALTERNATE/Gaming-PC-RTX-5060-Intel-Core-i5-14400F-16-GB-RAM/html/product/100211681",
+          "price_eur": 1199,
+          "rating": "❌跳过",
+          "notes": "RTX5060 non-Ti/16GB/500GB/WinHome; free standard shipping; direct Black November page."
+        },
+        {
+          "seller": "Memory PC GmbH",
+          "domain": "memorypc.de",
+          "product_url": "https://www.memorypc.de/p/gaming-pc-amd-ryzen-7-5700-rtx-5060-ti-8gb-16-gb-ddr4-568661/",
+          "price_eur": 1349,
+          "rating": "❌跳过",
+          "notes": "Ryzen7 5700/Ti8/16GB/A520M H ARGB/650W be quiet! Gold; historical trend worsened."
+        },
+        {
+          "seller": "Memory PC GmbH",
+          "domain": "memorypc.de",
+          "product_url": "https://www.memorypc.de/p/gaming-pc-amd-ryzen-7-5700x-rtx-5060-16-gb-ddr4-554088/",
+          "price_eur": 1279,
+          "rating": "❌跳过",
+          "notes": "Ryzen7 5700X/RTX5060 non-Ti/16GB/1TB/650W be quiet! Gold."
+        },
+        {
+          "seller": "Memory PC GmbH",
+          "domain": "memorypc.de",
+          "product_url": "https://www.memorypc.de/p/gaming-pc-amd-ryzen-5-5500f-rx-9060-16-gb-ddr4-557636/",
+          "price_eur": 929,
+          "rating": "🟡普通好价",
+          "notes": "Low-budget Ryzen5 5500F/Radeon RX9060 8GB/16GB/500GB/550W Bronze."
+        },
+        {
+          "seller": "Memory PC GmbH",
+          "domain": "memorypc.de",
+          "product_url": "https://www.memorypc.de/configurator/555270",
+          "price_eur": 1249,
+          "rating": "🟡普通好价",
+          "notes": "Category listing Ryzen5 7500F/RX9060 8GB/16GB DDR5/1TB/A620M H ARGB; configurator JS dynamic, PSU/OS/network not confirmed."
+        },
+        {
+          "seller": "many electronics GmbH (Dubaro)",
+          "domain": "dubaro.de",
+          "product_url": "https://www.dubaro.de/p/gaming-pc-amd-ryzen-7-5700x-mit-rtx-5060-ti-8gb-400037",
+          "price_eur": 1549,
+          "rating": "❌跳过",
+          "notes": "5700X/Ti8/32GB/B550 ATX/650W AZZA Bronze/noOS; above budget."
+        },
+        {
+          "seller": "IT-Systemtreff GmbH (MediaMarkt Marketplace)",
+          "domain": "mediamarkt.de",
+          "product_url": "https://www.mediamarkt.de/de/product/_systemtreff-gaming-gaming-pc-ryzentm-7-5700x-prozessor-32-gb-ram-1000-gb-ssd-nvidia-geforce-rtxtm-5060-ti-windows-11-pro-175213248.html",
+          "price_eur": 1349.9,
+          "rating": "❌跳过",
+          "notes": "Marketplace actual seller SYSTEMTREFF, not MediaMarkt self; 450W be quiet!, A520 2DIMM, WinPro; seller/platform terms apply."
+        },
+        {
+          "seller": "CSL Computer GmbH",
+          "domain": "csl-computer.com",
+          "product_url": "https://www.csl-computer.com/gaming-pcs/pc-csl-sprint-5548-ryzen-5.html",
+          "price_eur": 1299,
+          "rating": "🟡普通好价",
+          "notes": "AM5 7500F/Radeon RX9060XT16/16GB DDR5 single-channel/B840M WiFi6/700W BoostBoxx Gold/noOS; shipping extra."
+        },
+        {
+          "seller": "CSL Computer GmbH",
+          "domain": "csl-computer.com",
+          "product_url": "https://www.csl-computer.com/gaming-pcs/pc-csl-sprint-5797-ryzen-7.html",
+          "price_eur": 999,
+          "rating": "🟡普通好价",
+          "notes": "Entry 5700/RTX5060 non-Ti/16GB single/500GB/500W CSL Bronze/noOS."
+        }
+      ],
+      "github_pages_deployment_status": "pending verification after final main commit",
+      "github_pages_run_id": null
+    },
     {
       "date": "2026-11-14",
       "title": "2026-11-14 Desktop Angebot Search — final: x-kom M3A SKU001540864 noOS €1,099.99 champion; CSL Sprint5815 closest-price challenger; SYSTEMTREFF Ed76 remote/upgrade alternative",
