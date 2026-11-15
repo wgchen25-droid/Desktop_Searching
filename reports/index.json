@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T22:00:00+01:00",
+  "updated_at": "2026-11-15T22:09:00+01:00",
   "reports": [
     {
       "date": "2026-11-15",
@@ -145,8 +145,10 @@
           "notes": "Entry 5700/RTX5060 non-Ti/16GB single/500GB/500W CSL Bronze/noOS."
         }
       ],
-      "github_pages_deployment_status": "pending verification after final main commit",
-      "github_pages_run_id": null
+      "github_pages_deployment_status": "success",
+      "github_pages_run_id": 43761998719,
+      "github_pages_run_url": "https://github.com/wgchen25-droid/Desktop_Searching/actions/runs/43761998719",
+      "github_pages_deployed_commit_sha": "fb9020fc6c07006ce86e5f6fe1b732ff3c18229d"
     },
     {
       "date": "2026-11-14",
