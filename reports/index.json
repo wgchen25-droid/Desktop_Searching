@@ -1,6 +1,280 @@
 {
-  "updated_at": "2026-11-17T22:02:00+01:00",
+  "updated_at": "2026-11-18T21:56:29+01:00",
   "reports": [
+    {
+      "date": "2026-11-18",
+      "title": "2026-11-18 Desktop Angebot Search — SYSTEMTREFF Ed76 €1,249.95 winner; CSL Sprint 5787 non-Systemtreff challenger; broad cross-vendor scan",
+      "summary": "跨商家扫描后今日总冠军为 SYSTEMTREFF Ed76：Ryzen 7 5700X/RTX 5060 Ti 8GB/16GB DDR4/1TB/Windows 11 Pro/B550 ATX/650W be quiet!，直售价€1,249.95+德国保险配送€9.90=€1,259.85。以同 SKU 7天均价€1,279.90（n=7）、30天均价€1,279.90（n=9）作市场参考，折扣2.34%，刷新本仓库跟踪低价；🟡普通好价，机会稀缺度3/10。主要短板是默认16GB，32GB配置到手€1,349.85，超主要预算。最佳非同商家挑战者为CSL Sprint 5787：€1,249+约€9.85运费，32GB/RTX5060Ti8GB，但A520、500W CSL Bronze、无OS/无Wi-Fi；到手价与总冠军只差约€1。相对HP Z2固定Reference（i7-12700K/32GB/UHD770），Ed76 CPU和RAM均退步，仅GPU和Win11 Pro远程主机能力明显提升；优先核对HP Z2 PSU/空间，考虑只升级GPU。",
+      "rating": "🟡普通好价",
+      "seller": "IT-Systemtreff GmbH",
+      "domain": "systemtreff.de",
+      "seller_domain": "systemtreff.de",
+      "product_url": "https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-7-5700X-16GB-DDR4-GeForce-RTX-5060-Ti-8GB-1TB-4176",
+      "price_eur": 1249.95,
+      "market_reference_eur": 1279.9,
+      "discount_vs_market_pct": 2.34,
+      "engineering_score": 7.4,
+      "remote_score": 9,
+      "upgrade_score": 7.2,
+      "rarity_score": 3,
+      "regret_risk_score": 2,
+      "trend_summary": "SYSTEMTREFF Ed76: prior 7d mean €1,279.90 (n=7), prior 30d mean €1,279.90 (n=9), tracked low €1,279.90; today €1,249.95 is 2.34% below and a new tracked low, improving modestly. CSL Sprint5815 rose from €1,199 to direct €1,349 (+12.51%); CSL 5787 is €1,249 versus 7d mean €1,211.50 and tracked low €1,099; CSL 5548 is flat at €1,299. Overall: one local improvement, no broad market anomaly.",
+      "challenger_seller": "CSL Computer GmbH",
+      "challenger_domain": "csl-computer.com",
+      "challenger_product_url": "https://www.csl-computer.com/pc-csl-sprint-5787-ryzen-7-9952.html",
+      "price_close_challenger_seller": "CSL Computer GmbH",
+      "price_close_challenger_domain": "csl-computer.com",
+      "price_close_challenger_product_url": "https://www.csl-computer.com/pc-csl-sprint-5787-ryzen-7-9952.html",
+      "reference_systems_count": 1,
+      "market_price_rows": 770,
+      "scan_time_local": "2026-11-18 21:56 CET",
+      "path": "reports/2026-11-18.md",
+      "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-11-18.md",
+      "rolling7_count": 157,
+      "rolling30_count": 465,
+      "candidate_count": 20,
+      "price_discovery_leads": 10,
+      "upgrade_platform_alternative_seller": "CSL Computer GmbH",
+      "upgrade_platform_alternative_domain": "csl-computer.com",
+      "upgrade_platform_alternative_product_url": "https://www.csl-computer.com/gaming-pcs/amd-radeon-gaming-pcs/pc-csl-sprint-5548-ryzen-5.html",
+      "conditional_campus_alternative_seller": "notebooksbilliger.de AG",
+      "conditional_campus_alternative_domain": "notebooksbilliger.de",
+      "conditional_campus_alternative_product_url": "https://www.notebooksbilliger.de/hyrican+business+desktop+pc+cts01006+921851",
+      "additional_candidates": [
+        {
+          "seller": "IT-Systemtreff GmbH",
+          "domain": "systemtreff.de",
+          "product_url": "https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-7-5700X-16GB-DDR4-GeForce-RTX-5060-Ti-8GB-1TB-4176",
+          "price_eur": 1249.95,
+          "rating": "🟡普通好价",
+          "notes": "Direct new sale by IT-Systemtreff GmbH, not marketplace. 16GB DDR4-3200 dual-channel (2x8); 32GB generic option +€90, making €1,339.95 + €9.90 shipping = €1,349.85, above core budget. Kingston Fury 2x16 option +€134. Windows 11 Pro included. 1TB WD SN3000. Default has no Wi-Fi; use wired LAN. Exact GPU card/output model not named on Ed76 page. Standard ATX B550; AM4 is end-of-line. Trustpilot about 4.3/5 from 2,137 reviews; about 8% one-star and 80% negative reviews answered; generally positive but not risk-free."
+        },
+        {
+          "seller": "CSL Computer GmbH",
+          "domain": "csl-computer.com",
+          "product_url": "https://www.csl-computer.com/pc-csl-sprint-5787-ryzen-7-9952.html",
+          "price_eur": 1249,
+          "rating": "🟡普通好价",
+          "notes": "Direct CSL sale. 32GB DDR4-3200 2x16, 1TB M.2 PCIe4 SSD (board's M.2 is PCIe3), RTX 5060 Ti 8GB with 1 HDMI + 3 DP. No OS and no Wi-Fi; Windows Pro license/setup extra for native RDP host. 500W CSL Bronze PSU and A520/one M.2/PCIe 3.0 make upgrades less attractive than winner. About €1 cheaper landed, with 32GB immediately, but loses Windows Pro, ATX B550, branded 650W PSU and 3-year/30-day service."
+        },
+        {
+          "seller": "CSL Computer GmbH",
+          "domain": "csl-computer.com",
+          "product_url": "https://www.csl-computer.com/pc-systeme/pc-csl-sprint-5815-ryzen-7.html",
+          "price_eur": 1349,
+          "rating": "❌跳过",
+          "notes": "Official CSL page today shows €1,349, not the €1,199 still visible in an Idealo search snippet. 32GB/1TB, no OS/no Wi-Fi, 500W Bronze and A520 from prior full config capture. Use direct checkout price, not stale comparison snippet."
+        },
+        {
+          "seller": "CSL Computer GmbH",
+          "domain": "csl-computer.com",
+          "product_url": "https://www.csl-computer.com/pc-csl-sprint-5746-ryzen-7-9646.html",
+          "price_eur": 1229,
+          "rating": "❌跳过",
+          "notes": "Same CPU tier as winner, but 16GB DDR4 single-channel (1x16), Radeon rather than NVIDIA CUDA/OptiX, 500W CSL PSU, A520, no OS/no Wi-Fi. 16GB VRAM may help large textures/viewports but does not replace CUDA for supported renderers."
+        },
+        {
+          "seller": "CSL Computer GmbH",
+          "domain": "csl-computer.com",
+          "product_url": "https://www.csl-computer.com/gaming-pcs/amd-radeon-gaming-pcs/pc-csl-sprint-5548-ryzen-5.html",
+          "price_eur": 1299,
+          "rating": "🟡普通好价",
+          "notes": "Best sub-€1,310 AM5 upgrade platform: 4 DIMM, 2 M.2, 2.5GbE and Wi-Fi 6. 16GB DDR5 is 2x8 dual-channel; 700W Gold but BoostBoxx model not independently identified. No OS. Radeon 16GB has no CUDA/OptiX; landed price is €8.85 above core budget."
+        },
+        {
+          "seller": "IT-Systemtreff GmbH",
+          "domain": "systemtreff.de",
+          "product_url": "https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-5-5600-16GB-DDR4-GeForce-RTX-5060-8GB-1TB-4175",
+          "price_eur": 1089.95,
+          "rating": "🟡普通好价",
+          "notes": "Direct new sale. Windows 11 Pro, 1TB WD SN3000, 650W be quiet!, 16GB DDR4 dual-channel, A520 board. Configurator 32GB +€90 and B550 Gaming X V2 +€43; combined product price €1,222.95, landed €1,232.85. Still Ryzen 5 5600 and RTX5060, not a CPU upgrade over HP Z2."
+        },
+        {
+          "seller": "IT-Systemtreff GmbH",
+          "domain": "systemtreff.de",
+          "product_url": "https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-5-5600-16GB-DDR4-GeForce-RTX-5060-8GB-1TB-4175",
+          "price_eur": 1222.95,
+          "rating": "🟡普通好价",
+          "notes": "Not stock SKU: base Ed75 €1,089.95 + 32GB DDR4 option €90 + B550 Gaming X V2 ATX option €43. Landed €1,232.85. Windows 11 Pro and 650W be quiet! retained. Still Ryzen 5 5600 and RTX5060 8GB, so less GPU/CPU headroom than Ed76."
+        },
+        {
+          "seller": "notebooksbilliger.de AG",
+          "domain": "notebooksbilliger.de",
+          "product_url": "https://www.notebooksbilliger.de/hyrican+business+desktop+pc+cts01006+921851",
+          "price_eur": 1249,
+          "rating": "🟡普通好价",
+          "notes": "Direct NBB sale, but €1,249 is Campus-exclusive. Page lists 5700X, 32GB, RTX5060Ti, 1TB M.2, Wi-Fi and Windows 11 Pro. Board, PSU, DIMM/M.2/PCIe layout and case standard undisclosed; do not assume five-year upgradeability."
+        },
+        {
+          "seller": "notebooksbilliger.de AG",
+          "domain": "notebooksbilliger.de",
+          "product_url": "https://www.notebooksbilliger.de/lenovo+ideacentre+loq+26adr10+91df000wgf+895100",
+          "price_eur": 1299,
+          "rating": "❌跳过",
+          "notes": "Campus-only NBB listing. 16GB, 1TB, RTX5060, Wi-Fi 6/BT5.4 and GbE. OEM chassis/board/PSU makes GPU/PSU/board upgrades less transparent."
+        },
+        {
+          "seller": "Memory PC GmbH",
+          "domain": "memorypc.de",
+          "product_url": "https://www.memorypc.de/p/gaming-pc-amd-ryzen-7-5700-rtx-5060-ti-8gb-16-gb-ddr4-568661/",
+          "price_eur": 1349,
+          "rating": "❌跳过",
+          "notes": "Over core budget before shipping, only 16GB and no Windows Pro confirmed. Board/PSU details not transparent enough for five-year planning."
+        },
+        {
+          "seller": "Memory PC GmbH",
+          "domain": "memorypc.de",
+          "product_url": "https://www.memorypc.de/p/singles-day-deal-gaming-pc-amd-ryzen-5-7500f-rx-9060-xt-8gb-16-gb-ddr5-569133/",
+          "price_eur": 1249,
+          "rating": "❌跳过",
+          "notes": "AM5/DDR5 but A620AM-K has only 2 DIMM and one M.2; 16GB only. Radeon 8GB lacks CUDA/OptiX. OS and Wi-Fi not confirmed."
+        },
+        {
+          "seller": "ALTERNATE GmbH",
+          "domain": "alternate.de",
+          "product_url": "https://www.alternate.de/ALTERNATE/Gaming-PC-RTX-5060-Intel-Core-i5-14400F-16-GB-RAM/html/product/100211681",
+          "price_eur": 1199,
+          "rating": "❌跳过",
+          "notes": "Direct German retailer. Windows 11 Home, 16GB, 500GB SSD, RTX5060, H610. Windows Home is not a native RDP host; 16GB/500GB and lower GPU tier make it weaker than Ed76."
+        },
+        {
+          "seller": "IT-Systemtreff GmbH (Saturn Marketplace)",
+          "domain": "saturn.de",
+          "product_url": "https://www.saturn.de/de/product/_systemtreff-gaming-gaming-pc-ryzentm-5-5600-prozessor-32-gb-ram-1000-gb-ssd-nvidia-geforce-rtxtm-5060-ti-windows-11-pro-175213179.html",
+          "price_eur": 1274.9,
+          "rating": "❌跳过",
+          "notes": "Actual seller IT-Systemtreff GmbH, platform Saturn Marketplace. 32GB/Win11Pro/USB Wi-Fi+BT but Ryzen5 5600, 450W PSU and 2-DIMM A520 are poor upgrade base. Do not assume Saturn direct-retail 30-day return applies."
+        },
+        {
+          "seller": "IT-Systemtreff GmbH (Saturn Marketplace)",
+          "domain": "saturn.de",
+          "product_url": "https://www.saturn.de/de/product/_systemtreff-gaming-gaming-pc-ryzentm-7-5700x-prozessor-32-gb-ram-1000-gb-ssd-nvidia-geforce-rtxtm-5060-ti-windows-11-pro-175213248.html",
+          "price_eur": 1349.9,
+          "rating": "❌跳过",
+          "notes": "Same actual seller as winner but via Saturn Marketplace. 32GB and Win11Pro; A520M-A PRO and 450W PSU are weaker than direct Ed76 B550 ATX/650W. €90 more for RAM while losing board/PSU headroom."
+        },
+        {
+          "seller": "IT-Systemtreff GmbH (MediaMarkt Marketplace)",
+          "domain": "mediamarkt.de",
+          "product_url": "https://www.mediamarkt.de/de/product/_systemtreff-gaming-gaming-pc-ryzentm-5-5600-prozessor-32-gb-ram-1000-gb-ssd-nvidia-geforce-rtxtm-5060-ti-windows-11-pro-175213005.html",
+          "price_eur": 1349.9,
+          "rating": "❌跳过",
+          "notes": "Current page says sold and shipped by SYSTEMTREFF. 32GB, Windows 11 Pro, USB Wi-Fi/BT, 1GbE; 450W PSU and MSI A520M-A PRO. More expensive than direct Ed76 despite weaker CPU, board and PSU."
+        },
+        {
+          "seller": "many electronics GmbH (Dubaro)",
+          "domain": "dubaro.de",
+          "product_url": "https://www.dubaro.de/p/gaming-pc-amd-ryzen-7-5700x-mit-rtx-5060-ti-400196/",
+          "price_eur": 1749,
+          "rating": "❌跳过",
+          "notes": "Technically attractive 16GB NVIDIA VRAM, 32GB DDR4, ATX B550 and 650W AZZA Bronze, but €1,749 exceeds both budget bands; no OS and no Wi-Fi."
+        },
+        {
+          "seller": "MYPC (legal entity not confirmed; Saturn Marketplace)",
+          "domain": "saturn.de",
+          "product_url": "https://www.saturn.de/de/product/_mypc-rtx-5060-ti-gaming-pc-mit-amd-ryzentm-7-7-5700x-prozessor-32-gb-ram-1000-gb-ssd-nvidia-nvidia-geforce-rtxtm-5070-nvidia-rtx-5060-ti-8gb-windows-11-pro-177770630.html",
+          "price_eur": 1419,
+          "rating": "❌跳过",
+          "notes": "Actual platform Saturn Marketplace, seller shown as MYPC; legal entity and exact GPU/board/PSU not confirmed. Do not purchase without full BOM and warranty seller identity."
+        },
+        {
+          "seller": "NEXOC STORE DE (MediaMarkt Marketplace)",
+          "domain": "mediamarkt.de",
+          "product_url": "https://www.mediamarkt.de/de/product/_captiva-advanced-gaming-r95-578-gaming-pc-mit-amd-ryzentm-7-5700x-prozessor-32-gb-ram-1-tb-ssd-nvidia-geforce-rtxtm-5060-ti-geforcer-rtxtm-5060-ti-freedos-164263025.html",
+          "price_eur": 1396,
+          "rating": "❌跳过",
+          "notes": "Marketplace seller NEXOC STORE DE, not MediaMarkt itself. 32GB/1TB/5700X, FreeDOS; board and PSU details limited. Above core budget and no Windows Pro."
+        },
+        {
+          "seller": "CSL Computer GmbH",
+          "domain": "csl-computer.com",
+          "product_url": "https://www.csl-computer.com/gaming-pcs/amd-radeon-gaming-pcs/pc-csl-sprint-5617-ryzen-5-8987.html",
+          "price_eur": 1579,
+          "rating": "❌跳过",
+          "notes": "AM5, 32GB DDR5 2x16, RX9060XT16, 700W Gold and Wi-Fi6/2.5GbE. No OS and Radeon lacks CUDA/OptiX. €1,588.85 landed is within upper cap but not exceptional for a 6-core CPU and no NVIDIA engineering stack."
+        },
+        {
+          "seller": "CSL Computer GmbH",
+          "domain": "csl-computer.com",
+          "product_url": "https://www.csl-computer.com/pc-csl-sprint-5753-ryzen-7.html",
+          "price_eur": 1599,
+          "rating": "❌跳过",
+          "notes": "AM5 and 16GB NVIDIA VRAM are attractive, but only 16GB DDR5, 500W CSL Bronze PSU, no OS and landed price exceeds €1,600. RAM and PSU upgrades worsen total cost."
+        }
+      ],
+      "scan_sources": [
+        {
+          "name": "CSL Computer",
+          "domain": "csl-computer.com",
+          "status": "Sprint 5787/5815/5746/5548/5617/5753 direct pages checked; prices/configs compared."
+        },
+        {
+          "name": "SYSTEMTREFF",
+          "domain": "systemtreff.de",
+          "status": "Ed75/Ed76 direct pages and configurator checked; marketplace SKUs separately checked."
+        },
+        {
+          "name": "MemoryPC",
+          "domain": "memorypc.de",
+          "status": "568661 and 569133 checked; limited BOM transparency."
+        },
+        {
+          "name": "Dubaro",
+          "domain": "dubaro.de",
+          "status": "SKU 400196 direct page checked; €1,749 and no OS, outside budget."
+        },
+        {
+          "name": "Alternate / Outlet",
+          "domain": "alternate.de",
+          "status": "RTX5060/i5-14400F system checked; weaker spec; no better Outlet candidate verified."
+        },
+        {
+          "name": "notebooksbilliger.de",
+          "domain": "notebooksbilliger.de",
+          "status": "Hyrican CTS01006 and Lenovo LOQ Campus-only offers checked; Hyrican board/PSU undisclosed."
+        },
+        {
+          "name": "Cyberport",
+          "domain": "cyberport.de",
+          "status": "Older Hyrican page returned 410/403; not counted as current stock."
+        },
+        {
+          "name": "MediaMarkt",
+          "domain": "mediamarkt.de",
+          "status": "SYSTEMTREFF and NEXOC STORE DE marketplace sellers identified separately."
+        },
+        {
+          "name": "Saturn",
+          "domain": "saturn.de",
+          "status": "SYSTEMTREFF and MYPC marketplace listings checked; actual sellers identified."
+        },
+        {
+          "name": "Amazon.de / Warehouse",
+          "domain": "amazon.de",
+          "status": "No suitable PC with verified reliable seller, warranty and return terms found."
+        },
+        {
+          "name": "Dell / Dell Outlet",
+          "domain": "dell.com",
+          "status": "No suitable sub-€1,600 Precision/Tower offer with transparent configuration verified."
+        },
+        {
+          "name": "HP / HP Renew",
+          "domain": "hp.com",
+          "status": "No suitable official Outlet tower under €1,600 verified."
+        },
+        {
+          "name": "Lenovo / Lenovo Outlet",
+          "domain": "lenovo.com",
+          "status": "No competitive direct Lenovo Outlet offer verified; NBB Campus Lenovo listing is not Lenovo direct."
+        },
+        {
+          "name": "Idealo / Geizhals / Mydealz",
+          "domain": "idealo.de;geizhals.de;mydealz.de",
+          "status": "Price discovery only; CSL Sprint5815 €1,199 snippet conflicts with current direct page €1,349."
+        }
+      ]
+    },
     {
       "date": "2026-11-17",
       "title": "2026-11-17 Desktop Angebot Search — CSL Sprint5815 €1,199 winner; SYSTEMTREFF Ed76 non-CSL challenger; broad cross-vendor scan",
