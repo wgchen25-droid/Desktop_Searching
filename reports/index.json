@@ -68,7 +68,7 @@
         {
           "seller": "CSL Computer GmbH",
           "domain": "csl-computer.com",
-          "product_url": "https://www.csl-computer.com/pc-csl-sprint-5746-ryzen-7-9646.html",
+          "product_url": "https://www.csl-computer.com/gaming-pcs/amd-radeon-gaming-pcs/pc-csl-sprint-5746-ryzen-7-9646.html",
           "price_eur": 1229,
           "rating": "❌跳过",
           "notes": "Same CPU tier as winner, but 16GB DDR4 single-channel (1x16), Radeon rather than NVIDIA CUDA/OptiX, 500W CSL PSU, A520, no OS/no Wi-Fi. 16GB VRAM may help large textures/viewports but does not replace CUDA for supported renderers."
