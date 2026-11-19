@@ -1,6 +1,122 @@
 {
-  "updated_at": "2026-11-18T21:56:29+01:00",
+  "updated_at": "2026-11-19T21:58:57+01:00",
   "reports": [
+    {
+      "date": "2026-11-19",
+      "title": "Germany Desktop / Workstation Angebot — 2026-11-19",
+      "summary": "Winner SYSTEMTREFF Ed76 €1,249.95 (ordinary good price, unchanged at tracked all-time low); best public non-same seller challenger CSL Sprint 5865 €1,229; conditional NBB Hyrican Campus €1,249 with undisclosed motherboard/PSU. No steal today.",
+      "rating": "🟡 普通好价",
+      "seller": "IT-Systemtreff GmbH",
+      "domain": "systemtreff.de",
+      "product_url": "https://www.systemtreff.de/Gaming-PC-AMD-Ryzen-7-5700X-16GB-DDR4-GeForce-RTX-5060-Ti-8GB-1TB-4176",
+      "price_eur": 1249.95,
+      "market_reference_eur": 1276.9,
+      "discount_vs_market_pct": 2.11,
+      "challenger_seller": "CSL Computer GmbH",
+      "challenger_domain": "csl-computer.com",
+      "challenger_product_url": "https://www.csl-computer.com/gaming-pcs/amd-ryzen-gaming-pcs/pc-csl-sprint-5865-ryzen-7.html",
+      "challenger_price_eur": 1229,
+      "conditional_campus_alternative_seller": "notebooksbilliger.de AG",
+      "conditional_campus_alternative_domain": "notebooksbilliger.de",
+      "conditional_campus_alternative_product_url": "https://www.notebooksbilliger.de/hyrican+business+desktop+pc+cts01006+921851",
+      "engineering_score": 7.4,
+      "remote_score": 9,
+      "upgrade_score": 7.2,
+      "rarity_score": 3,
+      "regret_risk_score": 2,
+      "trend_summary": "Ed76 unchanged versus 2026-11-18 and still at tracked all-time low; prior 7d mean €1,275.62 and 30d mean €1,276.90. NBB Campus offer flat at tracked low; CSL Sprint 5865 is a first-day comparable with no exact SKU history. Overall market mostly flat, no broad price drop.",
+      "scan_time_local": "2026-11-19 21:58 CET",
+      "candidate_count": 23,
+      "market_price_rows": 793,
+      "rolling7_count": 180,
+      "rolling30_count": 488,
+      "reference_systems_count": 1,
+      "reference_price_rows": 0,
+      "reference_note": "HP Z2 Tower G9 is a fixed hardware reference only; excluded from price_history.csv and all market averages/discounts.",
+      "dashboard_seller_columns": "Existing assets/app.js already renders seller, domain and direct product_url; no frontend change required.",
+      "report_path": "reports/2026-11-19.md",
+      "report_url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-11-19.md",
+      "price_history_path": "data/price_history.csv",
+      "price_history_rows_added": 23,
+      "additional_candidates": [],
+      "scan_sources": [
+        {
+          "seller": "CSL Computer GmbH",
+          "domain": "csl-computer.com",
+          "status": "Direct pages checked: Sprint 5865/5700/5787/5815/5746/5548/5797/5772/5753"
+        },
+        {
+          "seller": "IT-Systemtreff GmbH",
+          "domain": "systemtreff.de",
+          "status": "Direct Ed76/Ed75/Ed03 pages checked"
+        },
+        {
+          "seller": "notebooksbilliger.de AG",
+          "domain": "notebooksbilliger.de",
+          "status": "Hyrican CTS01006 Campus and Captiva R98-206 price discrepancy checked"
+        },
+        {
+          "seller": "ALTERNATE GmbH",
+          "domain": "alternate.de",
+          "status": "Direct €1,199 i5-14400F/RTX5060 system checked"
+        },
+        {
+          "seller": "Memory PC GmbH",
+          "domain": "memorypc.de",
+          "status": "568661 €1,349 checked; 569133 page unavailable"
+        },
+        {
+          "seller": "many electronics GmbH (Dubaro)",
+          "domain": "dubaro.de",
+          "status": "SKU 400196 €1,749 checked"
+        },
+        {
+          "seller": "Cyberport SE",
+          "domain": "cyberport.de",
+          "status": "Captiva R92-769 €1,399 checked"
+        },
+        {
+          "seller": "IT-Systemtreff GmbH (Marketplace)",
+          "domain": "saturn.de",
+          "status": "Actual seller identified; Saturn is the platform"
+        },
+        {
+          "seller": "IT-Systemtreff GmbH (Marketplace)",
+          "domain": "mediamarkt.de",
+          "status": "Actual seller identified; MediaMarkt is the platform"
+        },
+        {
+          "seller": "Sedatech DE (Marketplace)",
+          "domain": "mediamarkt.de",
+          "status": "Actual seller identified; €2,419.90 listing not relevant to budget"
+        },
+        {
+          "seller": "Amazon.de / Warehouse",
+          "domain": "amazon.de",
+          "status": "No seller+stock+complete BOM verified"
+        },
+        {
+          "seller": "Dell / Dell Outlet",
+          "domain": "dell.com",
+          "status": "No suitable official sub-€1,600 dGPU/32GB config verified"
+        },
+        {
+          "seller": "HP / HP Renew",
+          "domain": "hp.com",
+          "status": "No suitable official outlet under budget verified"
+        },
+        {
+          "seller": "Lenovo / Lenovo Outlet",
+          "domain": "lenovo.com",
+          "status": "No suitable German direct Tower workstation under budget verified"
+        },
+        {
+          "seller": "Geizhals / Idealo / Mydealz",
+          "domain": "geizhals.de; idealo.de; mydealz.de",
+          "status": "Price discovery only; stale or conflicting snippets excluded from current price facts"
+        }
+      ]
+    },
     {
       "date": "2026-11-18",
       "title": "2026-11-18 Desktop Angebot Search — SYSTEMTREFF Ed76 €1,249.95 winner; CSL Sprint 5787 non-Systemtreff challenger; broad cross-vendor scan",
