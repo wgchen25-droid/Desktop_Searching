@@ -868,7 +868,10 @@
       "regret_risk_score": 2,
       "reference_systems_count": 1,
       "reference_price_rows": 0,
-      "dashboard_seller_columns": "assets/app.js already renders seller, domain and product_url; no frontend change required."
+      "dashboard_seller_columns": "assets/app.js already renders seller, domain and product_url; no frontend change required.",
+      "price_history_total_rows": 820,
+      "rolling7_count": 152,
+      "rolling30_count": 476
     },
     {
       "date": "2026-11-19",
@@ -2851,5 +2854,10 @@
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-08-30.md"
     }
   ],
-  "deployment_refresh_note": "2026-11-20 report, market rows and index committed to main; GitHub Pages deployment status checked after push."
+  "deployment_refresh_note": "2026-11-20 report, market rows and index committed to main; GitHub Pages deployment will be verified after the final push.",
+  "market_price_rows": 820,
+  "rolling7_count": 152,
+  "rolling30_count": 476,
+  "reference_systems_count": 1,
+  "reference_price_rows": 0
 }
