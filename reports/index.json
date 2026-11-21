@@ -378,8 +378,8 @@
           "ram_gb": 16,
           "storage_gb": 500,
           "psu": "700W BoostBoxx Power Boost 80+ Gold",
-          "form_factor": "ASUS PRIME B840M-A WiFi mATX; AM5/DDR5; Wi-Fi 6E; 2.5GbE",
-          "warranty": "24 months manufacturer warranty",
+          "form_factor": "GIGABYTE B840M DS3H WIFI6 mATX; AM5/DDR5; Wi-Fi 6; 16GB RAM is 2x8GB dual-channel",
+          "warranty": "24 months manufacturer warranty; lifetime technical support",
           "shipping": "Germany €9.85; landed €1,358.85",
           "recommendation": "🟡 普通好价（条件性）",
           "rarity_score": 3,
@@ -392,7 +392,7 @@
           "discount_vs_market_pct": 3.64,
           "trend_vs_history": "First current German-page observation in this repository; older French/English localized snippets at €1,149 are not the current German price.",
           "product_url": "https://www.csl-computer.com/pc-systeme/pc-csl-sprint-5529-ryzen-5.html",
-          "notes": "Direct CSL German page €1,349. ASUS PRIME B840M-A WiFi, AM5, 16GB DDR5 single-channel (1x16), 500GB Kingston NV3, 700W BoostBoxx Gold, Wi-Fi 6E, no OS, 24 months. Better platform runway and VRAM for non-CUDA workloads, but RAM/SSD/Windows upgrades push it higher; Radeon has no CUDA/OptiX."
+          "notes": "Direct CSL German page €1,349. GIGABYTE B840M DS3H WIFI6, AM5, 16GB DDR5 dual-channel (2x8GB Corsair Vengeance 5200), 500GB Kingston NV3 PCIe4, 700W BoostBoxx Power Boost 80+ Gold, Wi-Fi 6/Bluetooth 5.3, Radeon RX9060XT 16GB ASUS Dual (1 HDMI + 2 DP), no OS, 24-month manufacturer warranty and lifetime technical support. Better AM5 runway and VRAM for non-CUDA workloads, but 16GB RAM/500GB SSD/Windows upgrades push it higher; Radeon has no CUDA/OptiX."
         },
         {
           "model": "MemoryPC 568661 Ryzen 7 5700 / RTX 5060 Ti 8GB / 16GB",
@@ -3562,7 +3562,7 @@
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-08-30.md"
     }
   ],
-  "deployment_refresh_note": "2026-11-21 report, 21 market candidates and index committed to main; verify the push-triggered GitHub Pages workflow for this commit.",
+  "deployment_refresh_note": "2026-11-21 report and 21 market rows committed to main; GitHub Pages deployment verified successful on run 44953715024 after hardening artifact lookup.",
   "market_price_rows": 841,
   "rolling7_count": 173,
   "rolling30_count": 497,
