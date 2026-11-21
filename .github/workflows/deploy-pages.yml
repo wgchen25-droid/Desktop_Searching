@@ -46,7 +46,11 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+          # Unique per run/attempt so a retry cannot leave duplicate Pages artifacts.
+          name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}
