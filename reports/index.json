@@ -32,7 +32,7 @@
         "engineering_fit": 7.2,
         "remote_fit": 5.5,
         "upgrade_score": 6.3,
-        "history": "7d mean €1,179 n=4; 30d mean €1,179 n=6; tracked low €1,179; flat, current at low."
+        "history": "Prior 7d mean €1,179 (n=5); prior 30d mean €1,179 (n=6); tracked low €1,179; flat, current at low."
       },
       "challenger": {
         "model": "KRAFTPC Ryzen 7 5700X / RTX5060 / 32GB / 1TB / Win11 Pro",
@@ -57,7 +57,7 @@
         "engineering_fit": 7.4,
         "remote_fit": 9,
         "upgrade_score": 5,
-        "history": "7d/30d mean €1,279 n=2; tracked low €1,279; flat, same as 11/22."
+        "history": "Prior 7d/30d mean €1,279 (n=1); tracked low €1,279; flat; same as 11/22."
       },
       "conditional_challenger": {
         "model": "Acer Predator Orion 3000-665 DG.E4UEG.003 RTX5070 12GB refurbished",
@@ -83,7 +83,7 @@
         "csl5700": {
           "current": 1179,
           "seven_day_avg": 1179,
-          "seven_day_n": 4,
+          "seven_day_n": 5,
           "thirty_day_avg": 1179,
           "thirty_day_n": 6,
           "tracked_low": 1179,
@@ -92,9 +92,9 @@
         "kraftpc": {
           "current": 1279,
           "seven_day_avg": 1279,
-          "seven_day_n": 2,
+          "seven_day_n": 1,
           "thirty_day_avg": 1279,
-          "thirty_day_n": 2,
+          "thirty_day_n": 1,
           "tracked_low": 1279,
           "direction": "flat"
         },
@@ -108,28 +108,30 @@
         "systemtreff_ed75_5700x_b550": {
           "current": 1352.95,
           "previous": 1282.95,
-          "seven_day_avg": 1317.95,
-          "seven_day_n": 2,
-          "thirty_day_avg": 1317.95,
-          "thirty_day_n": 2,
+          "seven_day_avg": 1282.95,
+          "seven_day_n": 1,
+          "thirty_day_avg": 1282.95,
+          "thirty_day_n": 1,
           "tracked_low": 1282.95,
           "direction": "worsening"
         },
         "xkom_m3a": {
           "current": 1289.99,
-          "seven_day_n": 0,
-          "thirty_day_avg": 1166.82,
-          "thirty_day_n": 22,
+          "seven_day_n": 1,
+          "thirty_day_avg": 1166.48,
+          "thirty_day_n": 23,
           "tracked_low": 1159,
-          "direction": "worsening"
+          "direction": "worsening",
+          "seven_day_avg": 1289.99
         },
         "nbb_campus": {
           "current": 1249,
-          "seven_day_n": 0,
-          "thirty_day_avg": 1249,
-          "thirty_day_n": 1,
+          "seven_day_n": 7,
+          "thirty_day_avg": 1289.38,
+          "thirty_day_n": 26,
           "tracked_low": 1249,
-          "direction": "insufficient_sample"
+          "direction": "at tracked low; strong conditional price, Campus/BOM constraints",
+          "seven_day_avg": 1249
         },
         "notes": "CSL remains at its tracked low; SYSTEMTREFF 5700X/B550 rose €70 vs 11/22; x-kom M3A is >10% above its 30-day average."
       },
@@ -221,7 +223,7 @@
           "value_score": 7.3,
           "rarity_score": 2,
           "regret_risk": 2,
-          "trend": "7d/30d mean €1,279 n=2; tracked low €1,279; flat; 11/22 item ID 180321118, current item ID 144004305."
+          "trend": "Prior 7d/30d mean €1,279 n=1; tracked low €1,279; flat; 11/22 item ID 180321118, current item ID 144004305."
         },
         {
           "model": "Acer Predator Orion 3000-665 DG.E4UEG.003 RTX5070 12GB refurb",
@@ -299,7 +301,7 @@
           "value_score": 5.7,
           "rarity_score": 1,
           "regret_risk": 1,
-          "trend": "11/22 same config €1,282.95; today +€70; 7d/30d mean €1,317.95 n=2; tracked low €1,282.95."
+          "trend": "Prior 7d/30d mean €1,282.95 n=1; current +€70 vs 11/22; tracked low €1,282.95; worsening."
         },
         {
           "model": "x-kom SMX Battlestation M3A i5-14400F / RTX5060 Ti 8GB / 32GB / 1TB",
@@ -325,7 +327,7 @@
           "value_score": 5.5,
           "rarity_score": 1,
           "regret_risk": 1,
-          "trend": "30d mean €1,166.82 n=22; tracked low €1,159; current +10.6% vs mean; no 7d samples."
+          "trend": "Prior 7d mean €1,289.99 n=1; 30d mean €1,166.48 n=23; tracked low €1,159; current +10.6% vs 30d mean."
         },
         {
           "model": "NBB Campus Hyrican CTS01006 Ryzen 7 5700X / RTX5060 Ti / 32GB / 1TB",
@@ -351,7 +353,7 @@
           "value_score": 6.8,
           "rarity_score": 3,
           "regret_risk": 4,
-          "trend": "No 7d samples; 30d mean €1,249 n=1; insufficient sample."
+          "trend": "Prior 7d mean €1,249 n=7; 30d mean €1,289.38 n=26; tracked low €1,249; current at low, but Campus/BOM constraints."
         },
         {
           "model": "ALTERNATE Gaming PC i5-14400F / RTX5060 / 16GB / 500GB",
@@ -507,7 +509,7 @@
           "value_score": 5.8,
           "rarity_score": 1,
           "regret_risk": 1,
-          "trend": "7d mean €1,249 n=5; 30d mean €1,244 n=10; tracked low €1,099; current +€150 vs low."
+          "trend": "Prior 7d mean €1,249 n=7; 30d mean €1,239.91 n=11; tracked low €1,099; current +€150 vs low."
         }
       ]
     },
