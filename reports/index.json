@@ -4679,7 +4679,7 @@
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-08-30.md"
     }
   ],
-  "deployment_refresh_note": "2026-11-23 report and 13 market-price rows committed to main; Dashboard table now labels seller/platform domain and direct purchase link. GitHub Pages verification pending.",
+  "deployment_refresh_note": "GitHub Actions deploy-pages.yml completed successfully for main HEAD 49f0506dcba15eadd86ec791fd0362c984709a3f (2026-11-23 21:11 UTC); seller/domain and direct-purchase columns are included. Pages workflow success verified; direct site fetch is blocked by the web reader.",
   "market_price_rows": 876,
   "rolling7_count": 141,
   "rolling30_count": 491,
