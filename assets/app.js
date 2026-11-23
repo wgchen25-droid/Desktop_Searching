@@ -193,7 +193,7 @@ function renderReports(index) {
   const reports = Array.isArray(index?.reports) ? index.reports : [];
   if (!reports.length) return;
   box.innerHTML = reports.slice(0, 8).map((r) => {
-    const url = r.url || `${REPO}/blob/main/${r.path}`;
+    const url = r.report_url || r.url || `${REPO}/blob/main/${r.report_path || r.path}`;
     return `<a class="report-item" href="${esc(url)}" target="_blank" rel="noreferrer"><span><strong>${esc(r.title || 'Desktop Angebot Search')}</strong><small>${esc(r.summary || r.rating || '查看完整搜索报告')}</small></span><span class="report-date">${esc(r.date || '')}</span></a>`;
   }).join('');
 }
