@@ -143,7 +143,7 @@
         "candidate_gpu": "RTX 5060 8GB: major discrete GPU upgrade for CUDA/OptiX/viewport/rendering versus UHD770.",
         "candidate_ram": "32GB: same capacity.",
         "engineering": "Reference is preferable for CPU-bound simulation, compilation and large assemblies; CSL only wins GPU-accelerated workflows. 8GB VRAM can constrain larger scenes.",
-        "remote": "CSL has no OS/Wi-Fi; install Windows Pro for native RDP host or use RustDesk/Parsec. 1GbE and WoL by PME are useful. Reference OS edition is not recorded.",
+        "remote": "CSL has no OS/Wi-Fi; install Windows Pro for native RDP host or use RustDesk/Parsec. 1GbE is useful; WOL support must be verified for this exact board. Reference OS edition is not recorded.",
         "thermals": "CSL 500W own-brand Bronze has limited GPU upgrade headroom; PSU own-brand warranty is 12 months. Noise/load thermals not independently measured.",
         "upgrade": "Standard mATX ASUS board, 4 DIMM/128GB, 1 M.2, PCIe3 x16; AM4 EOL and 500W PSU remain constraints.",
         "decision": "Do not replace the HP Z2 G9 for CPU performance. Consider CSL only as a separate NVIDIA GPU node or after verifying that the HP cannot accept a compatible GPU."
