@@ -73,13 +73,13 @@
         "notes": "i5-14400F, RTX5070 12GB, 16GB/1TB/Win11 Home, 850W Gold, 2 DIMM max32GB, one M.2, OEM board. Case scratches. One-month return, but desktop warranty term is not clear on seller page; written confirmation required."
       },
       "gpu_focused_alternative": {
-        "model": "NBB Campus Hyrican CTS01006 Ryzen 7 5700X / RTX5060 Ti / 32GB / 1TB",
+        "model": "NBB Campus Hyrican CTS01006 Ryzen 7 5700X / RTX5060 Ti 8GB / 32GB / 1TB",
         "seller": "notebooksbilliger.de AG",
         "domain": "notebooksbilliger.de",
         "product_url": "https://www.notebooksbilliger.de/hyrican+business+desktop+pc+cts01006+921851",
         "price_eur": 1249,
-        "rating": "❌跳过（BOM未披露）",
-        "notes": "Campus-only; NBB confirms 5700X/RTX5060Ti/32GB/1TB/Win11 Pro but omits motherboard and PSU. Do not buy without written full BOM."
+        "rating": "❌跳过（Campus 限购；8GB Ti / 400W / 2 DIMM）",
+        "notes": "Campus-only direct NBB offer; German page lists 5700X/32GB/1TB/Windows 11 Pro, matched EAN EU specs confirm RTX 5060 Ti 8GB, 400W PSU, A520, 2 DIMM/max64GB, Wi-Fi 5 and Gigabit LAN. Better GPU than RTX5060 but limited VRAM and weak PSU/upgrade path."
       },
       "trend_summary": {
         "market_direction": "持平偏弱 / 略恶化；CSL 持历史低位，SYSTEMTREFF 配置版 +€70，KRAFTPC 同日 +€100，无值得抢购的神价",
@@ -348,7 +348,7 @@
           "product_url": "https://www.notebooksbilliger.de/hyrican+business+desktop+pc+cts01006+921851",
           "price_eur": 1249,
           "landed_price_eur": null,
-          "rating": "❌跳过（BOM未披露）",
+          "rating": "❌跳过（Campus 限购；8GB Ti / 400W / 2 DIMM）",
           "market_reference_eur": 1280,
           "discount_vs_market_pct": 2.42,
           "cpu": "Ryzen 7 5700X",
@@ -4706,7 +4706,7 @@
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-08-30.md"
     }
   ],
-  "deployment_refresh_note": "22:23 CET same-day price refresh committed to main; GitHub Pages deployment verification follows.",
+  "deployment_refresh_note": "2026-11-23 22:23 CET report, price history and dashboard index committed to main; awaiting final Pages workflow status check.",
   "market_price_rows": 877,
   "rolling7_count": 142,
   "rolling30_count": 493,
