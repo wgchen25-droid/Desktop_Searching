@@ -24,7 +24,7 @@
         "cpu": "Ryzen 7 5700X 8C/16T",
         "gpu": "RTX 5060 8GB",
         "ram": "32GB DDR4 dual-channel",
-        "ssd": "1TB M.2 NVMe",
+        "ssd": "1TB M.2 NVMe (drive listed PCIe4; A520 board M.2 slot is PCIe3.0 x4, so actual link is Gen3)",
         "motherboard": "ASUS PRIME A520M-A II/CSM mATX; 4 DIMM/128GB; 1 M.2 PCIe3 x4; PCIe3 x16",
         "psu": "CSL 500W 80+ Bronze; own-brand PSU warranty 12 months",
         "network": "1GbE; no Wi-Fi/BT",
@@ -32,7 +32,8 @@
         "engineering_fit": 7.2,
         "remote_fit": 5.5,
         "upgrade_score": 6.3,
-        "history": "Prior 7d mean €1,179 (n=5); prior 30d mean €1,179 (n=6); tracked low €1,179; flat, current at low."
+        "history": "Prior 7d mean €1,179 (n=5); prior 30d mean €1,179 (n=6); tracked low €1,179; flat, current at low.",
+        "notes": " SSD speed is capped by the board's PCIe3.0 x4 M.2 slot."
       },
       "challenger": {
         "model": "SYSTEMTREFF Ed75 configured Ryzen 7 5700X / RTX5060 / 32GB / 1TB / B550 ATX / Win11 Pro",
@@ -4706,7 +4707,7 @@
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-08-30.md"
     }
   ],
-  "deployment_refresh_note": "GitHub Pages 自动部署已启用（push 到 reports/**、data/** 会触发）；2026-11-23 本轮报告与索引更新的部署工作流已验证成功，后续索引元数据提交也会触发新部署。",
+  "deployment_refresh_note": "GitHub Pages auto-deploy is enabled for reports/** and data/**; the prior 22:23 deployment succeeded, and this technical clarification will trigger a fresh deployment.",
   "market_price_rows": 877,
   "rolling7_count": 142,
   "rolling30_count": 493,
