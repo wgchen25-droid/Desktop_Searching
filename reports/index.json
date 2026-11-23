@@ -4706,7 +4706,7 @@
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-08-30.md"
     }
   ],
-  "deployment_refresh_note": "2026-11-23 22:23 CET report, price history and dashboard index committed to main; awaiting final Pages workflow status check.",
+  "deployment_refresh_note": "GitHub Pages 自动部署已启用（push 到 reports/**、data/** 会触发）；2026-11-23 本轮报告与索引更新的部署工作流已验证成功，后续索引元数据提交也会触发新部署。",
   "market_price_rows": 877,
   "rolling7_count": 142,
   "rolling30_count": 493,
