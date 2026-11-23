@@ -39,7 +39,7 @@
         "seller": "Fasra 24 Computerhandels GmbH (KRAFTPC)",
         "platform": "MediaMarkt Marketplace",
         "domain": "mediamarkt.de",
-        "product_url": "https://www.mediamarkt.de/de/product/_kraftpc-gaming-pc-amd-ryzen-7-5700x-32gb-ram-1tb-ssd-nvidia-geforce-rtx-5060-windows-11-pro-180321118.html",
+        "product_url": "https://www.mediamarkt.de/de/product/_kraftpc-amd-ryzen7-5700x-gaming-pc-mit-amd-ryzentm-7-32-gb-ram-1000-gb-ssd-nvidia-geforce-rtxtm-4060-windows-11-pro-64-bit-144004305.html",
         "price_eur": 1279,
         "landed_price_eur": 1279,
         "price_delta_vs_winner_eur": 90.15,
@@ -201,7 +201,7 @@
           "seller": "Fasra 24 Computerhandels GmbH (KRAFTPC)",
           "platform": "MediaMarkt Marketplace",
           "domain": "mediamarkt.de",
-          "product_url": "https://www.mediamarkt.de/de/product/_kraftpc-gaming-pc-amd-ryzen-7-5700x-32gb-ram-1tb-ssd-nvidia-geforce-rtx-5060-windows-11-pro-180321118.html",
+          "product_url": "https://www.mediamarkt.de/de/product/_kraftpc-amd-ryzen7-5700x-gaming-pc-mit-amd-ryzentm-7-32-gb-ram-1000-gb-ssd-nvidia-geforce-rtxtm-4060-windows-11-pro-64-bit-144004305.html",
           "price_eur": 1279,
           "landed_price_eur": 1279,
           "rating": "🟡普通好价",
@@ -221,7 +221,7 @@
           "value_score": 7.3,
           "rarity_score": 2,
           "regret_risk": 2,
-          "trend": "7d/30d mean €1,279 n=2; tracked low €1,279; flat; same as 11/22."
+          "trend": "7d/30d mean €1,279 n=2; tracked low €1,279; flat; 11/22 item ID 180321118, current item ID 144004305."
         },
         {
           "model": "Acer Predator Orion 3000-665 DG.E4UEG.003 RTX5070 12GB refurb",
