@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T22:29:00+01:00",
+  "updated_at": "2026-11-24T22:52:00+01:00",
   "reports": [
     {
       "date": "2026-11-24",
@@ -60,9 +60,9 @@
         "shipping_to_germany": "€9.90; landed €1,385.85; 10–12 workdays",
         "engineering_fit": 7.5,
         "remote_fit": 9,
-        "upgrade_score": 8.5,
+        "upgrade_score": 7.5,
         "history": "Configured SKU has no exact history. Ed76 base SKU €1,289.95; prior 7d mean €1,255.94 (n=5), 30d mean €1,270.68 (n=13), tracked low €1,249.95.",
-        "notes": "Base €1,289.95 + Kingston FURY 32GB 2x16 option +€134 - RTX5060 8GB option -€48 = €1,375.95; +€9.90 shipping. Same CPU/GPU/RAM/SSD as winner but better ATX/4 DIMM/128GB/dual M.2/PCIe4 board, named 650W be quiet PSU, Windows 11 Pro and 3-year guarantee. 30-day return is advertised; confirm eligibility for this customized build."
+        "notes": "Base €1,289.95 + Kingston FURY 32GB 2x16 option +€134 - RTX5060 8GB option -€48 = €1,375.95; +€9.90 shipping. Same CPU/GPU/RAM/SSD as winner but better ATX/4 DIMM/128GB/dual M.2/PCIe4 board, named 650W be quiet PSU, Windows 11 Pro and 3-year guarantee. 30-day return is advertised; confirm eligibility for this customized build. AM4/B550 is mature with limited next-generation CPU path; its advantage is RAM/storage/GPU expandability, not a fresh CPU socket."
       },
       "conditional_challenger": {
         "model": "x-kom SMX Battlestation M3A i5-14400F / RTX 5060 Ti 8GB / 32GB / 1TB",
@@ -254,12 +254,12 @@
           "form_factor": "Gigabyte B550 Gaming X V2 ATX; 4 DIMM/128GB; dual M.2; PCIe4 x16; 1GbE",
           "warranty": "3-year system guarantee; advertised 30-day return (custom build eligibility to confirm)",
           "shipping_to_germany": "Germany €9.90; landed €1,385.85; 10–12 workdays",
-          "upgrade_score": 8.5,
+          "upgrade_score": 7.5,
           "engineering_score": 7.5,
           "remote_score": 9,
           "rarity_score": 1,
           "trend": "Ed76 base SKU prior 7d mean €1,255.94(n=5), 30d mean €1,270.68(n=13), tracked low €1,249.95; configured version has no exact history.",
-          "notes": "Direct seller IT-Systemtreff GmbH. Base €1,289.95 + Kingston FURY 32GB 2x16 +€134 - RTX5060 option -€48 = €1,375.95; +€9.90 shipping. Windows 11 Pro; confirm 30-day return for customized build."
+          "notes": "Direct seller IT-Systemtreff GmbH. Base €1,289.95 + Kingston FURY 32GB 2x16 +€134 - RTX5060 option -€48 = €1,375.95; +€9.90 shipping. Windows 11 Pro; confirm 30-day return for customized build. AM4/B550 is mature with limited next-generation CPU path; expansion is RAM/storage/GPU rather than a fresh CPU generation."
         },
         {
           "model": "CSL Sprint 5865 Ryzen 7 5700X / RTX 5060 8GB / 32GB / 1TB",
@@ -5388,7 +5388,7 @@
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-08-30.md"
     }
   ],
-  "deployment_refresh_note": "2026-11-24 22:29 CET: report and price_history refreshed on main. index.html already renders seller/domain/direct product URL fields, so no frontend change was needed. GitHub Pages deployment will be verified against the post-commit Actions run.",
+  "deployment_refresh_note": "2026-11-24 22:52 CET: refined SYSTEMTREFF platform score to reflect mature AM4 socket; report, history, and index are synchronized. Dashboard source columns remain in assets/app.js.",
   "market_price_rows": 896,
   "rolling7_count": 146,
   "rolling30_count": 499,
