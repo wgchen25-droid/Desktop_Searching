@@ -213,7 +213,7 @@
         "product_url"
       ],
       "frontend_changed": false,
-      "deployment_refresh_note": "Main updated; verify automatic GitHub Pages deployment after this commit."
+      "deployment_refresh_note": "GitHub Pages deploy workflow run 45899062988 completed success for index commit aa08fc72c0d54fb460e4e4667b14ce9d7d2ac615. A later report-only Markdown cleanup does not change Dashboard data."
     },
     {
       "date": "2026-11-25",
@@ -5781,7 +5781,7 @@
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-08-30.md"
     }
   ],
-  "deployment_refresh_note": "Main updated with 2026-11-26 22:27 scan; automatic GitHub Pages deployment status is being checked.",
+  "deployment_refresh_note": "GitHub Pages deploy workflow run 45899062988 completed success for index commit aa08fc72c0d54fb460e4e4667b14ce9d7d2ac615. A later report-only Markdown cleanup does not change Dashboard data.",
   "market_price_rows": 914,
   "rolling7_count": 121,
   "rolling30_count": 497,
