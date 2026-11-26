@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T22:00:00+01:00",
+  "updated_at": "2026-11-26T22:01:00+01:00",
   "reports": [
     {
       "date": "2026-11-26",
@@ -205,16 +205,14 @@
         "coolblue.de",
         "geizhals.de",
         "idealo.de",
-        "mydealz.de",
-        "heise.de"
+        "mydealz.de"
       ],
       "candidates_scanned": 31,
-      "seller_channels_scanned": 21,
+      "seller_channels_scanned": 20,
       "price_discovery_sources": [
         "Geizhals",
         "Idealo",
         "Mydealz",
-        "Heise",
         "site-targeted vendor searches"
       ],
       "price_history_rows_added": 9,
@@ -5797,7 +5795,7 @@
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-08-30.md"
     }
   ],
-  "deployment_refresh_note": "GitHub Pages deployment completed successfully for commit b6d42f8c8125a86a583f1aa52c2254328ea6a367; workflow run 45897274588.",
+  "deployment_refresh_note": "GitHub Pages deployment completed successfully for content commit b6d42f8c8125a86a583f1aa52c2254328ea6a367 (run 45897274588) and follow-up report/index commit a9d01c39ffb1a540324658fee0c875a601b18c27 (run 45897376288).",
   "market_price_rows": 912,
   "rolling7_count": 119,
   "rolling30_count": 495,
