@@ -5986,7 +5986,7 @@
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-08-30.md"
     }
   ],
-  "deployment_refresh_note": "Latest 2026-11-27 report and candidate source fields committed to main; GitHub Pages workflow will be verified after this update.",
+  "deployment_refresh_note": "Confirmed: GitHub Pages deployment run #253 completed successfully for latest main commit 6447ad11f90fa9817b0d85de557b1f85256158bc; all deploy steps succeeded.",
   "market_price_rows": 920,
   "rolling7_count": 127,
   "rolling30_count": 503,
@@ -5998,5 +5998,15 @@
     "domain",
     "product_url"
   ],
-  "frontend_changed": false
+  "frontend_changed": false,
+  "latest_pages_deployment": {
+    "workflow": "Deploy dashboard to GitHub Pages",
+    "run_id": 46067843051,
+    "run_number": 253,
+    "status": "completed",
+    "conclusion": "success",
+    "head_sha": "6447ad11f90fa9817b0d85de557b1f85256158bc",
+    "url": "https://github.com/wgchen25-droid/Desktop_Searching/actions/runs/46067843051",
+    "verified_at": "2026-11-27T21:05:02Z"
+  }
 }
