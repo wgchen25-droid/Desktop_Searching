@@ -8,7 +8,7 @@
       "file": "reports/2026-11-28.md",
       "report_url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-11-28.md",
       "dashboard_url": "https://wgchen25-droid.github.io/Desktop_Searching/",
-      "summary": "今日总冠军 Kiebel InvaderXS V €1,249（Kiebel / K-Quadrat Vertrieb GmbH，OTTO Marketplace），🟡普通好价；32GB、RTX5060、1TB、Windows 11 Pro、650W。最佳非同商家挑战者 CSL Sprint 5865：€1,229 + €9.85 = €1,238.85；同 CPU/GPU/RAM/SSD，B550/双 M.2/PCIe4，但 500W、无 OS/Wi-Fi，B550M-K ARGB 仅 2 DIMM/64GB。CSL Sprint 5700 到手 €1,188.85 是最便宜全新裸机方案。",
+      "summary": "今日总冠军 Kiebel InvaderXS V €1,249（Kiebel / K-Quadrat Vertrieb GmbH，OTTO Marketplace），🟡普通好价；32GB、RTX5060、1TB、Windows 11 Pro、650W。最佳非同商家挑战者 CSL Sprint 5865：€1,229 + €9.85 = €1,238.85；同 CPU/GPU/RAM/SSD，B550/双 M.2/PCIe4，但 500W、无 OS/Wi-Fi，B550M-K ARGB 仅 2 DIMM/64GB。CSL Sprint 5700 到手 €1,188.85 是最便宜全新裸机方案。 Coolblue €1,319 包邮也已复核：MSI A520、2 DIMM/64GB、550W、Windows Home，售后好但比冠军贵 €70，故跳过。",
       "winner": {
         "rank": 1,
         "title": "KIEBEL InvaderXS V — Ryzen 7 5700X / RTX 5060 8GB / 32GB / 1TB / Windows 11 Pro",
@@ -141,6 +141,20 @@
           "landed_price_eur": 1308.85,
           "rating": "❌跳过",
           "notes": "Landed price exceeds main budget; A520, 500W Bronze, no OS/Wi-Fi, Ti has only 8GB VRAM; not an exceptional stretch."
+        },
+        {
+          "title": "Coolblue Cobalt X MSI Tier 1 — 5700X / RTX5060 / 32GB / 1TB / Windows 11 Home",
+          "seller": "Coolblue GmbH",
+          "domain": "coolblue.de",
+          "platform": "Direct retail; not Marketplace",
+          "product_url": "https://www.coolblue.de/produkt/981905/cobalt-x-powered-by-msi-tier-1-rtx-5060-ryzen-7-5700x-32-gb-1-tb-ssd-wlan.html",
+          "price_eur": 1319,
+          "shipping_eur": 0,
+          "landed_price_eur": 1319,
+          "rating": "❌跳过（高于预算且配置不如冠军）",
+          "regret_risk": 1,
+          "rarity_score": 1,
+          "notes": "Windows 11 Home; MSI A520; 2 DIMM/max64GB; 1TB M.2; 550W MSI PSU; Wi-Fi6/BT5.3; 1GbE; 4 GPU display outputs. 2-year warranty, 30-day free return/exchange, free delivery and Monday delivery shown. Trustpilot 4.4/5 (23,453), Kiyoh 9.3/10 (10,914). €70 more than Kiebel but lower RAM expansion, PSU headroom and no native RDP host."
         }
       ],
       "trend_summary": {
@@ -185,7 +199,7 @@
         "simpex-systemhaus.com",
         "ram-koenig.de"
       ],
-      "candidates_scanned": 18,
+      "candidates_scanned": 19,
       "seller_channels_scanned": 22,
       "price_discovery_sources": [
         "Geizhals",
@@ -194,10 +208,10 @@
         "Heise",
         "vendor-specific site searches"
       ],
-      "price_history_rows_added": 8,
-      "market_price_rows": 929,
-      "rolling7_count": 88,
-      "rolling30_count": 492,
+      "price_history_rows_added": 9,
+      "market_price_rows": 930,
+      "rolling7_count": 89,
+      "rolling30_count": 493,
       "reference_systems_count": 1,
       "reference_price_rows": 0,
       "dashboard_source_fields": [
@@ -6208,10 +6222,10 @@
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-08-30.md"
     }
   ],
-  "deployment_refresh_note": "2026-11-28 report and 8 market candidates committed to main; assets/app.js already renders seller/domain/product_url. Verify the Pages workflow for the latest main commit.",
-  "market_price_rows": 929,
-  "rolling7_count": 88,
-  "rolling30_count": 492,
+  "deployment_refresh_note": "2026-11-28 report and 9 market candidates committed to main; assets/app.js already renders seller/domain/product_url. Verify the Pages workflow for the latest main commit.",
+  "market_price_rows": 930,
+  "rolling7_count": 89,
+  "rolling30_count": 493,
   "reference_systems_count": 1,
   "reference_price_rows": 0,
   "latest_report_date": "2026-11-28",
