@@ -6222,7 +6222,7 @@
       "url": "https://github.com/wgchen25-droid/Desktop_Searching/blob/main/reports/2026-08-30.md"
     }
   ],
-  "deployment_refresh_note": "GitHub Pages workflow #265 completed successfully on 2026-11-28; head SHA 62a3ef453b9d26e5b4db3fbd0fea6187ea655ccd matched main. Existing assets/app.js already renders seller/domain/product_url; no frontend change needed.",
+  "deployment_refresh_note": "GitHub Pages workflow #268 completed successfully on 2026-11-28; head SHA 734b5959d37bce2ac8d5f03e1fae4dcd9cb0f223 matched main. Existing assets/app.js already renders seller/domain/product_url; no frontend change needed.",
   "market_price_rows": 930,
   "rolling7_count": 89,
   "rolling30_count": 493,
@@ -6237,12 +6237,12 @@
   "frontend_changed": false,
   "latest_pages_deployment": {
     "workflow": "Deploy dashboard to GitHub Pages",
-    "run_id": 46192702240,
-    "run_number": 265,
+    "run_id": 46192822521,
+    "run_number": 268,
     "status": "completed",
     "conclusion": "success",
-    "head_sha": "62a3ef453b9d26e5b4db3fbd0fea6187ea655ccd",
-    "url": "https://github.com/wgchen25-droid/Desktop_Searching/actions/runs/46192702240",
-    "verified_at": "2026-11-28T21:40:03Z"
+    "head_sha": "734b5959d37bce2ac8d5f03e1fae4dcd9cb0f223",
+    "url": "https://github.com/wgchen25-droid/Desktop_Searching/actions/runs/46192822521",
+    "verified_at": "2026-11-28T21:41:29Z"
   }
 }
